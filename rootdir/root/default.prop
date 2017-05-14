@@ -16,9 +16,3 @@ dalvik.vm.image-dex2oat-Xmx=64m
 ro.dalvik.vm.native.bridge=0
 ro.hardware=sprout
 persist.sys.usb.config=mtp,adb
-#
-# BOOTIMAGE_BUILD_PROPERTIES
-#
-ro.bootimage.build.date=Чт. мая 12 01:08:30 MSK 2016
-ro.bootimage.build.date.utc=1463004510
-ro.bootimage.build.fingerprint=highscreen/full_alps/alps:6.0.1/MOB30J/eng.cake.20160512.001640:userdebug/test-keys
