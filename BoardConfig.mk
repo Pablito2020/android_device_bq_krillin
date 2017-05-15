@@ -84,6 +84,9 @@ BLOCK_BASED_OTA := false
 # Assert
 TARGET_OTA_ASSERT_DEVICE := krillin,Aquaris_E45,alps,giraffe
 
+# Double Tap 2 wake
+TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 

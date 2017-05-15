@@ -53,7 +53,7 @@ Camera  | 8MPx, LED Flash
  * MTP and Mass Storage modes
  * Audio over Bluetooth (music, calls .etc)
  * Wi-Fi tethering
- * Double tap to unlock
+ * Double tap to unlock and doubletap2wake full implementation
  * Notification Led (colours + customization)
  * Screencast (must apply mtk patch, thanks to Hikari No Tenshi)
  * OTA Updates (via API.JSON)
