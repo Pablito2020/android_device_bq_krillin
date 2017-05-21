@@ -940,9 +940,4 @@ service conn_launcher /system/bin/6620_launcher -p /system/etc/firmware/
 #
 # Connectivity related services (End)
 #
-	
-service enableswap /system/bin/sh /enableswap.sh
-    class core
-    oneshot	
-
 

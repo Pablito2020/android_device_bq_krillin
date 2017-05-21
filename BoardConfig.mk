@@ -1,23 +1,27 @@
 LOCAL_PATH := device/bq/krillin
- 
-# Board
+
+# Bootloader
+TARGET_NO_BOOTLOADER := true
+TARGET_BOOTLOADER_BOARD_NAME := Aquaris_E45
+
+# Platform
 TARGET_BOARD_PLATFORM := mt6582
 MTK_BOARD_PLATFORMS := mt6582
+
+# Architecture
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 ARCH_ARM_HAVE_VFP := true
 TARGET_CPU_SMP := true
 TARGET_ARCH := arm
 ARCH_ARM_HAVE_NEON := true
-TARGET_NO_BOOTLOADER := true
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a7
 TARGET_CPU_VARIANT:= cortex-a7
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
-DEVICE_RESOLUTION := 540x960
 
-# Bootloader test 
-TARGET_BOOTLOADER_BOARD_NAME := Aquaris_E45
+# Resolution
+DEVICE_RESOLUTION := 540x960
 
 # Storage allocations (via cat /proc/partitions)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
@@ -25,15 +29,12 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
 BOARD_SYSTEMIMAGE_PARTITION_SIZE:=1073741824
 BOARD_USERDATAIMAGE_PARTITION_SIZE:=5886705664
 BOARD_CACHEIMAGE_PARTITION_SIZE:=743003200
-TARGET_USERIMAGES_USE_EXT4 := true
-BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Vold
 BOARD_VOLD_MAX_PARTITIONS := 25
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
-
 
 # kernel stuff
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/tools/bootimg.mk
@@ -46,7 +47,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-# Don't build recovery.
+# TWRP Recovery ( not tested )
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -84,8 +85,9 @@ BLOCK_BASED_OTA := false
 # Assert
 TARGET_OTA_ASSERT_DEVICE := krillin,Aquaris_E45,alps,giraffe
 
-# Double Tap 2 wake
+# Double Tap 2 wake (works, but you can't disable it)
 TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -133,5 +135,4 @@ USE_CAMERA_STUB := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/alps/sepolicy
-
+    device/bq/krillin/sepolicy

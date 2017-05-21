@@ -29,7 +29,7 @@ Camera  | 8MPx, LED Flash
 
 ### Warning! --- IMPORTANT:
 
- * You must take backup of the folder data/nvram before installing any rom.
+ * You must have an sdcard in your device, because this device uses SDCard as default storage 
 
 ### Working:
 
@@ -48,24 +48,24 @@ Camera  | 8MPx, LED Flash
  * Hardware buttons (HOME, BACK, APP_SWITCH + customization of it)
  * HDR
  * Flashlight (statusbar and camera)
- * Camera rear/front (video and photo)
- * Micro SD support
+ * Camera rear/front (video and photo) (correct mpx)
+ * Micro SD support (As stock storage)
  * MTP and Mass Storage modes
  * Audio over Bluetooth (music, calls .etc)
  * Wi-Fi tethering
  * Double tap to unlock and doubletap2wake full implementation
  * Notification Led (colours + customization)
- * Screencast (must apply mtk patch, thanks to Hikari No Tenshi)
+ * Screencast (must apply mtk patch)
  * OTA Updates (via API.JSON)
 
 ### In progress/bugs:
 
- * Camera megapixels (It is showing 5mpx instead of 8mpx in frontal camera)
-
+ * No bugs found for now...
 
 ### Thanks to (In alphabetichal order):
 
  * Assusdan (help with kernel sources builded from scratch)
+ * Hikari No Tenshi ( Screencast App patch )
  * Varun Chitre (RIL + Sprout device tree patches)
  * Vo-1 (Sound Fix in kernel)
  * Zormax (Initial cm12.1/13.0 bringup for mt6582 with kernel sources)
