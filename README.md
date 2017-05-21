@@ -27,10 +27,6 @@ Camera  | 8MPx, LED Flash
 
 # Build Information
 
-### Warning! --- IMPORTANT:
-
- * You must have an sdcard in your device, because this device uses SDCard as default storage 
-
 ### Working:
 
  * Wi-Fi
@@ -49,7 +45,7 @@ Camera  | 8MPx, LED Flash
  * HDR
  * Flashlight (statusbar and camera)
  * Camera rear/front (video and photo) (correct mpx)
- * Micro SD support (As stock storage)
+ * Micro SD support
  * MTP and Mass Storage modes
  * Audio over Bluetooth (music, calls .etc)
  * Wi-Fi tethering
