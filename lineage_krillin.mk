@@ -136,6 +136,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libxlog
     
+
+# GPS
+PRODUCT_PACKAGES += \
+    YGPS
+
 # Build libsprout for ril
 PRODUCT_PACKAGES += \
     libsprout
