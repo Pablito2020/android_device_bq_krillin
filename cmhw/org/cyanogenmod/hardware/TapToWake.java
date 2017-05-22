@@ -16,23 +16,67 @@
 
 package org.cyanogenmod.hardware;
 
-import java.io.File;
-
 import org.cyanogenmod.hardware.util.FileUtils;
 
+import java.io.File;
+import java.io.DataOutputStream;
+import java.io.IOException;
+
+/**
+ * Tap (usually double-tap) to wake. This *should always* be supported by
+ * the hardware directly. A lot of recent touch controllers have a firmware
+ * option for this
+ */
 public class TapToWake {
 
     private static String CONTROL_PATH = "/sys/android_touch/doubletap2wake";
 
+    /**
+     * Whether device supports it
+     *
+     * @return boolean Supported devices must return always true
+     */
     public static boolean isSupported() {
-        return new File(CONTROL_PATH).exists();
+	return new File(CONTROL_PATH).exists();
     }
 
-    public static boolean isEnabled()  {
-        return "1".equals(FileUtils.readOneLine(CONTROL_PATH));
+    /**
+     * This method return the current activation state
+     *
+     * @return boolean Must be false when feature is not supported or
+     * disabled.
+     */
+    public static boolean isEnabled() {
+	return "1".equals(FileUtils.readOneLine(CONTROL_PATH));
     }
 
+    /**
+     * This method allows to set activation state
+     *
+     * @param state The new state
+     * @return boolean for on/off, exception if unsupported
+     */
     public static boolean setEnabled(boolean state)  {
-        return FileUtils.writeLine(CONTROL_PATH, (state ? "1" : "0"));
-    }
+	DataOutputStream os;
+	Process suProcess;
+	try {
+		suProcess = Runtime.getRuntime().exec("sh");
+		os = new DataOutputStream(suProcess.getOutputStream());
+		if(state)
+		{
+                        os.writeBytes("echo 1 > /sys/android_touch/doubletap2wake\n");
+		}
+                else 
+		{
+                        os.writeBytes("echo 0 > /sys/android_touch/doubletap2wake\n");
+                }
+		os.flush();
+		return state;
+	    } 
+	    catch (IOException exception) 
+	    {
+	        exception.printStackTrace();
+		return false;
+	    }
+	}
 }
