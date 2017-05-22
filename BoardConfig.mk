@@ -39,9 +39,9 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_
 # kernel stuff
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/tools/bootimg.mk
 MTK_PLATFORM := mt6582
-MTK_PROJECT := alps
-TARGET_KERNEL_SOURCE := kernel/mediatek/krillin
-TARGET_KERNEL_CONFIG := alps_defconfig
+MTK_PROJECT := krillin
+TARGET_KERNEL_SOURCE := kernel/bq/krillin
+TARGET_KERNEL_CONFIG := lineage_krillin_defconfig
 BOARD_KERNEL_CMDLINE :=
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_KERNEL_BASE := 0x10000000
