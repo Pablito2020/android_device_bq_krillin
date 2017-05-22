@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_NAME := lineage_krillin
 PRODUCT_DEVICE :=krillin
 PRODUCT_BRAND := bq
-PRODUCT_MANUFACTURER := mediatek
+PRODUCT_MANUFACTURER := bq
 PRODUCT_MODEL := Aquaris E4.5
 
 # Correct bootanimation size for the screen
