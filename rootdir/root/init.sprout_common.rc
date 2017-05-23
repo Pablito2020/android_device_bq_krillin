@@ -179,6 +179,7 @@ on post-fs-data
     chown system system /dev/gyroscope
     chown system system /dev/aal_als
 
+    # Accelerometer Sensor
     chmod 0660 /sys/class/misc/m_acc_misc/accenablenodata
     chmod 0660 /sys/class/misc/m_acc_misc/accactive
     chmod 0660 /sys/class/misc/m_acc_misc/accdelay
@@ -190,6 +191,7 @@ on post-fs-data
     chown system system /sys/class/misc/m_acc_misc/accbatch
     chown system system /sys/class/misc/m_acc_misc/accflush
 
+    # Magnetometer (compass) sensor
     chmod 0660 /sys/class/misc/m_mag_misc/magactive
     chmod 0660 /sys/class/misc/m_mag_misc/magdelay
     chmod 0660 /sys/class/misc/m_mag_misc/magbatch
@@ -205,9 +207,10 @@ on post-fs-data
     chown system system /sys/class/misc/m_mag_misc/magoactive
     chown system system /sys/class/misc/m_mag_misc/magodelay
     
-    #20140929 xiexijun add ckt baseline AT cmd for factory test
+    # ADDED BY BQ (IT SEEMS TO BE SOMETHING RELATED WITH BATERY)
     chown system system /sys/devices/platform/battery/Ckt_AT_Test_Charging_State
 
+    # More magnetometer sensors..
     chown system system /sys/class/misc/m_mag_misc/magobatch
     chown system system /sys/class/misc/m_mag_misc/magoflush
     chmod 0660 /sys/class/misc/m_batch_misc/batchactive
@@ -219,7 +222,8 @@ on post-fs-data
     chown system system /sys/class/misc/m_batch_misc/batchbatch
     chown system system /sys/class/misc/m_batch_misc/batchflush
 
-	chmod 0660 /sys/class/misc/m_gyro_misc/gyroenablenodata
+    # Gyroscope 
+    chmod 0660 /sys/class/misc/m_gyro_misc/gyroenablenodata
     chmod 0660 /sys/class/misc/m_gyro_misc/gyroactive
     chmod 0660 /sys/class/misc/m_gyro_misc/gyrodelay
     chmod 0660 /sys/class/misc/m_gyro_misc/gyrobatch
@@ -230,6 +234,7 @@ on post-fs-data
     chown system system /sys/class/misc/m_gyro_misc/gyrobatch
     chown system system /sys/class/misc/m_gyro_misc/gyroflush
 
+    # ALSPS
     chmod 0660 /sys/class/misc/m_alsps_misc/alsactive
     chmod 0660 /sys/class/misc/m_alsps_misc/alsdelay
     chmod 0660 /sys/class/misc/m_alsps_misc/alsbatch
@@ -247,6 +252,7 @@ on post-fs-data
     chown system system /sys/class/misc/m_alsps_misc/psbatch
     chown system system /sys/class/misc/m_alsps_misc/psflush
 
+    # Barometer sensor (NOT USED) 
     chmod 0660 /sys/class/misc/m_baro_misc/baroenablenodata
     chmod 0660 /sys/class/misc/m_baro_misc/baroactive
     chmod 0660 /sys/class/misc/m_baro_misc/barodelay
@@ -940,4 +946,3 @@ service conn_launcher /system/bin/6620_launcher -p /system/etc/firmware/
 #
 # Connectivity related services (End)
 #
-
