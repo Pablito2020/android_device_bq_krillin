@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_krillin.mk
+    $(LOCAL_DIR)/device.mk
