@@ -79,11 +79,9 @@ ro.sf.hwrotation=0
 ril.current.share_modem=2
 ril.radiooff.poweroffMD=0
 
-# temporary enables NAV bar (soft keys)
-qemu.hw.mainkeys=1
-
 #ro.crypto.state=unencrypted
 
+# RIL AND GPS
 ##
 ro.telephony.ril_class=SproutRIL
 persist.radio.fd.counter=15
