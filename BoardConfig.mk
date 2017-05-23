@@ -47,34 +47,6 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-# TWRP Recovery ( not tested )
-BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_RECOVERY_SWIPE := true
-RECOVERY_GRAPHICS_USE_LINELENGTH := true
-RECOVERY_SDCARD_ON_DATA := true
-TW_USE_EXTERNAL_STORAGE := true
-TW_DEFAULT_EXTERNAL_STORAGE := true
-TW_NO_REBOOT_BOOTLOADER := true
-TW_NO_USB_STORAGE := true
-TW_INTERNAL_LABEL := "internal"
-TW_EXTERNAL_LABEL := "external"
-TW_INTERNAL_STORAGE_PATH := "/internal"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "/internal"
-TW_EXTERNAL_STORAGE_PATH := "/external/sdcard2"
-TW_EXTERNAL_STORAGE_MOUNT_POINT := "/external"
-TW_INCLUDE_NTFS_3G := true
-TW_INCLUDE_L_CRYPTO := true
-TW_CRYPTO_FS_TYPE := "ext4"
-TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p7"
-TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
-TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone5/temp
-TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TW_MAX_BRIGHTNESS := 255
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/f_mass_storage/lun/file
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/recovery.fstab
-
 # Deodex
 WITH_DEXPREOPT := false
 DISABLE_DEXPREOPT := true
@@ -85,8 +57,10 @@ BLOCK_BASED_OTA := false
 # Assert
 TARGET_OTA_ASSERT_DEVICE := krillin,Aquaris_E45,alps,giraffe
 
-# Double Tap 2 wake (works, but you can't disable it)
-TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
+# recovery.fstab (needed for a flasheable zip)
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/recovery.fstab
+
+# Lineage OS Hardware Hooks
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
 
 # Bluetooth
