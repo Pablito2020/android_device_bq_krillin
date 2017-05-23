@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Call device specific makefile
-$(call inherit-product, device/bq/krillin/lineage_krillin.mk)
+$(call inherit-product, device/bq/krillin/device.mk)
 
 LOCAL_PATH := device/bq/krillin
 
