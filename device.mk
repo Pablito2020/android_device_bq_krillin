@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
+# MTK leds
+PRODUCT_PACKAGES += \
+    liblights
+
 # Wifi
  PRODUCT_PACKAGES += \
     libwpa_client \
@@ -125,12 +129,14 @@ PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
 
+# Offline Charging
 PRODUCT_PACKAGES += \
     charger \
     charger_res_images \
     libnl_2 \
     libtinyxml
 
+# Partitions
 PRODUCT_PACKAGES += \
     setup_fs \
     e2fsck
