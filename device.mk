@@ -115,7 +115,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 
 # MTK leds
 PRODUCT_PACKAGES += \
-    liblights
+    lights.default.so
 
 # Wifi
  PRODUCT_PACKAGES += \
