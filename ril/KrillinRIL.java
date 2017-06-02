@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2017 The Lineage OS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -40,7 +41,7 @@ import java.io.InputStream;
 import com.android.internal.telephony.uicc.IccConstants;
 import com.android.internal.telephony.uicc.IccIoResult;
 
-public class SproutRIL extends RIL implements CommandsInterface {
+public class KrillinRIL extends RIL implements CommandsInterface {
 
 static final int RIL_REQUEST_SET_3G_CAPABILITY = 128;
 static final int RIL_REQUEST_ALLOW_DATA = 125;
@@ -48,11 +49,11 @@ static final int RIL_REQUEST_GET_HARDWARE_CONFIG = 122;
 static final int RIL_REQUEST_SET_UICC_SUBSCRIPTION = 124;
 static int registered = 0;
 
-    public SproutRIL(Context context, int networkMode, int cdmaSubscription) {
+    public KrillinRIL(Context context, int networkMode, int cdmaSubscription) {
         super(context, networkMode, cdmaSubscription, null);
     }
 
-    public SproutRIL(Context context, int networkMode, int cdmaSubscription, Integer instanceId) {
+    public KrillinRIL(Context context, int networkMode, int cdmaSubscription, Integer instanceId) {
         super(context, networkMode, cdmaSubscription, instanceId);
     }
 

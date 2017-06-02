@@ -16,10 +16,10 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    sprout_ril.cpp
+    krillin_ril.cpp
 
 LOCAL_SHARED_LIBRARIES := libbinder
-LOCAL_MODULE := libsprout
+LOCAL_MODULE := libkrillin
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)

@@ -149,11 +149,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     YGPS
 
-# Build libsprout for ril
+# Build libkrillin for ril
 PRODUCT_PACKAGES += \
-    libsprout
+    libkrillin
     
-# Build libstlport EGL package necessary for build MM
+# Build libstlport EGL package necessary for boot MM
 PRODUCT_PACKAGES += \
     libstlport
    

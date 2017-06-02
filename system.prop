@@ -83,7 +83,7 @@ ril.radiooff.poweroffMD=0
 
 # RIL AND GPS
 ##
-ro.telephony.ril_class=SproutRIL
+ro.telephony.ril_class=KrillinRIL
 persist.radio.fd.counter=15
 persist.radio.fd.off.counter=5
 persist.radio.fd.r8.counter=15
