@@ -32,6 +32,10 @@ BOARD_CACHEIMAGE_PARTITION_SIZE:=743003200
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Recovery allocations
+TARGET_USERIMAGES_USE_EXT4 := true
+BOARD_HAS_LARGE_FILESYSTEM := true
+
 # Vold
 BOARD_VOLD_MAX_PARTITIONS := 25
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
@@ -57,8 +61,40 @@ BLOCK_BASED_OTA := false
 # Assert
 TARGET_OTA_ASSERT_DEVICE := krillin,Aquaris_E45,alps,giraffe
 
-# recovery.fstab (needed for a flasheable zip)
+# Recovery
+RECOVERY_VARIANT=twrp
+
+# TWRP stuff
+ifeq ($(RECOVERY_VARIANT), twrp)
+TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery/kernel
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/etc/recovery.fstab
+DEVICE_RESOLUTION := 540x960
+DEVICE_SCREEN_WIDTH := 540
+DEVICE_SCREEN_HEIGHT := 960
+BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_SUPPRESS_SECURE_ERASE := true
+TW_NO_REBOOT_BOOTLOADER := true
+# TARGET_USERIMAGES_USE_F2FS := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun0/file
+TW_NO_CPU_TEMP := true
+TW_EXCLUDE_MTP := true
+TW_THEME := portrait_mdpi
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_DEFAULT_EXTERNAL_STORAGE := true
+TW_MAX_BRIGHTNESS := 255
+TW_INCLUDE_CRYPTO := true
+#TW_CRYPTO_FS_TYPE := "ext4"
+#TW_CRYPTO_MNT_POINT := "/data"
+#TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data =ordered"
+else
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/recovery.fstab
+endif
+
 
 # Lineage OS Hardware Hooks
 BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw
@@ -80,7 +116,7 @@ WIFI_DRIVER_FW_PATH_STA:=STA
 WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
  
-# Enable Minikin text layout engine (will be the default soon)
+# Enable Minikin text layout engine
 USE_MINIKIN := true
 MALLOC_IMPL := dlmalloc
 
@@ -110,3 +146,7 @@ USE_CAMERA_STUB := true
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/bq/krillin/sepolicy
+
+# Hack for build
+$(shell mkdir -p $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates)
+$(shell touch $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates/export_includes) 

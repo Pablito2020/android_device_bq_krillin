@@ -19,7 +19,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 LOCAL_PATH := device/bq/krillin
 
-# Permissions
+# PERMISSIONS
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
@@ -40,12 +40,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
-    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+    packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
-    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 
-# Camera permissions
+# CAMERA PERMISSIONS
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
@@ -55,11 +55,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/system/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
 
-# Using Prebuilt Gps Configuration From Lineage OS Common Device Tree 
+# GPS CONFIGURATION
 PRODUCT_COPY_FILES +=\
   $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf 
 
-# Audio	
+# AUDIO	
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
@@ -69,17 +69,17 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml
 
-# Thermal
+# THERMAL
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/system/etc/thermal/thermal.conf:system/etc/.tp/thermal.conf \
      $(LOCAL_PATH)/rootdir/system/etc/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
      $(LOCAL_PATH)/rootdir/system/etc/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf
 
-# Keylayout
+# KEYLAYOUT
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
 
-# Hostapd
+# HOSTAPD
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     $(LOCAL_PATH)/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
@@ -99,11 +99,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/init.sprout.rc:root/init.sprout.rc \
     $(LOCAL_PATH)/rootdir/root/fstab.sprout:root/fstab.sprout
     
+# TWRP RECOVERY
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
+    $(LOCAL_PATH)/recovery/etc/sbin/fsck.f2fs:root/sbin/fsck.f2fs \
+    $(LOCAL_PATH)/recovery/etc/sbin/mkfs.f2fs:root/sbin/mkfs.f2fs
 
-# Overlay
+# OVERLAY
 DEVICE_PACKAGE_OVERLAYS := device/bq/krillin/overlay
 
-# Audio
+# AUDIO
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
@@ -113,11 +118,11 @@ PRODUCT_PACKAGES += \
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# MTK leds
+# LED NOTIFICATION 
 PRODUCT_PACKAGES += \
     lights.default.so
 
-# Wifi
+# WIFI
  PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
@@ -129,14 +134,14 @@ PRODUCT_PACKAGES += \
     librs_jni \
     com.android.future.usb.accessory
 
-# Offline Charging
+# CHARGING
 PRODUCT_PACKAGES += \
     charger \
     charger_res_images \
     libnl_2 \
     libtinyxml
 
-# Partitions
+# PARTITIONS
 PRODUCT_PACKAGES += \
     setup_fs \
     e2fsck
@@ -144,28 +149,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libxlog
     
-
-# GPS
+# GPS PACKAGE
 PRODUCT_PACKAGES += \
     YGPS
 
-# Build libkrillin for ril
+# RIL
 PRODUCT_PACKAGES += \
     libkrillin
     
-# Build libstlport EGL package necessary for boot MM
+# EGL
 PRODUCT_PACKAGES += \
     libstlport
    
-# Build the Lineage OS camera called Snap 
+# CAMERA PACKAGE
 PRODUCT_PACKAGES += \
     Snap
 
-# Build the "new" lineage OS browser called Gello
+# BROWSER PACKAGE
 PRODUCT_PACKAGES += \
     Gello
     
-# Build Radio APP
+# RADIO PACKAGE
 PRODUCT_PACKAGES += \
     FMRadio
     
@@ -191,7 +195,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-swap=false	
 	
-# logd
+# LOGD TOOL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tools/logd:system/bin/logd
 	
+
+# Hack for build
+$(shell mkdir -p $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates)
+$(shell touch $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates/export_includes)

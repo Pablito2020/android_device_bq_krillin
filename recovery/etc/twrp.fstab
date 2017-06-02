@@ -1,0 +1,9 @@
+/cache            ext4       /dev/block/mmcblk0p6
+/system           ext4       /dev/block/mmcblk0p5
+/data             ext4       /dev/block/mmcblk0p7   length=-16384
+/nvram            emmc       /dev/nvram flags=display="Nvram";backup=1
+/logo             emmc       /dev/logo flags=display="logo";backup=1
+/boot             emmc       /dev/bootimg
+/recovery         emmc       /dev/recovery
+/external_sd      vfat       /dev/block/mmcblk1p1 /dev/block/mmcblk1  flags=display="External SD";storage;wipeingui;removable
+/usb-otg          vfat       /dev/block/sda1 /dev/block/sda           flags=display="USB OTG";storage;wipeingui;removable
