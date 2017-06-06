@@ -3,15 +3,15 @@ Aquaris E4.5 - LineageOS 13.0
 
 ### Full Compilation guide:
 
-   repo init -u git://github.com/LineageOS/android.git -b cm-13.0
+     * repo init -u git://github.com/LineageOS/android.git -b cm-13.0
 
-   repo sync
+     * repo sync
 
-   add device tree, vendor blobs, kernel source and stlport in his respective paths
+     * NOW IS TIME TO ADD KERNEL, VENDOR AND STLPORT (FOR EGL) FILES IN HIS DIRECTORY PATHS 
 
-   . build/envsetup.sh
+     * . build/envsetup.sh
 
-   lunch lineage_krillin-userdebug
+     * lunch lineage_krillin-userdebug
 
 ### Recovery Compilation (TWRP Variant):
 
