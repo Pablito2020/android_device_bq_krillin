@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<recovery>
+	<details>
+		<resolution width="1080" height="1920"/>
+		<author>z31s1g</author>
+		<title>TWRP Materialised Stock Splash</title>
+		<description>splash screen</description>
+		<themeversion>2</themeversion>
+	</details>
+
+	<resources>
+		<font name="splash" filename="Light.ttf" size="47"/>
+		<image name="splashlogo" filename="splashlogo_stock" retainaspect="1"/>
+		<image name="splashteamwin" filename="splashteamwin_stock" retainaspect="1"/>
+	</resources>
+
+	<variables>
+		<variable name="screen_w" value="1080"/>
+		<variable name="background" value="#000000FF"/>
+		<variable name="header_color" value="#666666FF"/>
+		<variable name="accent_install" value="#039BE5FF"/>
+		<variable name="accent_wipe" value="#ED3B3BFF"/>
+		<variable name="accent_backup" value="#0F9D58FF"/>
+		<variable name="accent_restore" value="#EF6C00FF"/>
+		<variable name="accent_reboot" value="#009688FF"/>
+	</variables>
+
+	<pages>
+		<page name="splash">
+			<background color="%background%"/>
+
+			<fill color="%header_color%">
+				<placement x="0" y="0" w="%screen_w%" h="456"/>
+			</fill>
+
+			<fill color="%accent_install%">
+				<placement x="0" y="0" w="216" h="456"/>
+			</fill>
+
+			<fill color="%accent_wipe%">
+				<placement x="216" y="0" w="216" h="456"/>
+			</fill>
+
+			<fill color="%accent_backup%">
+				<placement x="432" y="0" w="216" h="456"/>
+			</fill>
+
+			<fill color="%accent_restore%">
+				<placement x="648" y="0" w="216" h="456"/>
+			</fill>
+
+			<fill color="%accent_reboot%">
+				<placement x="864" y="0" w="216" h="456"/>
+			</fill>
+
+			<fill color="%background%">
+				<placement x="462" y="420" w="64" h="50"/>
+			</fill>
+
+			<fill color="%accent_backup%">
+				<placement x="554" y="452" w="64" h="50"/>
+			</fill>
+
+			<image>
+				<image resource="splashlogo"/>
+				<placement x="540" y="456" placement="4"/>
+			</image>
+
+			<image>
+				<image resource="splashteamwin"/>
+				<placement x="540" y="1540" placement="4"/>
+			</image>
+
+			<text color="%header_color%">
+				<font resource="splash"/>
+				<placement x="540" y="1590" placement="5"/>
+				<text>Recovery Project %tw_version%</text>
+			</text>
+		</page>
+	</pages>
+</recovery>
+

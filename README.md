@@ -1,75 +1,6 @@
 Aquaris E4.5 - LineageOS 13.0
 ==============
 
-This branch is device for building of the LineageOS 13.0 and other MM ROMS.
-
----
-# About Device
-
-![Aquaris E4.5](https://img.pccomponentes.com/articles/6/67915/bq-aquaris-e4-5-16gb-blanco-libre-4.jpg "Aquaris E4.5")
-
-Announced on 2014, the bq Aquaris E4.5 (codenamed _"krillin"_) is a smartphone from bq. Krillin now supports LineageOS 13.0!
-
-### Specifications
-
-Basic   | Spec Sheet
--------:|:-------------------------
-CPU     | 1.3GHz Quad-Core MT6582
-GPU     | Mali-400MP
-Memory  | 1GB RAM
-Shiped Android Version | 6.0.x
-Storage | 8GB
-Battery | 2150 mAh
-Display | 4.5" 540 x 960 px
-Camera  | 8MPx, LED Flash
-
----
-
-# Build Information
-
-### Working:
-
- * WIFI
- * Bluetooth
- * RIL (calls + 2g + 3g + switch)
- * Camera ( Front + Rare )
- * Video Recording ( Front + rare )
- * Filesystems:
-
-     - F2FS (MUST CHANGE IT IN RECOVERY)
-     
-     - NTFS (MUST CHANGE IT IN RECOVERY)
- 
-     - EXT4 (AS DEFAULT IN SYSTEM, DATA AND CACHÉ PARTITION)
-
-     - EXT3 (MUST CHANGE IT IN RECOVERY)
-
-     - EXT2 (MUST CHANGE IT IN RECOVERY)
-
- * DoubleTap2wake + customization of it
- * Sweep2wake
- * Encoder + Decoders
- * Audio ( speakers + earphones )
- * Screencast app
- * Sensors:
-
-     - Accelerometer
- 
-     - Compass
-
-     - Gyroscope
-
-     - Sound
-
-     - Rotation
-
-     - Proximity
- 
-
-### In progress/bugs:
-
- * 
-
 ### Full Compilation guide:
 
    repo init -u git://github.com/LineageOS/android.git -b cm-13.0
@@ -84,19 +15,16 @@ Camera  | 8MPx, LED Flash
 
 ### Recovery Compilation (TWRP Variant):
 
-  cd booteable
+  LineageOS root / source directory:
 
-  git clone https://github.com/omnirom/android_bootable_recovery.git recovery-twrp
+     * git clone https://github.com/LineageOS/android_external_busybox external/busybox
+     * git clone https://github.com/OmniROM/android_bootable_recovery bootable/recovery-twrp
+     * source build/envsetup.sh
+     * lunch
+     * lineage_krillin-eng
+     * export WITH_TWRP=true
+     * mka recoveryimage
 
-  cd ..
-
-  . build/envsetup.sh
-
-  lunch
-
-  lineage_krillin-eng
- 
-  mka -jx recoveryimage   (in x, specify number of cores that your computer have)
 
 ### Developer:
 

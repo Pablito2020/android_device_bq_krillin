@@ -1,0 +1,787 @@
+<?xml version="1.0"?>
+
+<recovery>
+	<styles>
+		<style name="text_ab_title">
+			<font resource="title" color="%text_actionbar%"/>
+		</style>
+
+		<style name="text_ab_title_install">
+			<font resource="title" color="%text_actionbar_install%"/>
+		</style>
+
+		<style name="text_ab_title_wipe">
+			<font resource="title" color="%text_actionbar_wipe%"/>
+		</style>
+
+		<style name="text_ab_title_backup">
+			<font resource="title" color="%text_actionbar_backup%"/>
+		</style>
+
+		<style name="text_ab_title_restore">
+			<font resource="title" color="%text_actionbar_restore%"/>
+		</style>
+
+		<style name="text_ab_title_mount">
+			<font resource="title" color="%text_actionbar_mount%"/>
+		</style>
+
+		<style name="text_ab_title_filemanager">
+			<font resource="title" color="%text_actionbar_filemanager%"/>
+		</style>
+
+		<style name="text_ab_title_advanced">
+			<font resource="title" color="%text_actionbar_advanced%"/>
+		</style>
+
+		<style name="text_ab_title_reboot">
+			<font resource="title" color="%text_actionbar_reboot%"/>
+		</style>
+
+		<style name="text_ab_subtitle">
+			<font resource="body1" color="%text_actionbar%"/>
+		</style>
+
+		<style name="text_ab_subtitle_install">
+			<font resource="body1" color="%text_actionbar_install%"/>
+		</style>
+
+		<style name="text_ab_subtitle_wipe">
+			<font resource="body1" color="%text_actionbar_wipe%"/>
+		</style>
+
+		<style name="text_ab_subtitle_backup">
+			<font resource="body1" color="%text_actionbar_backup%"/>
+		</style>
+
+		<style name="text_ab_subtitle_restore">
+			<font resource="body1" color="%text_actionbar_restore%"/>
+		</style>
+
+		<style name="text_ab_subtitle_mount">
+			<font resource="body1" color="%text_actionbar_mount%"/>
+		</style>
+
+		<style name="text_ab_subtitle_filemanager">
+			<font resource="body1" color="%text_actionbar_filemanager%"/>
+		</style>
+
+		<style name="text_ab_subtitle_advanced">
+			<font resource="body1" color="%text_actionbar_advanced%"/>
+		</style>
+
+		<style name="text_dlg_title">
+			<font resource="title" color="%text%"/>
+		</style>
+
+		<style name="text_dlg_title_install">
+			<font resource="title" color="%text%"/>
+		</style>
+
+		<style name="text_dlg_title_backup">
+			<font resource="title" color="%text%"/>
+		</style>
+
+		<style name="text_dlg_title_restore">
+			<font resource="title" color="%text%"/>
+		</style>
+
+		<style name="text_dlg_title_mount">
+			<font resource="title" color="%text%"/>
+		</style>
+
+		<style name="text_input_fail">
+			<font resource="input_fail" color="%text_fail%"/>
+		</style>
+
+		<style name="text_status">
+			<font resource="status" color="%text%"/>
+		</style>
+
+		<style name="text_status_fail">
+			<font resource="status" color="%text_fail%"/>
+		</style>
+
+		<style name="text_body1">
+			<font resource="body1" color="%text%"/>
+		</style>
+
+		<style name="text_body1_hl">
+			<font resource="body1" color="%accent%"/>
+		</style>
+
+		<style name="text_body1_hl_install">
+			<font resource="body1" color="%accent_install%"/>
+		</style>
+
+		<style name="text_body1_hl_wipe">
+			<font resource="body1" color="%accent_wipe%"/>
+		</style>
+
+		<style name="text_body1_hl_backup">
+			<font resource="body1" color="%accent_backup%"/>
+		</style>
+
+		<style name="text_body1_hl_restore">
+			<font resource="body1" color="%accent_restore%"/>
+		</style>
+
+		<style name="text_body1_hl_mount">
+			<font resource="body1" color="%accent_mount%"/>
+		</style>
+
+		<style name="text_body1_hl_filemanager">
+			<font resource="body1" color="%accent_filemanager%"/>
+		</style>
+
+		<style name="text_body1_hl_advanced">
+			<font resource="body1" color="%accent_advanced%"/>
+		</style>
+
+		<style name="text_body1_hl_reboot">
+			<font resource="body1" color="%accent_reboot%"/>
+		</style>
+
+		<style name="text_body1_fail">
+			<font resource="body1" color="%text_fail%"/>
+		</style>
+
+		<style name="text_body2">
+			<font resource="body1" color="%text%"/>
+		</style>
+
+		<style name="text_body2_dark">
+			<font resource="body1" color="%text_dark%"/>
+		</style>
+
+		<style name="text_body2_hl">
+			<font resource="body1" color="%accent%"/>
+		</style>
+
+		<style name="text_body2_hl_install">
+			<font resource="body1" color="%accent_install%"/>
+		</style>
+
+		<style name="text_body2_hl_wipe">
+			<font resource="body1" color="%accent_wipe%"/>
+		</style>
+
+		<style name="text_body2_hl_backup">
+			<font resource="body1" color="%accent_backup%"/>
+		</style>
+
+		<style name="text_body2_hl_restore">
+			<font resource="body1" color="%accent_restore%"/>
+		</style>
+
+		<style name="text_body2_hl_mount">
+			<font resource="body1" color="%accent_mount%"/>
+		</style>
+
+		<style name="text_body2_hl_filemanager">
+			<font resource="body1" color="%accent_filemanager%"/>
+		</style>
+
+		<style name="text_body2_hl_advanced">
+			<font resource="body1" color="%accent_advanced%"/>
+		</style>
+
+		<style name="text_body2_hl_reboot">
+			<font resource="body1" color="%accent_reboot%"/>
+		</style>
+
+		<style name="text_body2_fail">
+			<font resource="body1" color="%text_fail%"/>
+		</style>
+
+		<style name="caption">
+			<font resource="caption" color="%text_light%"/>
+		</style>
+
+		<style name="caption_hl">
+			<font resource="caption" color="%accent%"/>
+		</style>
+
+		<style name="caption_hl_install">
+			<font resource="caption" color="%accent_install%"/>
+		</style>
+
+		<style name="caption_hl_wipe">
+			<font resource="caption" color="%accent_wipe%"/>
+		</style>
+
+		<style name="caption_hl_backup">
+			<font resource="caption" color="%accent_backup%"/>
+		</style>
+
+		<style name="caption_hl_restore">
+			<font resource="caption" color="%accent_restore%"/>
+		</style>
+
+		<style name="caption_hl_mount">
+			<font resource="caption" color="%accent_mount%"/>
+		</style>
+
+		<style name="caption_hl_filemanager">
+			<font resource="caption" color="%accent_filemanager%"/>
+		</style>
+
+		<style name="caption_hl_advanced">
+			<font resource="caption" color="%accent_advanced%"/>
+		</style>
+
+		<style name="caption_hl_reboot">
+			<font resource="caption" color="%accent_reboot%"/>
+		</style>
+
+		<style name="icon_mb_solid">
+			<fill color="%accent%"/>
+		</style>
+
+		<style name="icon_mb_solid_install">
+			<fill color="%accent_install%"/>
+		</style>
+
+		<style name="icon_mb_solid_wipe">
+			<fill color="%accent_wipe%"/>
+		</style>
+
+		<style name="icon_mb_solid_backup">
+			<fill color="%accent_backup%"/>
+		</style>
+
+		<style name="icon_mb_solid_restore">
+			<fill color="%accent_restore%"/>
+		</style>
+
+		<style name="icon_mb_solid_mount">
+			<fill color="%accent_mount%"/>
+		</style>
+
+		<style name="icon_mb_solid_filemanager">
+			<fill color="%accent_filemanager%"/>
+		</style>
+
+		<style name="icon_mb_solid_advanced">
+			<fill color="%accent_advanced%"/>
+		</style>
+
+		<style name="icon_mb_solid_reboot">
+			<fill color="%accent_reboot%"/>
+		</style>
+
+		<style name="menu_text">
+			<font resource="menu" color="%text%"/>
+		</style>
+
+		<style name="menu_text_hl">
+			<font resource="menu" color="%accent%"/>
+		</style>
+
+		<style name="menu_text_hl_install">
+			<font resource="menu" color="%accent_install%"/>
+		</style>
+
+		<style name="menu_text_hl_wipe">
+			<font resource="menu" color="%accent_wipe%"/>
+		</style>
+
+		<style name="menu_text_hl_backup">
+			<font resource="menu" color="%accent_backup%"/>
+		</style>
+
+		<style name="menu_text_hl_restore">
+			<font resource="menu" color="%accent_restore%"/>
+		</style>
+
+		<style name="menu_text_hl_mount">
+			<font resource="menu" color="%accent_mount%"/>
+		</style>
+
+		<style name="menu_text_hl_filemanager">
+			<font resource="menu" color="%accent_filemanager%"/>
+		</style>
+
+		<style name="menu_text_hl_advanced">
+			<font resource="menu" color="%accent_advanced%"/>
+		</style>
+
+		<style name="menu_text_hl_reboot">
+			<font resource="menu" color="%accent_reboot%"/>
+		</style>
+
+		<style name="menu_btn">
+			<highlight color="%highlight_color%" />
+			<fill color="%transparent%"/>
+		</style>
+
+		<style name="mb_text">
+			<font resource="mainbutton" color="%text_button%"/>
+		</style>
+
+		<style name="mb_btn">
+			<highlight color="%highlight_color%"/>
+			<fill color="%transparent%"/>
+		</style>
+
+		<style name="bs_text">
+			<font resource="button" color="%text_button%"/>
+		</style>
+
+		<style name="bs_btn">
+			<highlight color="%highlight_color%"/>
+			<fill color="%transparent%"/>
+		</style>
+
+		<style name="btn_raised">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised"/>
+		</style>
+
+		<style name="btn_raised_warn">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_warn"/>
+		</style>
+
+		<style name="btn_raised_hl">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl"/>
+		</style>
+
+		<style name="btn_raised_hl_install">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl_install"/>
+		</style>
+
+		<style name="btn_raised_hl_wipe">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl_wipe"/>
+		</style>
+
+		<style name="btn_raised_hl_backup">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl_backup"/>
+		</style>
+
+		<style name="btn_raised_hl_restore">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl_restore"/>
+		</style>
+
+		<style name="btn_raised_hl_mount">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl_mount"/>
+		</style>
+
+		<style name="btn_raised_hl_advanced">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl_advanced"/>
+		</style>
+
+		<style name="btn_raised_hl_filemanager">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl_filemanager"/>
+		</style>
+
+		<style name="btn_raised_hl_reboot">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_raised_hl_filemanager"/>
+		</style>
+
+		<style name="btn_flat_fw">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_flat_fw"/>
+		</style>
+
+		<style name="btn_flat_qw">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_flat_qw"/>
+		</style>
+
+		<style name="btn_flat_qw_mount">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_flat_qw_mount"/>
+		</style>
+
+		<style name="btn_flat_qw_advanced">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text%"/>
+			<image resource="btn_flat_qw_advanced"/>
+		</style>
+
+		<style name="navigate_left">
+			<highlight color="%highlight_color%"/>
+			<image resource="navigate_left"/>
+		</style>
+
+		<style name="navigate_right">
+			<highlight color="%highlight_color%"/>
+			<image resource="navigate_right"/>
+		</style>
+
+		<style name="navigate_accept">
+			<highlight color="%highlight_color%"/>
+			<image resource="navigate_accept"/>
+		</style>
+
+		<style name="btn_dlg">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%text_button%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl_install">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent_install%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl_wipe">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent_wipe%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl_backup">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent_backup%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl_restore">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent_restore%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl_mount">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent_mount%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl_filemanager">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent_filemanager%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl_advanced">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent_advanced%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="btn_dlg_hl_reboot">
+			<highlight color="%highlight_color%"/>
+			<font resource="button" color="%accent_reboot%"/>
+			<image resource="db_empty" highlightresource="db_hl" />
+		</style>
+
+		<style name="settingslist">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true" unselected="checkbox_false"/>
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent%"/>
+		</style>
+
+		<style name="settingslist_install">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_install%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true_install" unselected="checkbox_false"/>
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_install%"/>
+		</style>
+
+		<style name="settingslist_backup">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_backup%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true_backup" unselected="checkbox_false"/>
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_backup%"/>
+		</style>
+
+		<style name="listbox">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="radio_true" unselected="radio_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent%" />
+		</style>
+
+		<style name="textbox">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<font resource="body1" spacing="%textbox_spacing%" color="%text%" />
+		</style>
+
+		<style name="textbox_install">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_install%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<font resource="body1" spacing="%textbox_spacing%" color="%text%" />
+		</style>
+
+		<style name="checkbox_big">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="checkbox_big_install">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true_install" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="checkbox_big_wipe">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true_wipe" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="checkbox_big_backup">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true_backup" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="checkbox_big_restore">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true_restore" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="checkbox_big_mount">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true_mount" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="checkbox_big_advanced">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true_advanced" unchecked="checkbox_false"/>
+		</style>
+
+		<style name="checkbox_small">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true_d" unchecked="checkbox_false_d"/>
+		</style>
+
+		<style name="checkbox_small_install">
+				<font resource="body1" color="%text%"/>
+				<image checked="checkbox_true_d_install" unchecked="checkbox_false_d"/>
+		</style>
+
+		<style name="partitionlist">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true" unselected="checkbox_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent%" />
+		</style>
+
+		<style name="partitionlist_wipe">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_wipe%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true_wipe" unselected="checkbox_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_wipe%" />
+		</style>
+
+		<style name="partitionlist_backup">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_backup%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true_backup" unselected="checkbox_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_backup%" />
+		</style>
+
+		<style name="partitionlist_restore">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_restore%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true_restore" unselected="checkbox_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_restore%" />
+		</style>
+
+		<style name="partitionlist_mount">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_mount%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true_mount" unselected="checkbox_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_mount%" />
+		</style>
+
+		<style name="partitionlist_advanced">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_advanced%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="checkbox_true_advanced" unselected="checkbox_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_advanced%" />
+		</style>
+
+		<style name="partitionlist_dialog">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="radio_true_d" unselected="radio_false_d" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent%" />
+		</style>
+
+		<style name="partitionlist_dialog_install">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_install%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="radio_true_d_install" unselected="radio_false_d" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_install%" />
+		</style>
+
+		<style name="partitionlist_dialog_backup">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_backup%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="radio_true_d_backup" unselected="radio_false_d" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_backup%" />
+		</style>
+
+		<style name="partitionlist_dialog_restore">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_restore%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="radio_true_d_restore" unselected="radio_false_d" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_restore%" />
+		</style>
+
+		<style name="partitionlist_dialog_mount">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_mount%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="radio_true_d_mount" unselected="radio_false_d" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_mount%" />
+		</style>
+
+		<style name="partitionlist_radio">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="radio_true" unselected="radio_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent%" />
+		</style>
+
+		<style name="partitionlist_radio_install">
+			<background color="%background%"/>
+			<fastscroll rectcolor="%accent_install%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<icon selected="radio_true_install" unselected="radio_false" />
+			<font resource="body1" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_install%" />
+		</style>
+
+		<style name="fileselector_b">
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<separator color="%linecolor%" height="%fileselector_separatorheight%" />
+			<icon folder="folder_icon" file="file_icon" />
+			<background color="%background%" />
+			<font resource="status" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent%" />
+		</style>
+
+		<style name="fileselector_b_install">
+			<fastscroll rectcolor="%accent_install%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<separator color="%linecolor%" height="%fileselector_separatorheight%" />
+			<icon folder="folder_icon" file="file_icon_install" />
+			<background color="%background%" />
+			<font resource="status" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_install%" />
+		</style>
+
+		<style name="fileselector_b_restore">
+			<fastscroll rectcolor="%accent_restore%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<separator color="%linecolor%" height="%fileselector_separatorheight%"/>
+			<icon folder="file_icon_restore"/>
+			<background color="%background%"/>
+			<font resource="status" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_restore%"/>
+		</style>
+
+		<style name="fileselector_b_filemanager">
+			<fastscroll rectcolor="%accent_filemanager%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<separator color="%linecolor%" height="%fileselector_separatorheight%" />
+			<icon folder="folder_icon" file="file_icon_filemanager" />
+			<background color="%background%" />
+			<font resource="status" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_filemanager%" />
+		</style>
+
+		<style name="fileselector_s">
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<separator color="%linecolor%" height="%fileselector_separatorheight%" />
+			<icon folder="folder_icon" file="file_icon" />
+			<background color="%background%" />
+			<font resource="caption" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent%" />
+		</style>
+
+		<style name="fileselector_s_install">
+			<fastscroll rectcolor="%accent_install%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<separator color="%linecolor%" height="%fileselector_separatorheight%" />
+			<icon folder="folder_icon" file="file_icon_install" />
+			<background color="%background%" />
+			<font resource="caption" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_install%" />
+		</style>
+
+		<style name="fileselector_s_restore">
+			<fastscroll rectcolor="%accent_restore%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<separator color="%linecolor%" height="%fileselector_separatorheight%" />
+			<icon folder="file_icon_restore"/>
+			<background color="%background%"/>
+			<font resource="caption" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_restore%"/>
+		</style>
+
+		<style name="fileselector_s_filemanager">
+			<fastscroll rectcolor="%accent_filemanager%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%" />
+			<separator color="%linecolor%" height="%fileselector_separatorheight%" />
+			<icon folder="folder_icon" file="file_icon_filemanager" />
+			<background color="%background%" />
+			<font resource="caption" spacing="%fileselector_spacing%" color="%text%" highlightcolor="%accent_filemanager%" />
+		</style>
+
+		<style name="terminal">
+			<fastscroll rectcolor="%accent%" w="%fastscroll_w%" rectw="%fastscroll_rectw%" recth="%fastscroll_recth%"/>
+			<background color="%background%"/>
+			<font resource="fixed" spacing="3" color="%text%"/>
+		</style>
+
+		<style name="slider">
+			<placement x="%center_x%" y="%slider_y%" placement="5"/>
+			<resource base="slider" used="slider_used" touch="handle_h"/>
+		</style>
+
+		<style name="slider_install">
+			<placement x="%center_x%" y="%slider_y%" placement="5"/>
+			<resource base="slider" used="slider_used_install" touch="handle_h_install"/>
+		</style>
+
+		<style name="slider_wipe">
+			<placement x="%center_x%" y="%slider_y%" placement="5"/>
+			<resource base="slider" used="slider_used_wipe" touch="handle_h_wipe"/>
+		</style>
+
+		<style name="slider_backup">
+			<placement x="%center_x%" y="%slider_y%" placement="5"/>
+			<resource base="slider" used="slider_used_backup" touch="handle_h_backup"/>
+		</style>
+
+		<style name="slider_restore">
+			<placement x="%center_x%" y="%slider_y%" placement="5"/>
+			<resource base="slider" used="slider_used_restore" touch="handle_h_restore"/>
+		</style>
+
+		<style name="slider_mount">
+			<placement x="%center_x%" y="%slider_y%" placement="5"/>
+			<resource base="slider" used="slider_used_mount" touch="handle_h_mount"/>
+		</style>
+
+		<style name="slider_filemanager">
+			<placement x="%center_x%" y="%slider_y%" placement="5"/>
+			<resource base="slider" used="slider_used_filemanager" touch="handle_h_filemanager"/>
+		</style>
+
+		<style name="slider_advanced">
+			<placement x="%center_x%" y="%slider_y%" placement="5"/>
+			<resource base="slider" used="slider_used_advanced" touch="handle_h_advanced"/>
+		</style>
+	</styles>
+</recovery>

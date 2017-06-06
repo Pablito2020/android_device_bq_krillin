@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<recovery>
+	<details>
+		<resolution width="540" height="960"/>
+		<author>z31s1g</author>
+		<title>TWRP Materialised Custom Splash</title>
+		<description>splash screen</description>
+		<themeversion>2</themeversion>
+	</details>
+
+	<resources>
+		<font name="splash" filename="Light.ttf" size="52"/>
+		<image name="splash" filename="splash"/>
+	</resources>
+
+	<variables>
+		<variable name="screen_w" value="1080"/>
+		<variable name="background" value="#222222FF"/>
+		<variable name="header_color" value="#9A9A9AFF"/>
+		<variable name="accent" value="#03A9F4FF"/>
+	</variables>
+
+	<pages>
+		<page name="splash">
+			<object type="image">
+				<image resource="splash"/>
+				<placement x="0" y="0"/>
+			</object>
+
+			<!--text color="%header_color%">
+				<font resource="splash"/>
+				<placement x="540" y="1590" placement="5"/>
+				<text>%tw_version%</text>
+			</text-->
+		</page>
+	</pages>
+</recovery>
+

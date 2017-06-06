@@ -1,0 +1,1809 @@
+Manifest-Version: 1.0
+Created-By: Ryuinferno @ XDA
+
+Name: images_grey/btn_raised_hl.png
+SHA1-Digest: YAIfKHd79RdeKnRief0etvmSErQ=
+
+Name: images_stock/slideout_hl.png
+SHA1-Digest: Nb78tq8UhFzXQeiotS3Ao7aitDE=
+
+Name: images/mb_dumlock_color.png
+SHA1-Digest: rdV6Hr4Z6NPJkIPZCXjobqmZY7A=
+
+Name: images_amber/radio_true_d.png
+SHA1-Digest: mOE+Ru9qTDtam2+/gTT54AphVCE=
+
+Name: images_deeporange/splashteamwin_stock.png
+SHA1-Digest: OSNUJrkJI4IaHbgBLLmNg055quw=
+
+Name: images_green/splashlogo.png
+SHA1-Digest: ShWMgFfYM4l72Qwh6wgv2i1j1Kk=
+
+Name: images/actionbar_edit.png
+SHA1-Digest: Cw2UCyLLmexu/EVlT0hBzXw2rKw=
+
+Name: images_red/back.png
+SHA1-Digest: hHReCDjujNQ/38mDJkEiV5POBas=
+
+Name: images_bluegrey/splashteamwin_stock.png
+SHA1-Digest: q85G7enr3DY9BR2iy1Axwn823zM=
+
+Name: images/mb_poweroff.png
+SHA1-Digest: EssMO5+9oDO7vwM1z5v0vsKEC7U=
+
+Name: images_grey/radio_true_d.png
+SHA1-Digest: 954uxxRY4ymao3qIZh9L/M+gBqQ=
+
+Name: images/slider.png
+SHA1-Digest: jHZdpV9lqZG7ccQ8jzSXMhDX61Q=
+
+Name: images_green/file.png
+SHA1-Digest: BzgXbjt97nFJplTnSWTpuRg38Xo=
+
+Name: images/actionbar_pinned_hl.png
+SHA1-Digest: /TOS8BdhAinA7a5YpdbBjIYLh/0=
+
+Name: images_green/slider_used.png
+SHA1-Digest: NKnw8nsVGh7btHf5rFi/cY68YeU=
+
+Name: images_lime/checkbox_true_d.png
+SHA1-Digest: VYSlHAuM3dJ62sQyakwP0C4R3ls=
+
+Name: images/actionbar_close.png
+SHA1-Digest: 3mERc9X7ubyH/VuQSBXA+elXAwU=
+
+Name: images/menu_sort.png
+SHA1-Digest: 41+9r2ZeA1r9AVqzjzfaT6SahG0=
+
+Name: images_blue/btn_raised_hl.png
+SHA1-Digest: UeyW0hCW1/CrUFyqf363UkYTxlA=
+
+Name: images/back_white.png
+SHA1-Digest: ZtYegv56V7e4qcSnpv7IoVLyudY=
+
+Name: images/tab_bu_create_a.png
+SHA1-Digest: 8h2riw3AvlhcmGgFyUv2kzY7EoI=
+
+Name: images/mb_wipe.png
+SHA1-Digest: tzcERMnVOebw2AR32t/AL3gsEm0=
+
+Name: images/indeterminate023.png
+SHA1-Digest: QaL0CniZDkFBI0OKl+BWLTYuGlQ=
+
+Name: images_green/back_hl.png
+SHA1-Digest: N2FE/NGZ9f/3YT/GBfEfsBgrm8Q=
+
+Name: images_indigo/checkbox_true_d.png
+SHA1-Digest: dqptHXUoYWaLz7ppg2Ta503khhM=
+
+Name: images_lightblue/keyboard_hide_hl.png
+SHA1-Digest: ERoyJiVMKmRkxzjk9MoJRJg6cz8=
+
+Name: images_lime/slideout_hl.png
+SHA1-Digest: 27S/iqe5MW1E64wZh3oxmgrlT3Q=
+
+Name: images_grey/checkbox_true.png
+SHA1-Digest: n8r3BMhq0U5hCSsaWMe12F1Agjo=
+
+Name: images_teal/checkbox_true_d.png
+SHA1-Digest: hLqUEPdX9A/16xFf7aGQLp9yUQs=
+
+Name: images/keyboard_show.png
+SHA1-Digest: G7w/GKfQNMk1iLN5o7gmQNAzKVM=
+
+Name: images/actionbar_sort_hl.png
+SHA1-Digest: wCWWxfkWr7IxjcYTviU4guh5FHw=
+
+Name: images/indeterminate007.png
+SHA1-Digest: qtPnTLcr++Zx1N/e5FtfiHZotSc=
+
+Name: images_lime/file.png
+SHA1-Digest: 0qNKNQi2tq7/449lr5AbDEqDzmA=
+
+Name: images_lightgreen/file.png
+SHA1-Digest: pKPbETuacqOG6EKI4g8p/z6bWXY=
+
+Name: images/actionbar_reset_hl.png
+SHA1-Digest: MNPTmrngAlpJJBdHCsjg8Jv8048=
+
+Name: images_orange/enter.png
+SHA1-Digest: ju0Zy+07+M0oFtpIyJQ+uwHN5hQ=
+
+Name: images_amber/splashlogo_stock.png
+SHA1-Digest: /Sz2pDWw+RY4b8yZf0XMUNPT6ls=
+
+Name: images_brown/slider_used.png
+SHA1-Digest: SewsLWSwQuLE2G4dQVyXMC4tYZU=
+
+Name: ui.xml
+SHA1-Digest: RMZ7PS+hK+cRMBae9trkZt8c1qY=
+
+Name: images/btn_float_accept.png
+SHA1-Digest: awcykUhGGrKHRY77diS+42uYzQk=
+
+Name: images_amber/slideout_hl.png
+SHA1-Digest: af90DendW+AyyRbsOeLmKPmlv3Y=
+
+Name: images_bluegrey/slideout.png
+SHA1-Digest: sJSVv+rsVM0vwrXToXwY6he3ofg=
+
+Name: images_orange/splashlogo.png
+SHA1-Digest: OzI4ysfsoBulD5aAIjmK8sRzdno=
+
+Name: images/actionbar_edit_hl.png
+SHA1-Digest: qiPoHTjTSDXTc5ZSpcrJF/1hpRg=
+
+Name: images_amber/file.png
+SHA1-Digest: s/jDCdUlWk+ZQsCHgTNRYoTt04g=
+
+Name: images_lime/splashlogo_stock.png
+SHA1-Digest: o0CN0kFAclDMpjo+oLBDqslaDR8=
+
+Name: images/actionbar_close_hl.png
+SHA1-Digest: K/QP3wDNZyqMd1Rqdi5SmtF73Cw=
+
+Name: images_green/splashteamwin_stock.png
+SHA1-Digest: hhl9enmVXzlZ5P6iKP1kNNF99gs=
+
+Name: splashes/splash_xml_logo_big.xml
+SHA1-Digest: 0A/NwmvmDuQL0AWCCwu+ZyK1sY4=
+
+Name: images/checkbox_false_d.png
+SHA1-Digest: Za+tsKxHqHHfWMCrODYEC4mcdeU=
+
+Name: images_blue/back.png
+SHA1-Digest: vnASsj14iq6ZDfi6RlBECbgP4ME=
+
+Name: images_lime/back.png
+SHA1-Digest: pg0meHRdTxUgCxuslNtezKkgU90=
+
+Name: images_orange/slideout_hl.png
+SHA1-Digest: AR2a5tT9fDh07EeP5D8UuZ1cdjk=
+
+Name: images/radio_false.png
+SHA1-Digest: wTDD7iZgudIG76zLNERq5+S2tSA=
+
+Name: images_red/file.png
+SHA1-Digest: c0BVorMdEnpk10pHf5v6jHAJTaE=
+
+Name: images_lightgreen/slideout_hl.png
+SHA1-Digest: ImjgxWsPeSeLm8CqxwAEPxG//GU=
+
+Name: images/icon_cake.png
+SHA1-Digest: +qWIOgIglZHee6b81J7s0hjG67o=
+
+Name: images_red/btn_float_folder.png
+SHA1-Digest: 20imozgpFtcE+4LcgWrag8f5Ae4=
+
+Name: images_blue/checkbox_true.png
+SHA1-Digest: cwmhu1K45Hi7LVHCHsPEFaC/9iU=
+
+Name: styles.xml
+SHA1-Digest: ddizPb2jQ9mqR02+MY8oY/76fW8=
+
+Name: images/icon_mail.png
+SHA1-Digest: ECZGGXIPSxTyAeJ8VUwO7FVn2+o=
+
+Name: images/mb_restart_color.png
+SHA1-Digest: VcfAyZDqvrQsQbSAiC0cfDpCCpw=
+
+Name: images/icon_warning.png
+SHA1-Digest: 9Rqi5jnnX5TrxajQdSq5YnQB3tI=
+
+Name: images_blue/keyboard_show_hl.png
+SHA1-Digest: O+lwQD/vEiwmyoOblV0+Whf8J4g=
+
+Name: images_orange/keyboard_show_hl.png
+SHA1-Digest: KqkMidpEB6RavLf4SxBXrzEXUTU=
+
+Name: images_indigo/keyboard_hide_hl.png
+SHA1-Digest: WfeGNsO2ddpQikXXEgpOhjYKPz8=
+
+Name: images/checkbox_false.png
+SHA1-Digest: n6REX117//pGAxz/SRno5gfxsTg=
+
+Name: images/actionbar_theme_hl.png
+SHA1-Digest: dhxndh/2jQoIdOpd7w5ajKG0u44=
+
+Name: images/bs_btn_chmod.png
+SHA1-Digest: tylk3fm2RVGSu8cqErP83Z2m0wI=
+
+Name: images_orange/radio_true_d.png
+SHA1-Digest: JM9VJwp2rxG+FlOwS203t8zbLcQ=
+
+Name: images_grey/home.png
+SHA1-Digest: dCaUCcj/EdMfEFEQyXyId/h5mrs=
+
+Name: images/indeterminate015.png
+SHA1-Digest: GbKofpKWK8KvHLLQtwmbiT4zPHk=
+
+Name: images_blue/file.png
+SHA1-Digest: o59n5GVB5+/+k+HA4JjF9xd7Xa0=
+
+Name: images_green/slideout.png
+SHA1-Digest: 7p2eN+krxvcO/QDhsEZkXCDIm1o=
+
+Name: images_orange/checkbox_true_d.png
+SHA1-Digest: NrHPGWxxTgZLaC8lfgN/diK+bOY=
+
+Name: images_lightblue/home.png
+SHA1-Digest: pQ7Xeu6z+xQKaC56ZLZMUTzXMIU=
+
+Name: images/mb_restart.png
+SHA1-Digest: 2ok+6AychiI6cZHibnwnIyT1WdE=
+
+Name: images_lime/btn_raised_hl.png
+SHA1-Digest: gLGJcYaunAbpg4VsBHfvjMcroi4=
+
+Name: images_blue/btn_float_folder.png
+SHA1-Digest: yHCNAnMJxsFryqG9JT5XdCa0qW0=
+
+Name: images/tab_bu_encr_ena.png
+SHA1-Digest: dMXguPBVCtFXPn/ulMVPyCj8mSA=
+
+Name: images_stock/file.png
+SHA1-Digest: 3WbOw0DGmU9Fag2FX/zAxUc5CtQ=
+
+Name: images_lightgreen/keyboard_show_hl.png
+SHA1-Digest: BuxHlSGRbWgyybojmJQjLV0TPto=
+
+Name: images_stock/keyboard_hide.png
+SHA1-Digest: gLH86BibG8FhI/QKR3gUNON+pU0=
+
+Name: images_deeporange/btn_float_accept.png
+SHA1-Digest: IrY09uwxxDX8asbZNBy/oWr5/vw=
+
+Name: images/tab_bu_encr_ena_a.png
+SHA1-Digest: FqZG+zjB2othC9CsBnIQiyaMye4=
+
+Name: images_indigo/splashlogo_stock.png
+SHA1-Digest: qRLOwNLVKdENP0Znk986fYVHV1s=
+
+Name: images_teal/handle.png
+SHA1-Digest: OaTwo4daIllQRLlwK6ebC9VGUkE=
+
+Name: images_amber/checkbox_true_d.png
+SHA1-Digest: 8Jngwo/vJQqUAvvTtb7+2/+bIYw=
+
+Name: images_lightblue/btn_raised_hl.png
+SHA1-Digest: LKdxeLXmQhrHDZBtyf9TTo2ui/w=
+
+Name: images/folder.png
+SHA1-Digest: 5eouvzvWKGt4h2v3ngMFZ/4aoa8=
+
+Name: images_grey/splashlogo_stock.png
+SHA1-Digest: +E6ueEnTxPIG2KVepatuFiGSYSY=
+
+Name: images_lime/radio_true.png
+SHA1-Digest: Pg5eX8BMsFcUVl6JeePVVE8D768=
+
+Name: images/actionbar_pin_hl.png
+SHA1-Digest: EVjmonDLOguLHun3s1x2w3DW2Sk=
+
+Name: images_green/btn_raised_hl.png
+SHA1-Digest: Mfw9HL6P8kCADuHiHSTCeW08qms=
+
+Name: images_lightgreen/back.png
+SHA1-Digest: BczI+E05yO6G6+EsLmik2yO1C6s=
+
+Name: images_bluegrey/radio_true_d.png
+SHA1-Digest: I8+kMOP4HOQtlNUWjkgYPeL2r9E=
+
+Name: images_deeporange/handle.png
+SHA1-Digest: fZ75M85D559W4XZznM0qk/LLEuQ=
+
+Name: images_deeporange/keyboard_show.png
+SHA1-Digest: h41kx6/+82t3DthRdiTDdYj4Kww=
+
+Name: images/indeterminate006.png
+SHA1-Digest: ab0/ofm0X71WxGb8xcp6/fNZcpE=
+
+Name: images/mb_poweroff_color.png
+SHA1-Digest: ojQ3bwH1pjL20cpUrXSW6ITEfjE=
+
+Name: images/mb_advanced_color.png
+SHA1-Digest: rva3eavG00qZkY0Ch8+C+ckttpY=
+
+Name: images/indeterminate022.png
+SHA1-Digest: tQaHGY2Bx5gTmUUYM8F4Te6S4x4=
+
+Name: images_green/checkbox_true_d.png
+SHA1-Digest: TYEkbr3npbwOqzC7lI7Lj0LZ+G4=
+
+Name: images_teal/radio_true_d.png
+SHA1-Digest: Zfp91Lx0Iw42Yt8/jn88m1FPErY=
+
+Name: images/mb_system_color.png
+SHA1-Digest: D1VH+QjgX6ZwLYmxGyxtNN9It0I=
+
+Name: images_brown/splashteamwin.png
+SHA1-Digest: rR6EotfCilgXS+JIPbxg9obz2YA=
+
+Name: images_stock/radio_true_d.png
+SHA1-Digest: qplXzB77UM2QTmusyFsXfxZxyhE=
+
+Name: images_green/keyboard_hide_hl.png
+SHA1-Digest: RTGwUYd93tEQQ1ycOBJnOOkjFH8=
+
+Name: images_brown/btn_raised_hl.png
+SHA1-Digest: OKrpyOWSJP+/7KUMurOAFLV/Td8=
+
+Name: images_lime/keyboard_show_hl.png
+SHA1-Digest: TSgddc8YZiLxf8l1qJlvz2RpX54=
+
+Name: images/bs_btn_delete.png
+SHA1-Digest: 0BhXx2uGOoLdiUwS6pr3/VmIm2s=
+
+Name: images_lime/handle.png
+SHA1-Digest: SqnPE742ZhffnPItuF3F7ogTO0g=
+
+Name: images_stock/checkbox_true_d.png
+SHA1-Digest: zr71oexym5fWvhEeikZkh7sIVzc=
+
+Name: images_green/checkbox_true.png
+SHA1-Digest: LgPk64mnGho7A92PipyfYNQU320=
+
+Name: images_indigo/keyboard_show_hl.png
+SHA1-Digest: y4VhmyjTLqIghKdEIpc20Bw/ieo=
+
+Name: images/actionbar_date.png
+SHA1-Digest: vr4mPCKaiPttcLHiXMsIqcMDtik=
+
+Name: images_lightgreen/slideout.png
+SHA1-Digest: p6joGxZta4vNgP+gjuY1Ndqh+bA=
+
+Name: images_brown/file.png
+SHA1-Digest: axSTj0pGV1BDYNlzXloRDea2B60=
+
+Name: images_lime/checkbox_true.png
+SHA1-Digest: WjV76dDG1NtXZS0qn2IM0x0SHPk=
+
+Name: images/btn_flat_qw.png
+SHA1-Digest: Hm/H18TNrprNuYsZJkbp8B3NCWE=
+
+Name: images_brown/checkbox_true.png
+SHA1-Digest: pvREgM0d59bOJIUaIL+ZElIUvMk=
+
+Name: images_bluegrey/enter.png
+SHA1-Digest: BD+HzL1sS9Dw297davZWt8gYQq8=
+
+Name: images_green/keyboard_hide.png
+SHA1-Digest: 8c1Imd0hjsQhcFlr7iEv9usyWyQ=
+
+Name: images/navigate_accept.png
+SHA1-Digest: Kzgo3UhhYNI1NpWJ9qp524n5A20=
+
+Name: images/indeterminate016.png
+SHA1-Digest: 8DkytdHPE1ZEya9F7eLgkSIO9y4=
+
+Name: images/home_white_hl.png
+SHA1-Digest: V1NZXUEZERHM7nwRWQ07RqpxS+8=
+
+Name: images_green/keyboard_show_hl.png
+SHA1-Digest: hRwHeBkPuHRYu4qSuU0PsJnN7LA=
+
+Name: images_lightblue/back_hl.png
+SHA1-Digest: cGlGJd+lqSTYPMP6qoNhkHbRrOU=
+
+Name: images_brown/btn_float_folder.png
+SHA1-Digest: nLOZZyF+OSZWfsQmZ0b4wqugI6k=
+
+Name: images_stock/back.png
+SHA1-Digest: /awQjQbF5qhrpJ6s7wNJ3CCgJks=
+
+Name: images_bluegrey/back_hl.png
+SHA1-Digest: qu64a8KbkZPDf619/dmqxGuw6fE=
+
+Name: images/actionbar_font_small_hl.png
+SHA1-Digest: cCi+vfWrQeW77Gb92ZJ8V7j3nQ4=
+
+Name: images_grey/slider_used.png
+SHA1-Digest: kODnJgQyqt6fnmwYPpC6juxccW8=
+
+Name: images/mb_fixpermissions.png
+SHA1-Digest: JoBrxMtRZPIYhp1q0SsFmWPY0vY=
+
+Name: images/kb_arrow_up.png
+SHA1-Digest: UMtjjjvQElZ/A/l/jo5Nj4wFy1A=
+
+Name: images_teal/enter.png
+SHA1-Digest: rgmF7lpHvM9vIGzdZLwzqYS+AwI=
+
+Name: images/splashteamwin.png
+SHA1-Digest: 3H9D00j40dEFLgoA8naeEBs7ml4=
+
+Name: images_amber/keyboard_hide_hl.png
+SHA1-Digest: fpV3OjWYQthKQr4jWM56H+dmECk=
+
+Name: images_lightblue/keyboard_show_hl.png
+SHA1-Digest: WU71/VMuin2l5Qwe3oP19rnNazY=
+
+Name: images_stock/handle_h.png
+SHA1-Digest: INo9EcJkI7sD1nDdV2bdvvIiYE8=
+
+Name: images_orange/slideout.png
+SHA1-Digest: aPCyb+hnfMQyKhVfhVV/5HGngew=
+
+Name: images/icon_info.png
+SHA1-Digest: hsCqcXdqfa+zapocNFsjvdLftM4=
+
+Name: images_lightgreen/btn_float_folder.png
+SHA1-Digest: X2wMYrlEoi6nK+Wv30/8cteCRp0=
+
+Name: images/indeterminate001.png
+SHA1-Digest: X9WStyVuX3GzO1Z/AB09lNz43R4=
+
+Name: images_amber/keyboard_show_hl.png
+SHA1-Digest: 6WTYgfiTFGpNM7LycI3/gtxYsXg=
+
+Name: images_teal/keyboard_hide.png
+SHA1-Digest: u3HAygbSXfnIYq3nlhUcBMrUWPA=
+
+Name: images/mb_restore_color.png
+SHA1-Digest: jBH2AqAkuvsXQs2QmdxtxUCudr4=
+
+Name: images_lime/keyboard_hide_hl.png
+SHA1-Digest: Yg5cYm/pNKKpADZp33ThDBXunXM=
+
+Name: images/mb_bootloader.png
+SHA1-Digest: 2du6Ld8zd/ttvD/5jhh3cQGV/4Q=
+
+Name: images_brown/keyboard_show_hl.png
+SHA1-Digest: Goc+3H7nRc3+eFOUvzrCZK2Snsk=
+
+Name: images_green/splashlogo_stock.png
+SHA1-Digest: LD06SXcuJO3jN+W+CWON39r63m8=
+
+Name: images_brown/back.png
+SHA1-Digest: A7q7qCrkeNfZvMLmaZQ2V+iYp6s=
+
+Name: images_lightgreen/keyboard_show.png
+SHA1-Digest: K66NvMGSL0/3BUDGX1YcZD7dyjw=
+
+Name: images_bluegrey/home_hl.png
+SHA1-Digest: gLgjKz/kV6Hdyd5188KoynXPI7U=
+
+Name: images/actionbar_refresh.png
+SHA1-Digest: KeuS87EvlVwuGTUAhgna49Pw/sU=
+
+Name: images/keyboard_hide_white_hl.png
+SHA1-Digest: ynlNtAAdwj/t7DaG7nNhp6B2/IA=
+
+Name: images_lime/home.png
+SHA1-Digest: v1D2q96Jo1niBtvtRuCyfFRBPHk=
+
+Name: images_teal/home.png
+SHA1-Digest: k3b6zVLP6bL1FdbSDvEO9W8xwrI=
+
+Name: images_bluegrey/keyboard_show.png
+SHA1-Digest: IrvdQyUSi0yvOq66ORc8A9A/bVg=
+
+Name: images_lightgreen/radio_true_d.png
+SHA1-Digest: fXhCILa56UzRS/i9xDI/tlfqnMY=
+
+Name: images/bs_btn_rename.png
+SHA1-Digest: w/xFZMqqLdzI7ER7Jw8eLwXHeKI=
+
+Name: images_lightblue/splashlogo_stock.png
+SHA1-Digest: Fb2guJEBOTd9J6IbWV+gzZFvBfM=
+
+Name: images_green/home_hl.png
+SHA1-Digest: dTKVuDH5nUOYRRTHh17sQdPzyyM=
+
+Name: images_indigo/home.png
+SHA1-Digest: 8Z6XSQPzJv9wkM0GL4eQWQQggMY=
+
+Name: images_brown/keyboard_show.png
+SHA1-Digest: 0BUVc65JmKxUeisYjaSWP2T7XoM=
+
+Name: images_stock/back_hl.png
+SHA1-Digest: 0K35kTRVCyjqOLPnBeFM86nRUBk=
+
+Name: images_indigo/btn_raised_hl.png
+SHA1-Digest: AcnW0cJKZr6b+SsqyBQbmnZKghg=
+
+Name: images_lightblue/home_hl.png
+SHA1-Digest: TBuxbhvlongNW+youHqBQGbS3hY=
+
+Name: images_lightgreen/btn_float_accept.png
+SHA1-Digest: T2Jx5Z079sLu8mWIQEf9aBllHaQ=
+
+Name: images_deeporange/radio_true.png
+SHA1-Digest: ctUwTjJ48w1BS48xGsGFLdKVJuw=
+
+Name: images_lightgreen/home.png
+SHA1-Digest: Em4UBq+ie7d31bkxlDc/AZedCss=
+
+Name: images/space.png
+SHA1-Digest: INl+e+heVcMI2q75jeji6VLG8O0=
+
+Name: images/mb_mount.png
+SHA1-Digest: j4C7Ub3cCj1IeksFdPMxsNc1okk=
+
+Name: images/actionbar_overflow_hl.png
+SHA1-Digest: PH4lklxoQ7QhymeRHseZaFiYEBE=
+
+Name: images_red/keyboard_hide.png
+SHA1-Digest: SeWM0TZScSq+i8Z2u6JmAwrb02E=
+
+Name: images_red/slideout.png
+SHA1-Digest: 8AxS+Z63R8Fuu8eOGtiokCR6pwE=
+
+Name: images_grey/home_hl.png
+SHA1-Digest: 6xUAJ7tUNDNBi58tqeV31h806hk=
+
+Name: images_green/home.png
+SHA1-Digest: BT4y4R+OA95BkI3ZTWiEMrdQST8=
+
+Name: images_stock/checkbox_true.png
+SHA1-Digest: zeY1IEeq8ozVee2jkyTr6Ah5l94=
+
+Name: images_stock/btn_float_accept.png
+SHA1-Digest: awcykUhGGrKHRY77diS+42uYzQk=
+
+Name: images_indigo/handle.png
+SHA1-Digest: N7Zh0RytL8LJAuk5rJsJpGQn63k=
+
+Name: images/mb_bootloader_color.png
+SHA1-Digest: BbWx9Kly1CN2j4Qq6z59c3Ykfxw=
+
+Name: images_teal/keyboard_hide_hl.png
+SHA1-Digest: Dajizr+OmP3CQlRRigtfJfqoscc=
+
+Name: images/slider_used.png
+SHA1-Digest: s1GnfDkxgtoyHhgNAOCvvEsasUo=
+
+Name: images/actionbar_encr_dis_hl.png
+SHA1-Digest: 1gTYveYn3ajeKV2F67VVJMZn00U=
+
+Name: images_bluegrey/splashlogo.png
+SHA1-Digest: tltWIKQfdQNpaLJeNsETKWSx65Y=
+
+Name: images/mb_theme.png
+SHA1-Digest: jmgOBz4JwkDcQLdjfepKAABkMqo=
+
+Name: images_deeporange/checkbox_true.png
+SHA1-Digest: gZGvJZrfs3cGKWqKqWXYF1Yl43M=
+
+Name: images_blue/keyboard_hide.png
+SHA1-Digest: zLksqS81fte3ppH/jCMbzAqIU6o=
+
+Name: images_red/btn_float_accept.png
+SHA1-Digest: 5fNC6AMGgGCqEgKOwbMKoTSOkfs=
+
+Name: images_lightgreen/splashlogo.png
+SHA1-Digest: 694dHbqz3XJFU67xnrbzPX18ut0=
+
+Name: images/indeterminate005.png
+SHA1-Digest: VGDwfegNOtaJWeYgc0HDGZHK3CA=
+
+Name: images/mb_adbsideload.png
+SHA1-Digest: ydXOLf2ui8HEzZzB/v/T9m1Zgew=
+
+Name: images_blue/splashlogo_stock.png
+SHA1-Digest: wKQVzuFdqhqI4/sxN0APm+WNDjE=
+
+Name: images_deeporange/back.png
+SHA1-Digest: e1pNF7zC9JdPV8O48wTFAM6kUy4=
+
+Name: images_teal/file.png
+SHA1-Digest: ljkfg17UiFqZlebL7OCvP87aVQM=
+
+Name: images_teal/home_hl.png
+SHA1-Digest: 21o22P9kQR8yqYjKKxCCVamglIM=
+
+Name: images_grey/btn_float_accept.png
+SHA1-Digest: Mw0+KEQEi/VCWeF31Uv6rG/vSx8=
+
+Name: images_teal/radio_true.png
+SHA1-Digest: oly9c9tmpi+gpNRpFLg4AynogkI=
+
+Name: fonts/Regular.ttf
+SHA1-Digest: gktUgMl3qBZuF35TV9ExZMzEX0c=
+
+Name: images/actionbar_font_big.png
+SHA1-Digest: SgZ4PvWQbEYeM164MZ4q+fNjSJA=
+
+Name: images_amber/back_hl.png
+SHA1-Digest: NjWJpEwEjvJ0rTL8wUIGYGLOLr8=
+
+Name: images_bluegrey/handle_h.png
+SHA1-Digest: jLe/S7DZkgHoQt+vz/j2dehPs7A=
+
+Name: images_lightblue/btn_float_folder.png
+SHA1-Digest: YmaM+WENJR4riw1/iaqVAoT9ipo=
+
+Name: images_teal/handle_h.png
+SHA1-Digest: 4IGch5GSgCd2acbA3hqBLJRq2Qs=
+
+Name: images/btn_raised_warn.png
+SHA1-Digest: oNJAOYvk3iMgeyicMmnuz/dIxm8=
+
+Name: images/slideout_hl.png
+SHA1-Digest: Nb78tq8UhFzXQeiotS3Ao7aitDE=
+
+Name: images_indigo/file.png
+SHA1-Digest: 1hB1tnE/mtNpfuxAAgnfVAiP1kY=
+
+Name: images_blue/splashteamwin_stock.png
+SHA1-Digest: CeYnH6xlz/EtiGO3GYuntO3YMF8=
+
+Name: images_lightblue/checkbox_true.png
+SHA1-Digest: KHnJeS+LzRgT3J/PbCR5QW0g2hU=
+
+Name: images/cursor.png
+SHA1-Digest: VxSy1BZkGaUJcPN2ITmyRm0/ksk=
+
+Name: images_indigo/slider_used.png
+SHA1-Digest: iZbdCR4Msi4U1xIn8ajmZiuw48I=
+
+Name: images_brown/slideout.png
+SHA1-Digest: bE92YcQYU6SXH9iF/l4UrSkvg/c=
+
+Name: images_deeporange/checkbox_true_d.png
+SHA1-Digest: 2R87V8sn6omrd3RW/5MapBJ1/Cg=
+
+Name: images_lightblue/radio_true_d.png
+SHA1-Digest: MKyFNR23pT0jjJtuXFvLFiGo6ho=
+
+Name: images_lime/keyboard_hide.png
+SHA1-Digest: VFrLLUd7rWRrLeIYKvGEZEH2rcs=
+
+Name: images_lime/slideout.png
+SHA1-Digest: Yaw82P08S2rOyWYhD7zdm8flYCQ=
+
+Name: images_brown/btn_float_accept.png
+SHA1-Digest: 4M9/CstyiNK74wJ+KGcnXfAGWks=
+
+Name: images_deeporange/handle_h.png
+SHA1-Digest: BaZolIHTC0yd9UtWcXVrt2eC1SA=
+
+Name: images_indigo/slideout_hl.png
+SHA1-Digest: gfPX8/qSSK1iaLsf8RSYhd4dY8A=
+
+Name: images/handle.png
+SHA1-Digest: +FcuA7T4GrhsGnb2R6o8IK2Uljo=
+
+Name: images_red/handle.png
+SHA1-Digest: BeKICs8MEm2nWsqqebCVfSlxZVM=
+
+Name: images_amber/btn_raised_hl.png
+SHA1-Digest: wUXpp3/gdsF4mdFyVqHljwwXjlk=
+
+Name: images_blue/back_hl.png
+SHA1-Digest: 8tNya8f+xUMRWul0VuybeGfpq9o=
+
+Name: images_lime/home_hl.png
+SHA1-Digest: DEg2131zillE/8VcxBQrg5WDOGM=
+
+Name: images/checkbox_true_d.png
+SHA1-Digest: zr71oexym5fWvhEeikZkh7sIVzc=
+
+Name: images/indeterminate017.png
+SHA1-Digest: I8TqpdTfTN2g97FeT08MJfwGmBU=
+
+Name: images_blue/keyboard_hide_hl.png
+SHA1-Digest: SVPY8syIXozK2I/wGP64segF+Co=
+
+Name: images_orange/back_hl.png
+SHA1-Digest: Z4REtmjWd9iHZb48ZoLQ3SHGsA4=
+
+Name: images_bluegrey/handle.png
+SHA1-Digest: yVMn/OlIgDYQcBMhCYygeESZQdg=
+
+Name: images_grey/splashteamwin.png
+SHA1-Digest: Tpq02DjOjudVK5PlE6ZODUCdMKw=
+
+Name: images_orange/handle.png
+SHA1-Digest: U/UcWsm5qkSG4lEs9mhSLZnQ+8w=
+
+Name: images_red/slider_used.png
+SHA1-Digest: HWUV0b1Ppk0lIJzKsenQ7l68ibs=
+
+Name: images/shift_fill.png
+SHA1-Digest: uKJum4XEVWOFLjSTdYqr+WCHyyQ=
+
+Name: images_orange/splashlogo_stock.png
+SHA1-Digest: 8oReGqaee0J2P9Cas7pDhzXPOqM=
+
+Name: images/mb_download_color.png
+SHA1-Digest: BbWx9Kly1CN2j4Qq6z59c3Ykfxw=
+
+Name: images/actionbar_back.png
+SHA1-Digest: V6SYuWO98BJDgiWsuG5eUMSLDzw=
+
+Name: images_stock/handle.png
+SHA1-Digest: +FcuA7T4GrhsGnb2R6o8IK2Uljo=
+
+Name: images_deeporange/enter.png
+SHA1-Digest: NnSR3ge48g1g+KGuQ+qSDkuMYbY=
+
+Name: images/kb_arrow_right.png
+SHA1-Digest: U15XUq7Dh2SGFx1VP6xsIG5+I1s=
+
+Name: images/actionbar_encr_dis.png
+SHA1-Digest: AnDNCuoWHgoHpw+K+aS654NyHTI=
+
+Name: images/tab_display_a.png
+SHA1-Digest: CEjtPV5HdrtouqXepfKWh+++9gc=
+
+Name: images/bs_btn_cut.png
+SHA1-Digest: OgjzS8jrVp4YpYmI0x5NP8NOMyw=
+
+Name: images/indeterminate002.png
+SHA1-Digest: dZSXQx+yANhE4z+xdJ2iWzRgTzQ=
+
+Name: images_amber/back.png
+SHA1-Digest: P4eGzqQ6y/P+B+2DVgGRU0dzdNo=
+
+Name: images_bluegrey/splashteamwin.png
+SHA1-Digest: FfvJpd6mc3BKM6Msxt6n6QcukRI=
+
+Name: images_teal/splashteamwin.png
+SHA1-Digest: h9Pb0/pw1YeYiQNXBuBuTGye9hA=
+
+Name: images_red/splashlogo.png
+SHA1-Digest: TBMrQnm0K3JkXKSIL0T3Ig+QKAg=
+
+Name: images_indigo/back.png
+SHA1-Digest: U8uQvq3O7rVs/Cd0z/HgWeDw16U=
+
+Name: images_orange/keyboard_hide.png
+SHA1-Digest: mOP51CvgFcFf8AcY6tLxscQLP6U=
+
+Name: images/actionbar_font_small.png
+SHA1-Digest: o69gGHIDho3OVOVI43RzaJAmifw=
+
+Name: images_amber/handle_h.png
+SHA1-Digest: oBfnsYTZmcb1QG88lzndhaTX0xc=
+
+Name: images_stock/home.png
+SHA1-Digest: HaR/2urzWf4TKt0uy6B1hX0mpLs=
+
+Name: images_teal/back.png
+SHA1-Digest: FlOGuXD9fMFZKEPMN8S8B7zleqE=
+
+Name: images/indeterminate004.png
+SHA1-Digest: gaaHB9VdhmF+/EpMvXNrOj+2cAg=
+
+Name: images_grey/keyboard_show.png
+SHA1-Digest: jCq4OXse63pKGna1Sy2FMboOC3I=
+
+Name: images_orange/handle_h.png
+SHA1-Digest: PjLuxpye9SivVpOe/UyG1iuE0pI=
+
+Name: images/progress_empty.png
+SHA1-Digest: aB3LuFZBTw8FeaVKvEsVy+OcB1Q=
+
+Name: images_bluegrey/checkbox_true.png
+SHA1-Digest: 4gx0nT/kcXxWz+5hkNEOEz07X3Y=
+
+Name: images/indeterminate019.png
+SHA1-Digest: yV5/uogOnW6Im3+3vm3Dn5bdfvU=
+
+Name: images/mb_fixpermissions_color.png
+SHA1-Digest: Kv7Xrn1wzTjVqsMEUnpBSI2XHTo=
+
+Name: images/keyboard_shadow.png
+SHA1-Digest: 9ipMsFEjZWbE2Zw79oin5PT8pxk=
+
+Name: images/mb_advanced.png
+SHA1-Digest: /K1D3SQmeXh5CHEAiueQXoTXCmk=
+
+Name: images/mb_dumlock.png
+SHA1-Digest: SnKxpXQyeeNZEL0UrZSru1YqWp0=
+
+Name: images/mb_partsdcard.png
+SHA1-Digest: B1CbG+AzIGPnAfHn12Tuu0D6tio=
+
+Name: images_orange/home.png
+SHA1-Digest: cXN40/CWzpY+UMxpx/PAtyg7Y9U=
+
+Name: images/actionbar_pin.png
+SHA1-Digest: ME0kHXv01aV0J1PPXnuUUYND8Js=
+
+Name: images_brown/back_hl.png
+SHA1-Digest: +k/hymcXRMo1UYz9Mz4KNK5hQoo=
+
+Name: images_blue/handle.png
+SHA1-Digest: oQHP0uLTzukRu0ge806S1IrtYW8=
+
+Name: images_red/radio_true_d.png
+SHA1-Digest: RWANnLtRnr8nMlf46g7vbRwJ9iU=
+
+Name: images/indeterminate024.png
+SHA1-Digest: KGoykZTCAHFb9TjqafmAU2uzz74=
+
+Name: images/indeterminate010.png
+SHA1-Digest: EllrkvhlnjtPvIV1Rfx1CL+eCpk=
+
+Name: images_indigo/keyboard_hide.png
+SHA1-Digest: HvGfuRoa416Sbd5XQfbXOv5A2xc=
+
+Name: fonts/DroidSansMono.ttf
+SHA1-Digest: 9HMmtRx+gmClSm4fCfHbFR8SdjQ=
+
+Name: images_lightblue/splashlogo.png
+SHA1-Digest: Et0kZf6MteIxwDCCxaThh4RfV68=
+
+Name: images_orange/keyboard_hide_hl.png
+SHA1-Digest: 4/DwuRhMyui9zf0Dsoocn3+WF4s=
+
+Name: images_lightgreen/slider_used.png
+SHA1-Digest: rJ/pginXAsGfoytBV9GZE/pH6F4=
+
+Name: images_bluegrey/slideout_hl.png
+SHA1-Digest: bihQfWXPHwv4yv85EyJ/mcixe7g=
+
+Name: languages/en.xml
+SHA1-Digest: VkMcss0QXzBBEeMbaDnW2lmVvAE=
+
+Name: images_bluegrey/btn_float_accept.png
+SHA1-Digest: PFlwXjRm3a48jsr1ke5dEc0bOu4=
+
+Name: images_orange/slider_used.png
+SHA1-Digest: 6gYnBEylNeedWKgtP7Exj+z4vtg=
+
+Name: images/mb_install.png
+SHA1-Digest: o5rHZSMx1CylGFFvq/82hxzSI6U=
+
+Name: images/home_hl.png
+SHA1-Digest: 7I8wQR+uvuaWc+6BiOP/mwS/B+c=
+
+Name: images/slideout.png
+SHA1-Digest: c8r4GBKnrRphLqLIThjmAh4Pci4=
+
+Name: images_red/home.png
+SHA1-Digest: QItHcbgyOn2UDTaBBQq5ErC6ICk=
+
+Name: images_teal/splashlogo_stock.png
+SHA1-Digest: x4QEhoGIuJsxF41ub839HTrPaLI=
+
+Name: images_amber/splashlogo.png
+SHA1-Digest: ZqLVim6g2IspZBKmOsTXANXQKCI=
+
+Name: images_red/btn_raised_hl.png
+SHA1-Digest: NKLeuBZ1yotaRcmiZS9s2VB8/ko=
+
+Name: images/tab_time_a.png
+SHA1-Digest: 7ctj2CPoBKGNtBvNguQ/8eBSH5w=
+
+Name: images_deeporange/slideout_hl.png
+SHA1-Digest: 5IErIx7QgiiqPT49wT03rkIL8tQ=
+
+Name: images_grey/checkbox_true_d.png
+SHA1-Digest: zrsy9a5bxBxNfrO8g1UFbDbKLAA=
+
+Name: images_lightgreen/checkbox_true_d.png
+SHA1-Digest: kuu/BCDP32uYfw6d5MzbzZkit8E=
+
+Name: images_red/home_hl.png
+SHA1-Digest: da+fhXLbVloT7hdz7YmGjV1o3u4=
+
+Name: images_lightgreen/btn_raised_hl.png
+SHA1-Digest: npHslPjouQ35yCVMhKjIWq4TgwM=
+
+Name: images_orange/splashteamwin_stock.png
+SHA1-Digest: pcDh+aMJSgHr0IFPPYHgSzDLXrs=
+
+Name: images/mb_recovery.png
+SHA1-Digest: rfh6g3yT5vthz/aOdWGI1QPfcZk=
+
+Name: images/btn_raised.png
+SHA1-Digest: hjm015l5Z+EEmicL9DXlDjih4IQ=
+
+Name: images/unlock_icon.png
+SHA1-Digest: cGKE4yLdyXP1FqORII5bQm6PZE4=
+
+Name: splashes/splash_xml_stock.xml
+SHA1-Digest: 0A/NwmvmDuQL0AWCCwu+ZyK1sY4=
+
+Name: images/tab_vibration_a.png
+SHA1-Digest: mcbdwdAp+TfotgSzUFzqN2od+L4=
+
+Name: images/btn_float_folder.png
+SHA1-Digest: TEj+jXxJD9jiBixqasV74RVdVas=
+
+Name: images_stock/radio_true.png
+SHA1-Digest: HJXF54UC3T/CS9OA/AGNeRXlhig=
+
+Name: images_bluegrey/btn_float_folder.png
+SHA1-Digest: qAVSjgBXYkW08WFip+y5FN5hbTc=
+
+Name: images_grey/handle_h.png
+SHA1-Digest: u1RxK+0u3FXKyUJimBJQBBqGvfA=
+
+Name: images_deeporange/splashteamwin.png
+SHA1-Digest: SQJHCMepYnVBCXbJjKhO2X23FyY=
+
+Name: images_green/back.png
+SHA1-Digest: K3/kvMhGPhKy6fnvQxFhORLcreY=
+
+Name: images/backspace.png
+SHA1-Digest: MMftrDsCbbTUzckf+8c+f4d/9Sk=
+
+Name: images_teal/keyboard_show_hl.png
+SHA1-Digest: NXSKpbiT/avHVtUgIjQ8SQ2LAC4=
+
+Name: images/keyboard_show_white.png
+SHA1-Digest: IlEA03Ujoj4bgCdltlmAtqKz8pU=
+
+Name: images/icon_palette.png
+SHA1-Digest: RxXiAsHVWluTCQep/Ze4Vlx8O4M=
+
+Name: images_deeporange/file.png
+SHA1-Digest: uw3bAwWSBbZqj7l7+oLfvGu5Q/A=
+
+Name: images_blue/splashlogo.png
+SHA1-Digest: vqaqqKpF96t9BdknZZwtTUVFc50=
+
+Name: images_lightblue/keyboard_show.png
+SHA1-Digest: uPdJ5lccJaD5nw10zpY2xMcSJQs=
+
+Name: images/file.png
+SHA1-Digest: cUvX0EqnGH5CSVlE+vzx4fpKoEY=
+
+Name: images/mb_adbsideload_color.png
+SHA1-Digest: 5q5mDBAldcMqKcopHklal+81Htk=
+
+Name: images_lightgreen/back_hl.png
+SHA1-Digest: rtRDDlJhPOBafF4dpuLQyCTOnYs=
+
+Name: images/mb_filemanager.png
+SHA1-Digest: QMUlVjGC923YlTe3jgZupcPs6Ns=
+
+Name: images/indeterminate003.png
+SHA1-Digest: u3vyi0HIDMoiMc4BIrzKYi02YWY=
+
+Name: images_bluegrey/radio_true.png
+SHA1-Digest: 7Lq2xAeAUICSK5fSSTAmD8DmnSA=
+
+Name: images_brown/splashlogo.png
+SHA1-Digest: f3ZEIwHE7zxXchJgmQZgn9jmj7s=
+
+Name: images/splashlogo_stock.png
+SHA1-Digest: kHxljf1+f/X+1DIE6lbKu1QNedM=
+
+Name: fonts/Medium.ttf
+SHA1-Digest: YGDKcmuXYLdvfDR9zp0vof5C7JI=
+
+Name: images_orange/checkbox_true.png
+SHA1-Digest: C9s6zt/6AhAE5RfQUPRbnipYz4w=
+
+Name: images/actionbar_sort.png
+SHA1-Digest: aFspe2jS5O43KtJvs1PJSrCK1tw=
+
+Name: images_amber/handle.png
+SHA1-Digest: fomympnACqbokWDSI7Zu0J8+bpI=
+
+Name: images_stock/slider_used.png
+SHA1-Digest: s1GnfDkxgtoyHhgNAOCvvEsasUo=
+
+Name: images/mb_partsdcard_color.png
+SHA1-Digest: vWglyd2G1mXCbzDQbCWH9Vxn3Y8=
+
+Name: images/navigate_left.png
+SHA1-Digest: T4C4rUkEGqbpM3mQ27dH9S+gAeA=
+
+Name: images_amber/slider_used.png
+SHA1-Digest: 2TQmvjTzcgn5TvJtBoiy04gUrMY=
+
+Name: images_grey/splashlogo.png
+SHA1-Digest: KEWGS4FqKaMaHkaIwv6z0RgmQbI=
+
+Name: images/enter.png
+SHA1-Digest: TzYbJFs0KUDYPvMd1jyRS+rs8co=
+
+Name: images_indigo/splashteamwin.png
+SHA1-Digest: wBYr63r1P++lhNmautaaEiZ/XYo=
+
+Name: images_stock/splashteamwin.png
+SHA1-Digest: 3H9D00j40dEFLgoA8naeEBs7ml4=
+
+Name: images_lightgreen/splashteamwin_stock.png
+SHA1-Digest: 4f+229+LeBJrShdxuzhAQDebvdg=
+
+Name: images_amber/btn_float_accept.png
+SHA1-Digest: foB8JKHAlAWAyO2cQN1RE3AX+04=
+
+Name: images_indigo/radio_true.png
+SHA1-Digest: x3ZDtIyvdImsJWzFIlbyILbqs5M=
+
+Name: images_grey/splashteamwin_stock.png
+SHA1-Digest: gB+AH21PWbpn1sez6j+glYCRLT0=
+
+Name: images_bluegrey/checkbox_true_d.png
+SHA1-Digest: 94lgQldJBFTaFcDbJikSFVN1QiI=
+
+Name: images_bluegrey/keyboard_hide.png
+SHA1-Digest: X2YL36NY3QnADgw1W1QfJbYrwyw=
+
+Name: images/indeterminate018.png
+SHA1-Digest: /1O//zERwFNPLix7iKcNhD0VtR0=
+
+Name: images_teal/slideout.png
+SHA1-Digest: jDrej1q6114OpoLuffr088+MMVA=
+
+Name: images_red/checkbox_true_d.png
+SHA1-Digest: 7o9LoQVSkii20XmjQBDQmBwlWnk=
+
+Name: images/actionbar_encr_ena.png
+SHA1-Digest: Hub3XflIhl3B7SdOEfES6d3Nt44=
+
+Name: images_orange/btn_raised_hl.png
+SHA1-Digest: cF76Pwh4ZJi4AG3v0QAsmiZt6fE=
+
+Name: images/mb_system.png
+SHA1-Digest: OI3eOeWbS2W2k0GGqnFy0nTBvjE=
+
+Name: images/indeterminate011.png
+SHA1-Digest: wGgXBJgsV4EDz8+goivt/bYRl/4=
+
+Name: images_brown/enter.png
+SHA1-Digest: vIg+KjPq2QOWGZoqU1NH9XDTVrM=
+
+Name: images_deeporange/back_hl.png
+SHA1-Digest: CiJRckjHormXR6Spj5l2y81ai/g=
+
+Name: images_amber/keyboard_hide.png
+SHA1-Digest: 9zSnRxN1+OqHGvOYYbRV+1M5Gj8=
+
+Name: images_orange/back.png
+SHA1-Digest: XnTW+6cGRITD7Ev5bxRhHJxMU80=
+
+Name: images_deeporange/slider_used.png
+SHA1-Digest: 25PM6izuLysYFbzvUMXKqGKoMMs=
+
+Name: images/mb_restore.png
+SHA1-Digest: HUUEZK0AM23ZV3KE3itCX1yrbRI=
+
+Name: images/dialog_bg.png
+SHA1-Digest: jcT0Slh0eR6NdgiGM0cS8aenXhg=
+
+Name: images_teal/splashlogo.png
+SHA1-Digest: WabUDd1Ly4lpGNUpy/n+IbVCBCc=
+
+Name: images_indigo/btn_float_accept.png
+SHA1-Digest: j6F/y4eeEBQ8K5igtXx9Sw/C8ro=
+
+Name: images_lightgreen/home_hl.png
+SHA1-Digest: jT4AVNY6Jb1WAhKJw7igbHZP9lw=
+
+Name: images_red/keyboard_show.png
+SHA1-Digest: M8CijN1Ru/oc1RkJClGHKAsn3wI=
+
+Name: images/actionbar_logo.png
+SHA1-Digest: Tfpp/r4ZONIi/VXTGTNaRcU+kSo=
+
+Name: images_lightblue/btn_float_accept.png
+SHA1-Digest: WMzUx1fSSrbReYlMpby53bzQ/fQ=
+
+Name: images_red/handle_h.png
+SHA1-Digest: 3EFIeAvEsg3XLwWEVKWEjUWRQFw=
+
+Name: images_lime/slider_used.png
+SHA1-Digest: NFTrDE29Ula3jjVnyyYQ7PjR3uM=
+
+Name: images_lime/enter.png
+SHA1-Digest: gZ1oVpPd+6ST/Cbw4BlR+l/Qaaw=
+
+Name: images/tab_bu_encr_dis_a.png
+SHA1-Digest: 6I9Cl54QvEn62OsgNGVQjeP4UCI=
+
+Name: images_deeporange/keyboard_hide.png
+SHA1-Digest: Pvs/PPnAUqYOarMRB3nF+Z3PLDc=
+
+Name: images_lightblue/splashteamwin.png
+SHA1-Digest: tbFed1ipPyJEDevG9FgLqvQ6Ec8=
+
+Name: images_green/btn_float_accept.png
+SHA1-Digest: jGYDykhfd/Bc8Uet4ke0Pti5JE4=
+
+Name: images_grey/btn_float_folder.png
+SHA1-Digest: zcKYG5P9QAB4Da8moEdb5LfN4w8=
+
+Name: images/icon_person.png
+SHA1-Digest: ZQ0VQtTeC16Yjo5hIvCxKK7+gnE=
+
+Name: images_brown/slideout_hl.png
+SHA1-Digest: Cu16uGjy6pUklgRk5GozZxt62tA=
+
+Name: images_deeporange/slideout.png
+SHA1-Digest: 7fWSPCEChJViVLjdfTGYK4E9Y98=
+
+Name: images_lime/splashteamwin_stock.png
+SHA1-Digest: xAqDtRosLxqUyMsEenx1/SIuJtQ=
+
+Name: images_brown/keyboard_hide.png
+SHA1-Digest: ZYVEd2la2Zs8r8nL77Puydriq4w=
+
+Name: images_brown/handle_h.png
+SHA1-Digest: oJMcxOoeF5E2bX4tPxvy/PSSzQE=
+
+Name: images_green/splashteamwin.png
+SHA1-Digest: sLwqSFDchrXJbQzbxXb/UO9KR1c=
+
+Name: images_indigo/radio_true_d.png
+SHA1-Digest: ATZAGK+IAp/yoqy9Q3hRZVfnL7c=
+
+Name: images/mb_logtosd_color.png
+SHA1-Digest: 195vBCS678ljgVX6fPRk7gh7a/M=
+
+Name: images_green/slideout_hl.png
+SHA1-Digest: A3uRhes2Wr1dGACKv+0eBSgSTfo=
+
+Name: images/btn_float_addtoqueue_hl.png
+SHA1-Digest: IE7O7fQ1zxGrXVjh421XY06M/3s=
+
+Name: images/db_hl.png
+SHA1-Digest: EGNtX6YFaiJhx3jvFcgI+cb0vvE=
+
+Name: images_deeporange/home_hl.png
+SHA1-Digest: RnpLcJ9bisRba/UbLwBwMxPrbTQ=
+
+Name: images_stock/keyboard_show_hl.png
+SHA1-Digest: ljBvA+T6pI0looYnMArfotSLAjM=
+
+Name: images/radio_true.png
+SHA1-Digest: HJXF54UC3T/CS9OA/AGNeRXlhig=
+
+Name: images/actionbar_delete.png
+SHA1-Digest: aGHTAeFs5s5rYFE3whsk0BBpe5I=
+
+Name: images_lime/handle_h.png
+SHA1-Digest: wSQmsHMR2s5UuL4GJScLc5BLNbY=
+
+Name: images_green/keyboard_show.png
+SHA1-Digest: 6sbkKmn987AsgsPXM1byefHDcik=
+
+Name: images_indigo/home_hl.png
+SHA1-Digest: +vyIeaQ0sEsGFqiQt0Q+b4lnD2I=
+
+Name: images_green/enter.png
+SHA1-Digest: N6oy7bl+A2SUZequVoCSKBimgxE=
+
+Name: images_indigo/keyboard_show.png
+SHA1-Digest: 7kbrH9PoBTy56z3fk9nDr7hyA+o=
+
+Name: images_deeporange/radio_true_d.png
+SHA1-Digest: /omsr4gGPzT5xhfWKfVS0JQGWJk=
+
+Name: images_indigo/enter.png
+SHA1-Digest: 2VQJHcbNZ3Ln2GTRIG0mdZm/4GI=
+
+Name: images_bluegrey/slider_used.png
+SHA1-Digest: vcaulT1CR3Xp7JEFzinMLsOcZtI=
+
+Name: images_indigo/slideout.png
+SHA1-Digest: UIERVH0H24THtfMQtpqaPIqq7pg=
+
+Name: images_brown/home.png
+SHA1-Digest: H3d8fh7/Y6sYDODM+2nrFYLK2TY=
+
+Name: images_brown/splashteamwin_stock.png
+SHA1-Digest: bgDNyLixGmw6levr3NrecXjvwu8=
+
+Name: images/bs_close.png
+SHA1-Digest: qG3eeoSn/Uw/AzYJ2iabnmxcULc=
+
+Name: images/indeterminate012.png
+SHA1-Digest: dS9APa6Xo6TiokWwRiJ3fG1WCxI=
+
+Name: images_teal/slider_used.png
+SHA1-Digest: 1dpanu/lbcsLyEKtU+XnFqXBjbE=
+
+Name: images_bluegrey/home.png
+SHA1-Digest: Ga67fRlQrEtWj0gr1A1TenU4H3Q=
+
+Name: images_brown/splashlogo_stock.png
+SHA1-Digest: HCUc+GXpZI75xG30yJHfkcQK0uo=
+
+Name: images_blue/radio_true_d.png
+SHA1-Digest: n0xdxZMLOMxDwBb/KNiX3KoLr1o=
+
+Name: images_amber/slideout.png
+SHA1-Digest: xeTVB1kXjw09wuPlY39cHnnxIfo=
+
+Name: images_green/btn_float_folder.png
+SHA1-Digest: gRWBUQnn6P3rDd+X5FhN7fl7PjY=
+
+Name: images_teal/checkbox_true.png
+SHA1-Digest: +6ORaH7JVV6hOlId+2XY35qKxvE=
+
+Name: images/actionbar_encr_ena_hl.png
+SHA1-Digest: f+2pq6vXqgFUODFyr9wbxG+R2RY=
+
+Name: images/keyboard_show_white_hl.png
+SHA1-Digest: 4uwFLdxXrCyg1rOgABhVqVpNpjA=
+
+Name: images/mb_logtosd.png
+SHA1-Digest: 2xu1kmu94boseQ+6sQ+wwX5uXl8=
+
+Name: images/back_white_hl.png
+SHA1-Digest: 2QnNmCL7eKekTf6BGdo5LvNd8XU=
+
+Name: images_blue/slideout.png
+SHA1-Digest: h+GjdG3P3bg+/zjhK4Cb5vENqQc=
+
+Name: images/mb_mount_color.png
+SHA1-Digest: YFTbv+zA/KAP9h8akUcH5BBjv90=
+
+Name: images/tab_display.png
+SHA1-Digest: AAVzjKhQNy1HoUBZ+mpeVpZ3FF8=
+
+Name: images/shift.png
+SHA1-Digest: YS9RoSQj1aSv9bnxGEyytiDXj1U=
+
+Name: images_green/handle.png
+SHA1-Digest: TjMTIrdECxFCAiDnBuo0/Uc1/zc=
+
+Name: images_deeporange/keyboard_hide_hl.png
+SHA1-Digest: rfdxoW4B81va2aqc06XBMjVxmAg=
+
+Name: splashes/splash_static.xml
+SHA1-Digest: MYspVRdZ+fipNSFXG3lIlkKfuj0=
+
+Name: images_lightgreen/keyboard_hide.png
+SHA1-Digest: Uotn7QXAbhAZ89LEKEor/+KacPA=
+
+Name: images_lime/btn_float_folder.png
+SHA1-Digest: ws751p4JcqvDiZtBWbAMNTWFR0E=
+
+Name: images_blue/checkbox_true_d.png
+SHA1-Digest: yNMS4uhPzzS26MwLiVhlxIoDagU=
+
+Name: images_indigo/splashteamwin_stock.png
+SHA1-Digest: 3/TwuTYLAe/bKSbVjrzTAnPhgmQ=
+
+Name: images_stock/btn_float_folder.png
+SHA1-Digest: TEj+jXxJD9jiBixqasV74RVdVas=
+
+Name: images/keyboard_hide_white.png
+SHA1-Digest: JU0nWhqauGek4c/vP0VTt2EfsM0=
+
+Name: images_deeporange/home.png
+SHA1-Digest: jMeYOdCVtPwiDRi/Gw/48fV36Rg=
+
+Name: images_blue/home_hl.png
+SHA1-Digest: GN7Vj4roAxE0J0x/KykkroNIk0M=
+
+Name: images_indigo/back_hl.png
+SHA1-Digest: F6q+S/S1SgFsCUD6BLjLl6Efvew=
+
+Name: images_brown/handle.png
+SHA1-Digest: iadvlvoDXuAx3wCOthFb3Dgt8lU=
+
+Name: images/kb_arrow_left.png
+SHA1-Digest: lMaoACffTefJLG8OAf+9qlImLjg=
+
+Name: images/tab_bu_options.png
+SHA1-Digest: LKLOSgdLBCfddMH/pfpgiFmh5+8=
+
+Name: images/tab_misc.png
+SHA1-Digest: gzck/lGjLX6Jk4sYLqlrri/O61A=
+
+Name: images_stock/home_hl.png
+SHA1-Digest: 7I8wQR+uvuaWc+6BiOP/mwS/B+c=
+
+Name: images_amber/home.png
+SHA1-Digest: rIS76LMUFJ61dj0VrNlJFm7eo5o=
+
+Name: images_lime/splashlogo.png
+SHA1-Digest: tG53+zw6aC5N3LjpMT7IqHfLgIA=
+
+Name: images/slideout_white.png
+SHA1-Digest: ukkkidz3JA/weWcAap75nrH4//Q=
+
+Name: images_grey/slideout.png
+SHA1-Digest: REnLPDOKGf6jz/IZ7uAMXg4z9Ms=
+
+Name: images_lightgreen/splashlogo_stock.png
+SHA1-Digest: XjFK0cV93euNAd+aoxkD68qi/Iw=
+
+Name: images/tab_bu_create.png
+SHA1-Digest: wLLIaLZW3IUcBsplMy3L/bYRfMg=
+
+Name: images/mb_backup_color.png
+SHA1-Digest: dF4seQNd5ot5CJ2pP16gPPqbuSA=
+
+Name: images_deeporange/splashlogo.png
+SHA1-Digest: HPXU6nZm18ME5MKQ9e6qZqe7/Dk=
+
+Name: images/mb_backup.png
+SHA1-Digest: KH97AfsnGM0z0Nscqqm2uQ0fGas=
+
+Name: images_amber/splashteamwin_stock.png
+SHA1-Digest: 77gtfrzqSDuXqhKTOCLFU1Mu0Aw=
+
+Name: images/btn_raised_hl.png
+SHA1-Digest: Hf4rtUOsAFEC3YKZM3h/SviQyiI=
+
+Name: images_deeporange/splashlogo_stock.png
+SHA1-Digest: ithIlN2e8VMMAt3FMkFPg4q5trg=
+
+Name: images/checkbox_true.png
+SHA1-Digest: zeY1IEeq8ozVee2jkyTr6Ah5l94=
+
+Name: images_lime/splashteamwin.png
+SHA1-Digest: NmBpfW7Tp4qBB0Aym1YwY4ouJwA=
+
+Name: images_lightgreen/enter.png
+SHA1-Digest: S5KMT0fYgCBrgicH0TdhK9m7pEQ=
+
+Name: images/progress_fill.png
+SHA1-Digest: mhTdHuEyjrKeD6IMFEhpDwz1SHk=
+
+Name: images_orange/file.png
+SHA1-Digest: 7YPgNvNYgASde0rst3IZtkri2ow=
+
+Name: black.xml
+SHA1-Digest: TxB2nkXjISqIIHGcYCEZAauTowo=
+
+Name: images_lightgreen/handle.png
+SHA1-Digest: Nwtmy7iJK9OB0Zpfo/XJ/gHSL0Q=
+
+Name: images_deeporange/keyboard_show_hl.png
+SHA1-Digest: s/GEHbO5mGmgc+v4fVemsvIPn7g=
+
+Name: images/kb_arrow_down.png
+SHA1-Digest: BzzjKZGYoAPeSNsRZwcbq8MD4xk=
+
+Name: images/mb_install_color.png
+SHA1-Digest: zQ09IjdjK5ZNrpbIFsuvD+wv7lU=
+
+Name: images_stock/keyboard_show.png
+SHA1-Digest: G7w/GKfQNMk1iLN5o7gmQNAzKVM=
+
+Name: images/back.png
+SHA1-Digest: /awQjQbF5qhrpJ6s7wNJ3CCgJks=
+
+Name: images_amber/btn_float_folder.png
+SHA1-Digest: rgT8sAFKpA5l2yEv1GQDwpapwrg=
+
+Name: images_blue/enter.png
+SHA1-Digest: GWxZv0px1DEKoHrOUj91Lr/+J+g=
+
+Name: images_lime/btn_float_accept.png
+SHA1-Digest: /vE95yNkkvQK/VpPt6cubMPCLTw=
+
+Name: images_blue/keyboard_show.png
+SHA1-Digest: 0b7mNsL17MsVr47dpB6/CABLW18=
+
+Name: images/actionbar_settings.png
+SHA1-Digest: CBr5i/U4YekccWrmFByuyVhyUvg=
+
+Name: images_grey/file.png
+SHA1-Digest: hIH86SLVAdHv4rkDq77IE5ZbyhM=
+
+Name: images_teal/btn_float_accept.png
+SHA1-Digest: epHrMd2P2RkNSfcBp7GbtK4z3CQ=
+
+Name: images_lightblue/checkbox_true_d.png
+SHA1-Digest: emRvU4zHijju6vCvbWXHLCExwt4=
+
+Name: images_red/keyboard_hide_hl.png
+SHA1-Digest: Z1h7y4Q0bMeRT3h3MJe/VADQ7rQ=
+
+Name: images_grey/keyboard_hide_hl.png
+SHA1-Digest: ASpVZ0iHQUp7U4BEdRDQohGwivk=
+
+Name: images_deeporange/btn_raised_hl.png
+SHA1-Digest: RyITEijCK3dazXBQWW5sp84kAeE=
+
+Name: images_red/slideout_hl.png
+SHA1-Digest: TJOFPo99vyojvA8DmzyiJzCGnpw=
+
+Name: images/indeterminate013.png
+SHA1-Digest: bYmhe2iLC9WRBZTKFasoy0PbW28=
+
+Name: images_lime/back_hl.png
+SHA1-Digest: VD3zSBQV35GYjxlGiEkKM0ZnucM=
+
+Name: images/back_hl.png
+SHA1-Digest: 0K35kTRVCyjqOLPnBeFM86nRUBk=
+
+Name: images/indeterminate021.png
+SHA1-Digest: L8ZOVXCDEUcFX+7/KcmXs2Ws92g=
+
+Name: images_stock/splashlogo.png
+SHA1-Digest: SSChi35Eut3pVHn+4qJtdLG+P2Y=
+
+Name: images_orange/radio_true.png
+SHA1-Digest: 6358r5nsrcsER6Zkmn9itU0RiLo=
+
+Name: images/home.png
+SHA1-Digest: HaR/2urzWf4TKt0uy6B1hX0mpLs=
+
+Name: images_indigo/splashlogo.png
+SHA1-Digest: xaMSzv9WWU0sarJ4br2lzOyAhFI=
+
+Name: flashit/flashit.zip
+SHA1-Digest: jMo6HZuaEihfFYobAOuT2GVUq34=
+
+Name: images_deeporange/btn_float_folder.png
+SHA1-Digest: QEHNr9Xv81XAJZBUircV6HZQGlk=
+
+Name: zip
+SHA1-Digest: cSomz/Grx0b0Jpm9l/RTQM1Bl30=
+
+Name: images_grey/handle.png
+SHA1-Digest: c1NdqIiT4RmU8B1NLiddRI6TvHA=
+
+Name: images_lightgreen/keyboard_hide_hl.png
+SHA1-Digest: lrw8XOlD785KWoN6/6OSd80SKZ0=
+
+Name: images_blue/btn_float_accept.png
+SHA1-Digest: ClSHxZXPBVwEPQBcFxkRUFA0ATQ=
+
+Name: images_lightgreen/checkbox_true.png
+SHA1-Digest: NrFfO4wjxxFOcwhQwNRXfCB/xIU=
+
+Name: images_green/radio_true_d.png
+SHA1-Digest: AL2mc7V5pTMInEBqa5NtCQGBrik=
+
+Name: images_indigo/btn_float_folder.png
+SHA1-Digest: /YgSpqPrWE+JG9Tuz3RXNnxaqUc=
+
+Name: images_orange/btn_float_accept.png
+SHA1-Digest: wTjrtrJ6VUIg1lzR89GiApCb1TA=
+
+Name: images/handle_h.png
+SHA1-Digest: INo9EcJkI7sD1nDdV2bdvvIiYE8=
+
+Name: images_blue/radio_true.png
+SHA1-Digest: wAulU4mZdDY640MbwXgk+BdZe3I=
+
+Name: images/mb_filemanager_color.png
+SHA1-Digest: 6+420jBpeb2zdQjksG46Qb5OLlw=
+
+Name: images_teal/keyboard_show.png
+SHA1-Digest: SJBq/cZNouVCT0YH3w6DemIo43A=
+
+Name: images_teal/splashteamwin_stock.png
+SHA1-Digest: KJH9OIDooYBF0POlQ6YZwOErZJo=
+
+Name: images_grey/back_hl.png
+SHA1-Digest: Qsc2Iwmmcwm6+bcDaHWFwk/vkqQ=
+
+Name: images_stock/splashteamwin_stock.png
+SHA1-Digest: D7keelP0JKmlQUxW+N7U3bOXMl0=
+
+Name: images/mb_recovery_color.png
+SHA1-Digest: lS+OiCLzcX2bsmur0m6viIn2QKw=
+
+Name: images_bluegrey/back.png
+SHA1-Digest: AtuOv7Sm/G5QdXep7H3i0JfusA8=
+
+Name: images_lightblue/handle.png
+SHA1-Digest: 2M/03UlZPvuwj/JtEjM0UZ9zhrg=
+
+Name: images_stock/keyboard_hide_hl.png
+SHA1-Digest: cNyQVL3lekKumPbxvy1vqK8JH6c=
+
+Name: images_orange/splashteamwin.png
+SHA1-Digest: qzZ5QSA9XtWQvkRoC3XGPKFpkh0=
+
+Name: images_brown/keyboard_hide_hl.png
+SHA1-Digest: voQcgEw9B0CJIVUwFRd8byFfLaY=
+
+Name: images/tab_time.png
+SHA1-Digest: WK5CPwtgc+82D0EdhRwVusEaC7Y=
+
+Name: images_blue/home.png
+SHA1-Digest: HMOOS3xCbAN//3bGd+ZPsMVxUJ4=
+
+Name: images/usb.png
+SHA1-Digest: AXx1i5qpbPHXb8oJyXBW2rKxh5g=
+
+Name: images_brown/radio_true.png
+SHA1-Digest: eq3jVQEJSJydg4qpCIEuDVQRXow=
+
+Name: images_stock/splashlogo_stock.png
+SHA1-Digest: kHxljf1+f/X+1DIE6lbKu1QNedM=
+
+Name: images_lightblue/handle_h.png
+SHA1-Digest: 6Mkyoa6Gt6NEsjRgqRPu9IQWj18=
+
+Name: images/btn_float_flashitinfo.png
+SHA1-Digest: I7M5A3mRHEzOkiCZ6anRSD3rFJA=
+
+Name: images/mb_terminalcommand.png
+SHA1-Digest: qbrdQEfwr7hc55CY2tMuRv0MyYc=
+
+Name: images_indigo/handle_h.png
+SHA1-Digest: MWsLgKHlICYRcUr7qU0gPv9LDtU=
+
+Name: images_grey/radio_true.png
+SHA1-Digest: a2B+Rlc3CMtxBdRBA03V+7BpVe0=
+
+Name: images_orange/keyboard_show.png
+SHA1-Digest: mvQUh5se55uDnlqgK1hWRHeEC4Y=
+
+Name: images/indeterminate009.png
+SHA1-Digest: LKDxVltvva4TwMOoQc48tbwwai8=
+
+Name: images/bs_btn_copy.png
+SHA1-Digest: p5OkrcQTy9tz0YjpKynhrr0pbE4=
+
+Name: images/tab_bu_encr_dis.png
+SHA1-Digest: ymnnQjtbStIr/tv4fuFsWniurDw=
+
+Name: images_grey/keyboard_show_hl.png
+SHA1-Digest: QEyZblkQzvgpgPnTmP86cS9QX28=
+
+Name: images_orange/home_hl.png
+SHA1-Digest: QYNfQbiNd9y+dyhql79MAEmLcHo=
+
+Name: images_teal/btn_raised_hl.png
+SHA1-Digest: NTl8NSIUo7ecGK6h2J692EjV10A=
+
+Name: images/actionbar_shadow.png
+SHA1-Digest: hOI7F9yvYY0ZjiHahVaa58D8BWc=
+
+Name: images/actionbar_settings_hl.png
+SHA1-Digest: r9my83ID6ZEIeM8kksteINtSggk=
+
+Name: images_amber/radio_true.png
+SHA1-Digest: GchLPtsljuon5eznwnpcn3AqOY0=
+
+Name: images_grey/enter.png
+SHA1-Digest: GhAyxaVLlFFNt/tyslyZaSsPDjg=
+
+Name: images/mb_color_extension.png
+SHA1-Digest: uKXHJiWpjgrGvsBpMW0LCgY49F0=
+
+Name: images/btn_flat_fw.png
+SHA1-Digest: OJzOHIBNDJwczWZsVGUcy6gm6tA=
+
+Name: images/mb_theme_color.png
+SHA1-Digest: fvWBR9w7uipeEHre03yi5DgqKdw=
+
+Name: images/keyboard_hide.png
+SHA1-Digest: gLH86BibG8FhI/QKR3gUNON+pU0=
+
+Name: images_blue/slideout_hl.png
+SHA1-Digest: +wtCPJJQpJm3p5cv/cufoswXoTI=
+
+Name: images_amber/keyboard_show.png
+SHA1-Digest: pLCm3Nucce72bKsauH8i7d755dg=
+
+Name: images_brown/home_hl.png
+SHA1-Digest: OBGSKeRmA68KX/P79DVqsvxxbZY=
+
+Name: images/db_empty.png
+SHA1-Digest: hJYoknCvuZj75DxmHGwCMDkH0+M=
+
+Name: fonts/Light.ttf
+SHA1-Digest: 4yHBg+K3XuGYE4kre6yNfEEcuIo=
+
+Name: images_green/handle_h.png
+SHA1-Digest: UEobzq1Yx+8w9vX2kPfv7WwWqTw=
+
+Name: images_amber/home_hl.png
+SHA1-Digest: uZ5RmkP+A6lvoomkGBF6RWUYmbM=
+
+Name: images_red/keyboard_show_hl.png
+SHA1-Digest: AZ5dU08QEBTJTAxFHZ9KBU6S++w=
+
+Name: images/indeterminate020.png
+SHA1-Digest: VJYuQ/XlDdcEAeoPjqARBuWgF/c=
+
+Name: images_blue/slider_used.png
+SHA1-Digest: 2POwizTPm++/dBM+2Mk8ylozuEI=
+
+Name: images_orange/btn_float_folder.png
+SHA1-Digest: RXV1MFGFQhRJfOmmvCnyEBqT4H8=
+
+Name: images_bluegrey/file.png
+SHA1-Digest: rhbnprNHJW8ZL3jPn54winHSKyE=
+
+Name: images/actionbar_back_hl.png
+SHA1-Digest: moFXx7HwWxVgH3/X8lL81aW/Q1w=
+
+Name: images_teal/slideout_hl.png
+SHA1-Digest: jZ4nWV5dkmshfK4innQkNffN/UY=
+
+Name: images_amber/checkbox_true.png
+SHA1-Digest: 6AbV+bWmKR7llpClPZpM29fZWSk=
+
+Name: images_lightblue/enter.png
+SHA1-Digest: d6BYFIryqexJ2JSVH0uBVwv5myc=
+
+Name: images_red/enter.png
+SHA1-Digest: ZejzDoMh9Q27gEqq5A7BMfpmRgM=
+
+Name: images/radio_false_d.png
+SHA1-Digest: uxZUCDsjstOXa5jeevd8EBHoLQA=
+
+Name: images_bluegrey/splashlogo_stock.png
+SHA1-Digest: AZ9b6L6u4MsgkihUh0crxeVKVZA=
+
+Name: images/actionbar_reset.png
+SHA1-Digest: 1VRVmMZ38ENeogYdUi9LOEPlmJ4=
+
+Name: images_red/splashteamwin.png
+SHA1-Digest: 0kRkiCbbpWyIPaY9+ZlNC10P+r8=
+
+Name: images/btn_float_addtoqueue.png
+SHA1-Digest: zB9K8vXI5CVp9Lz5sum7hEjMuyI=
+
+Name: images_amber/splashteamwin.png
+SHA1-Digest: uVAzYUQMnWq6381l52Ah+6TWnzo=
+
+Name: images_red/splashteamwin_stock.png
+SHA1-Digest: ayRTqS3kba5ivCg/5qBY9pEEzrI=
+
+Name: images/btn_float_flashitinfo_hl.png
+SHA1-Digest: 9eMFmphgksqxhgGAaDQPp4rrc4U=
+
+Name: images_blue/handle_h.png
+SHA1-Digest: l4vKb1rdCLGJbEyiaQsWdaljXb8=
+
+Name: images_lightblue/slideout_hl.png
+SHA1-Digest: 2oGILFwKGf5ybdqGGPA21PDGiq4=
+
+Name: images_stock/slideout.png
+SHA1-Digest: c8r4GBKnrRphLqLIThjmAh4Pci4=
+
+Name: images_red/splashlogo_stock.png
+SHA1-Digest: 8rgR6LJmUiJrFzFLeKRqx4KN4Wc=
+
+Name: images/splashlogo.png
+SHA1-Digest: SSChi35Eut3pVHn+4qJtdLG+P2Y=
+
+Name: images_lightblue/slideout.png
+SHA1-Digest: gjsXCyShdtjd6lRLKJDWWI0WojY=
+
+Name: images/slideout_white_hl.png
+SHA1-Digest: jRyGPkM4yOVVKMl110I+klym81Q=
+
+Name: images/tab_misc_a.png
+SHA1-Digest: uc7xq8byOp18N084bGa5Eeb5rxw=
+
+Name: images_teal/btn_float_folder.png
+SHA1-Digest: RQ3MqCQRHJ89uQLyU+tq+1ZASZc=
+
+Name: images/mb_terminalcommand_color.png
+SHA1-Digest: Ecc6jlc8nUvgJzJor6SNYxtbPAM=
+
+Name: images_bluegrey/btn_raised_hl.png
+SHA1-Digest: 826eJGq1/N660VvHDQrJObZflCE=
+
+Name: images/keyboard_hide_hl.png
+SHA1-Digest: cNyQVL3lekKumPbxvy1vqK8JH6c=
+
+Name: images_grey/slideout_hl.png
+SHA1-Digest: tI9HviYjme/R/Ry0dUfqyWd1ZNs=
+
+Name: images/actionbar_overflow.png
+SHA1-Digest: QKwLJrmXO0ckKK3PwR9PwyPkxnA=
+
+Name: images_lime/radio_true_d.png
+SHA1-Digest: 6YmbGDOucjc47iLEBl6nFO/lw14=
+
+Name: images_lightblue/file.png
+SHA1-Digest: RS2dXUkUWbapkHVMbe56Yqfhs9o=
+
+Name: images_red/radio_true.png
+SHA1-Digest: w0d/uJtGzIP5MSjBhAss1KffhFo=
+
+Name: images_lightgreen/handle_h.png
+SHA1-Digest: ijlBn7iapN/GgEZF/vUN9wipnd8=
+
+Name: images_lightblue/slider_used.png
+SHA1-Digest: s1GnfDkxgtoyHhgNAOCvvEsasUo=
+
+Name: images/tab_bu_options_a.png
+SHA1-Digest: Z57aRFVMS7MGmb4nfRnYTXB9geM=
+
+Name: images_stock/btn_raised_hl.png
+SHA1-Digest: Dkz9M4BvIuZWwNUzTs6RtGEMOZQ=
+
+Name: images/indeterminate008.png
+SHA1-Digest: 4lYuO7LiWU4HqmainvkAARwpVtQ=
+
+Name: images/keyboard_show_hl.png
+SHA1-Digest: ljBvA+T6pI0looYnMArfotSLAjM=
+
+Name: images_bluegrey/keyboard_show_hl.png
+SHA1-Digest: 7G0ZGKj0DrDC3TL6vAaAv1PzLYM=
+
+Name: splashes/splash_xml.xml
+SHA1-Digest: B3GcUdcr3Tzi//X3EUtoYjNgfQE=
+
+Name: images/actionbar_font_big_hl.png
+SHA1-Digest: njyVldRoc2vyd58lFlNk6J66Uy0=
+
+Name: images_blue/splashteamwin.png
+SHA1-Digest: GMa2lSWQbMre4XPvAM1J6OeAvPU=
+
+Name: images_lightblue/keyboard_hide.png
+SHA1-Digest: 4/Pv0bP1sjERd9wWvg2H9ng/JKM=
+
+Name: images_indigo/checkbox_true.png
+SHA1-Digest: AJHzXYBN7bYUKbDgzrKfHPvHm4w=
+
+Name: images_lightgreen/splashteamwin.png
+SHA1-Digest: JFSjoSl7hXs3z2Ncag5bsu7Y+zg=
+
+Name: images_stock/enter.png
+SHA1-Digest: fLi1ijZvO+lKkqPO6qzMG0+T0MU=
+
+Name: images_green/radio_true.png
+SHA1-Digest: 8z4gRK+CiIi98yPBMqi3kgYy+a8=
+
+Name: images_grey/keyboard_hide.png
+SHA1-Digest: RozZtfGM4rZ0PjQmQfIMovfDMlc=
+
+Name: images/actionbar_pinned.png
+SHA1-Digest: YH7NZnku4W40UQBZ3+TVX/dxf2U=
+
+Name: images/indeterminate014.png
+SHA1-Digest: jVr041N2O3ivRuNk8bLcXAFSTeo=
+
+Name: images_lightblue/splashteamwin_stock.png
+SHA1-Digest: OltTaQduvULbv02P4ORahnwZQew=
+
+Name: images_lime/keyboard_show.png
+SHA1-Digest: EUCRBk+PlfTu81zFlSzAOitvOQ8=
+
+Name: images/actionbar_theme.png
+SHA1-Digest: 4lsWo7gcMGmh17W0OiateF9jhds=
+
+Name: images_amber/enter.png
+SHA1-Digest: 8ChhYfJYntS8zhtIkHFU6g/DzfY=
+
+Name: images_brown/radio_true_d.png
+SHA1-Digest: nYpe1j/sSpljND8r78b91j5FOjM=
+
+Name: images/tab_vibration.png
+SHA1-Digest: PClvimIktgtCjZ0kgHaqCo9aJ4Q=
+
+Name: images/home_white.png
+SHA1-Digest: bgTkoa0eYdF/iX5Fqg4UyBTAXIE=
+
+Name: images_teal/back_hl.png
+SHA1-Digest: qmhpFc7sl3yU6bYA3U3D7k5jqsA=
+
+Name: images/splashteamwin_stock.png
+SHA1-Digest: D7keelP0JKmlQUxW+N7U3bOXMl0=
+
+Name: images/actionbar_delete_hl.png
+SHA1-Digest: J75mwrA1s9CC2P95zUPgYi0v3Zo=
+
+Name: images/mb_download.png
+SHA1-Digest: 2du6Ld8zd/ttvD/5jhh3cQGV/4Q=
+
+Name: images_lightblue/radio_true.png
+SHA1-Digest: HqZNI8ELG24yCZZOOnZv3CpLYPk=
+
+Name: images_red/back_hl.png
+SHA1-Digest: hp/NhibslKLpuPKDWYnJbSPIJVM=
+
+Name: images_brown/checkbox_true_d.png
+SHA1-Digest: /rSA+dSygyXLRT0ybCnsTcGQYwQ=
+
+Name: images_grey/back.png
+SHA1-Digest: SykL4k2HHbOncwrbnlUqjyaICPU=
+
+Name: images_lightblue/back.png
+SHA1-Digest: wAtycRlRC8OW+owFCOp+XLH1tYA=
+
+Name: images/navigate_right.png
+SHA1-Digest: vYtqr3mvMdKi0tzcKzlmor7o6j8=
+
+Name: images/radio_true_d.png
+SHA1-Digest: qplXzB77UM2QTmusyFsXfxZxyhE=
+
+Name: images_bluegrey/keyboard_hide_hl.png
+SHA1-Digest: ps6IqywxNazly65cGvDLctf9Q1g=
+
+Name: images_lightgreen/radio_true.png
+SHA1-Digest: stjepIedCQrvfmRSb9a9VWmlwtY=
+
+Name: images/mb_wipe_color.png
+SHA1-Digest: aar9VvnchingjZWOBhvfWoK/s1s=
+
+Name: images_red/checkbox_true.png
+SHA1-Digest: oXswtrn5LCFacXqpT3AFGEivIXE=
+

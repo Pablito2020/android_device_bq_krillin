@@ -120,7 +120,7 @@ USE_CUSTOM_AUDIO_POLICY := 1
 
 # LED NOTIFICATION 
 PRODUCT_PACKAGES += \
-    lights.default.so
+    liblights
 
 # WIFI
  PRODUCT_PACKAGES += \
@@ -166,8 +166,8 @@ PRODUCT_PACKAGES += \
     Snap
 
 # BROWSER PACKAGE
-PRODUCT_PACKAGES += \
-    Gello
+# PRODUCT_PACKAGES += \
+#Gello
     
 # RADIO PACKAGE
 PRODUCT_PACKAGES += \
