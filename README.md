@@ -23,10 +23,11 @@ Aquaris E4.5 - LineageOS 13.0
      * export WITH_TWRP=true
      * mka recoveryimage
 
+### For apply the patches (only tested on lineage os):
 
-### Developer:
+  In the device tree directory (device/bq/krillin):
 
- * Pablito2020 ---- HTCMANIA, XDA , 4PDA , GITHUB
+     * . krillin.sh
 
 ### Thanks to (In alphabetichal order):
 
