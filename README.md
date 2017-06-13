@@ -32,6 +32,7 @@ Aquaris E4.5 - LineageOS 13.0
 ### Thanks to (In alphabetichal order):
 
  * Assusdan (help with kernel sources builded from scratch) ---- GITHUB, 4PDA
+ * sultanxda (commits for OTA updates) ---- GITHUB, XDA
  * Varun Chitre (RIL + Sprout device tree patches) ---- XDA, GITHUB
  * Vo-1 (Sound Fix in kernel) ---- XDA, 4PDA , GITHUB
  * Zormax (Initial cm12.1/13.0 bringup for mt6582 with kernel sources) ---- 4PDA
