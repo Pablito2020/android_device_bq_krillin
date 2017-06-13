@@ -5,9 +5,7 @@ Aquaris E4.5 - LineageOS 13.0
 
      * repo init -u git://github.com/LineageOS/android.git -b cm-13.0
 
-     * repo sync
-
-     * NOW IS TIME TO ADD KERNEL, VENDOR AND STLPORT (FOR EGL) FILES IN HIS DIRECTORY PATHS 
+     * repo sync --force-sync 
 
      * . build/envsetup.sh
 
@@ -33,7 +31,6 @@ Aquaris E4.5 - LineageOS 13.0
 ### Thanks to (In alphabetichal order):
 
  * Assusdan (help with kernel sources builded from scratch) ---- GITHUB, 4PDA
- * Hikari No Tenshi ( Screencast App patch ) ---- XDA, GITHUB
  * Varun Chitre (RIL + Sprout device tree patches) ---- XDA, GITHUB
  * Vo-1 (Sound Fix in kernel) ---- XDA, 4PDA , GITHUB
  * Zormax (Initial cm12.1/13.0 bringup for mt6582 with kernel sources) ---- 4PDA

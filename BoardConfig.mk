@@ -135,7 +135,3 @@ USE_CAMERA_STUB := true
 # SEPOLICY
 BOARD_SEPOLICY_DIRS += \
     device/bq/krillin/sepolicy
-
-# Hack for build
-$(shell mkdir -p $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates)
-$(shell touch $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates/export_includes) 

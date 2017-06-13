@@ -164,10 +164,6 @@ PRODUCT_PACKAGES += \
 # CAMERA PACKAGE
 PRODUCT_PACKAGES += \
     Snap
-
-# BROWSER PACKAGE
-# PRODUCT_PACKAGES += \
-#Gello
     
 # RADIO PACKAGE
 PRODUCT_PACKAGES += \
@@ -198,8 +194,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # LOGD TOOL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tools/logd:system/bin/logd
-	
-
-# Hack for build
-$(shell mkdir -p $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates)
-$(shell touch $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates/export_includes)

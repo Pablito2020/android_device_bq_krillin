@@ -47,7 +47,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
   persist.sys.usb.config=mtp,adb
 
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
-
-# Hack for build
-$(shell mkdir -p $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates)
-$(shell touch $(OUT)/obj/SHARED_LIBRARIES/libminui_intermediates/export_includes) 
