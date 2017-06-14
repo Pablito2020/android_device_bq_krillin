@@ -93,7 +93,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Power and native tap-to-wake (thanks to xen0n)
 TARGET_POWERHAL_VARIANT := mtk-pablito
-TARGET_POWER_SET_FEATURE_LIB := power-feature-arale
+TARGET_POWER_SET_FEATURE_LIB := power-feature-krillin
 
 # OpenGL GRAPHICS
 USE_OPENGL_RENDERER := true
