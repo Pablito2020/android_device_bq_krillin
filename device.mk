@@ -118,10 +118,6 @@ PRODUCT_PACKAGES += \
 
 USE_CUSTOM_AUDIO_POLICY := 1
 
-# LED NOTIFICATION 
-PRODUCT_PACKAGES += \
-    liblights
-
 # WIFI
  PRODUCT_PACKAGES += \
     libwpa_client \
