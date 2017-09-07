@@ -1,9 +1,9 @@
-Aquaris E4.5 - LineageOS 13.0
+Aquaris E4.5 - LineageOS 14.0/1
 ==============
 
 ### Full Compilation guide:
 
-     * repo init -u git://github.com/LineageOS/android.git -b cm-13.0
+     * repo init -u git://github.com/LineageOS/android.git -b cm-14.1
 
      * repo sync --force-sync 
 
