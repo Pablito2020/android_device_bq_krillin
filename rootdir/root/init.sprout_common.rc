@@ -758,13 +758,13 @@ service bluetoothd /system/bin/bluetoothd -n
 #  External Modme control related services
 #
 
-service agpsd /system/bin/mtk_agpsd
-    class main
-    socket agpsd stream 660 gps system
-    socket agpsd2 stream 660 gps inet
-    socket agpsd3 stream 660 gps inet
-    user gps
-    group gps inet sdcard_r sdcard_rw misc radio
+#service agpsd /system/bin/mtk_agpsd
+#    class main
+#    socket agpsd stream 660 gps system
+#    socket agpsd2 stream 660 gps inet
+#    socket agpsd3 stream 660 gps inet
+#    user gps
+#    group gps inet sdcard_r sdcard_rw misc radio
 
 service mnld /system/xbin/mnld
     class main
