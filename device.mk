@@ -116,7 +116,7 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
-USE_CUSTOM_AUDIO_POLICY := 1
+# USE_CUSTOM_AUDIO_POLICY := 1
 
 # WIFI
  PRODUCT_PACKAGES += \
