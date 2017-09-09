@@ -51,7 +51,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
 	frameworks/native/data/etc/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml
 	
-# GPS
+# AGPS
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/system/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
 
@@ -116,8 +116,6 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
-# USE_CUSTOM_AUDIO_POLICY := 1
-
 # WIFI
  PRODUCT_PACKAGES += \
     libwpa_client \
@@ -142,14 +140,11 @@ PRODUCT_PACKAGES += \
     setup_fs \
     e2fsck
     
-PRODUCT_PACKAGES += \
-    libxlog
-    
 # GPS PACKAGE
 PRODUCT_PACKAGES += \
-    YGPS
+    gps.mt6582
 
-# RIL
+# KRILLIN SHIMS
 PRODUCT_PACKAGES += \
     libkrillin
     
@@ -181,7 +176,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	dalvik.vm.image-dex2oat-Xms=64m \
 	dalvik.vm.image-dex2oat-Xmx=64m \
 	ro.dalvik.vm.native.bridge=0 \
-	ro.hardware=sprout
+	ro.hardware=sprout \
+	ro.telephony.ril_class=MT6735 \
+	ro.telephony.ril.config=fakeiccid 
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     pm.dexopt.first-boot=verify-at-runtime \

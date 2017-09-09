@@ -32,7 +32,9 @@ Aquaris E4.5 - LineageOS 14.0/1
 ### Thanks to (In alphabetichal order):
 
  * Assusdan
+ * Deckersu
  * sultanxda
  * Varun Chitre
  * Vo-1
+ * Xcore
  * Zormax

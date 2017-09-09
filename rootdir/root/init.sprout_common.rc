@@ -7,7 +7,7 @@ on early-init
     setprop ro.mtk.hardware mt6582
 
 on init
-    export LD_PRELOAD "/system/lib/libxlog.so /system/lib/libkrillin.so"
+    export LD_PRELOAD "/system/lib/libkrillin.so"
     
     mkdir /protect_f 0771 system system
     mkdir /protect_s 0771 system system
@@ -758,13 +758,13 @@ service bluetoothd /system/bin/bluetoothd -n
 #  External Modme control related services
 #
 
-#service agpsd /system/bin/mtk_agpsd
-#    class main
-#    socket agpsd stream 660 gps system
-#    socket agpsd2 stream 660 gps inet
-#    socket agpsd3 stream 660 gps inet
-#    user gps
-#    group gps inet sdcard_r sdcard_rw misc radio
+service agpsd /system/bin/mtk_agpsd
+    class main
+    socket agpsd stream 660 gps system
+    socket agpsd2 stream 660 gps inet
+    socket agpsd3 stream 660 gps inet
+    user gps
+    group gps inet sdcard_r sdcard_rw misc radio
 
 service mnld /system/xbin/mnld
     class main

@@ -81,9 +81,13 @@ ril.radiooff.poweroffMD=0
 
 #ro.crypto.state=unencrypted
 
-# RIL AND GPS
+## RIL and Encoders
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+ro.telephony.ril_class=MT6735
+ro.telephony.ril.config=fakeiccid
 ##
-ro.telephony.ril_class=KrillinRIL
+##
 persist.radio.fd.counter=15
 persist.radio.fd.off.counter=5
 persist.radio.fd.r8.counter=15

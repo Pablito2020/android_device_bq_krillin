@@ -16,9 +16,15 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    krillin_ril.cpp
+    ril.cpp \
+    ssl.c \
+    wvm.cpp \
+    ui.cpp \
+    xlog.c \
+    mtkaudio.cpp
 
-LOCAL_SHARED_LIBRARIES := libbinder
+LOCAL_C_INCLUDES += frameworks/av/media/mtp/ system/core/include/ frameworks/rs/server/ frameworks/av/include/ hardware/libhardware/include/
+LOCAL_SHARED_LIBRARIES := libbinder libcrypto liblog libstagefright_foundation libui libgui libcutils libutils
 LOCAL_MODULE := libkrillin
 LOCAL_MODULE_TAGS := optional
 
