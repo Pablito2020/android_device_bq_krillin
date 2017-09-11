@@ -9,7 +9,7 @@ $(call inherit-product, device/bq/krillin/device.mk)
 
 LOCAL_PATH := device/bq/krillin
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=6.0.1/MMB29M/2419427:user/release-keys PRIVATE_BUILD_DESC="krillin-user 6.0.1 MMB29M 2419427 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=7.1.2/MRA58M/2419427:user/release-keys PRIVATE_BUILD_DESC="krillin-user 7.1.2 MRA58M 2419427 release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="krillin"

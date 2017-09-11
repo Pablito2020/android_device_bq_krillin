@@ -1,4 +1,4 @@
-Aquaris E4.5 - LineageOS 14.0/1
+Aquaris E4.5 - LineageOS 14.1
 ==============
 
 ### Full Compilation guide:
@@ -23,11 +23,10 @@ Aquaris E4.5 - LineageOS 14.0/1
      * export WITH_TWRP=true
      * mka recoveryimage
 
-### For apply the patches (only tested on lineage os):
+### Currently broken freatures:
 
-  In the device tree directory (device/bq/krillin):
-
-     * . apply-patches.sh
+ * Video Recording
+ * Mobile data
 
 ### Thanks to (In alphabetichal order):
 

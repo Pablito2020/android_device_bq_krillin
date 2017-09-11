@@ -84,7 +84,7 @@ ril.radiooff.poweroffMD=0
 ## RIL and Encoders
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
-ro.telephony.ril_class=MT6735
+ro.telephony.ril_class=MediaTekRIL
 ro.telephony.ril.config=fakeiccid
 ##
 ##

@@ -249,6 +249,9 @@
     <!-- Whether UI for multi user should be shown. Must be used for internal storage.  -->
     <bool name="config_enableMultiUserUI">true</bool>
 
+    <!-- Configuration to support SIM contact batch operation -->
+    <bool name="config_sim_phonebook_batch_operation">false</bool>
+
     <!-- Performance profiles -->
 	<!--
     <string name="config_perf_profile_prop">sys.perf.profile</string>

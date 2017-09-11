@@ -147,7 +147,12 @@ PRODUCT_PACKAGES += \
 # KRILLIN SHIMS
 PRODUCT_PACKAGES += \
     libkrillin
-    
+
+# Telecomm
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/ecc_list.xml:system/etc/ecc_list.xml \
+    $(LOCAL_PATH)/rootdir/system/etc/spn-conf.xml:system/etc/spn-conf.xml
+
 # EGL
 PRODUCT_PACKAGES += \
     libstlport
@@ -177,7 +182,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	dalvik.vm.image-dex2oat-Xmx=64m \
 	ro.dalvik.vm.native.bridge=0 \
 	ro.hardware=sprout \
-	ro.telephony.ril_class=MT6735 \
+	ro.telephony.ril_class=MediaTekRIL \
 	ro.telephony.ril.config=fakeiccid 
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
