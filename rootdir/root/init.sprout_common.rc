@@ -24,6 +24,7 @@ on init
 on fs
     write /proc/bootprof "INIT:eMMC:Mount_All_START"
     mount_all /fstab.sprout
+    swapon_all fstab.sprout
     write /proc/bootprof "INIT:eMMC:Mount_All_END"
 
 # mount different fs end
