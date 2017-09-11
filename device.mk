@@ -201,3 +201,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # LOGD TOOL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tools/logd:system/bin/logd
+
+# Superuser
+WITH_SU := true
