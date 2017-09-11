@@ -12,11 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit necessary things
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
+$(call inherit-product, device/common/gps/gps_us_supl.mk) 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+# Inherit the proprietary setup
+$(call inherit-product, vendor/bq/krillin/krillin-vendor.mk)
+
+# Local Path
 LOCAL_PATH := device/bq/krillin
 
 # PERMISSIONS
@@ -54,10 +59,6 @@ PRODUCT_COPY_FILES += \
 # AGPS
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/system/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
-
-# GPS CONFIGURATION
-PRODUCT_COPY_FILES +=\
-  $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf 
 
 # AUDIO	
 PRODUCT_COPY_FILES += \
@@ -164,9 +165,6 @@ PRODUCT_PACKAGES += \
 # RADIO PACKAGE
 PRODUCT_PACKAGES += \
     FMRadio
-    
-# call the proprietary setup
-$(call inherit-product, vendor/bq/krillin/krillin-vendor.mk)
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	ro.crypto.state=unencrypted \
