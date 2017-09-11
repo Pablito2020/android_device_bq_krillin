@@ -3,13 +3,13 @@
     "remote": "Pablito2020"
     "repository": "android_kernel_bq_krillin",
     "target_path": "kernel/bq/krillin",
-    "branch": "cm-14.0"
+    "branch": "cm-14.1"
   },
   {
     "remote": "Pablito2020"
     "repository": "android_vendor_bq_krillin",
     "target_path": "vendor/bq/krillin",
-    "branch": "cm-14.0"
+    "branch": "cm-14.1"
   },
   {
     "remote": "LineageOS"
