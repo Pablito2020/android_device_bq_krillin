@@ -153,6 +153,7 @@ PRODUCT_PACKAGES += \
 # Telecomm
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/ecc_list.xml:system/etc/ecc_list.xml \
+    $(LOCAL_PATH)/rootdir/system/etc/apns-conf.xml:system/etc/apns-conf.xml \
     $(LOCAL_PATH)/rootdir/system/etc/spn-conf.xml:system/etc/spn-conf.xml
 
 # EGL
