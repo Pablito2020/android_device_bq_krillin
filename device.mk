@@ -163,10 +163,6 @@ PRODUCT_PACKAGES += \
 # CAMERA PACKAGE
 PRODUCT_PACKAGES += \
     Snap
-    
-# RADIO PACKAGE
-PRODUCT_PACKAGES += \
-    FMRadio
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	ro.crypto.state=unencrypted \
