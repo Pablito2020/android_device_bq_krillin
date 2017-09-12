@@ -26,7 +26,6 @@ Aquaris E4.5 - LineageOS 14.1
 ### Currently broken freatures:
 
  * Mobile data
- * Radio FM
 
 ### Thanks to (In alphabetichal order):
 
