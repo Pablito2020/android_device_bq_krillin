@@ -25,13 +25,14 @@ Aquaris E4.5 - LineageOS 14.1
 
 ### Currently broken freatures:
 
- * Video Recording
  * Mobile data
+ * Radio FM
 
 ### Thanks to (In alphabetichal order):
 
  * Assusdan
  * Deckersu
+ * kra1o5
  * sultanxda
  * Varun Chitre
  * Vo-1
