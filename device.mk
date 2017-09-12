@@ -159,7 +159,11 @@ PRODUCT_COPY_FILES += \
 # EGL
 PRODUCT_PACKAGES += \
     libstlport
-   
+  
+# RADIO FM NEEDED
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg
+
 # CAMERA PACKAGE
 PRODUCT_PACKAGES += \
     Snap
