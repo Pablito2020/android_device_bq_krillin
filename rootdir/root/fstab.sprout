@@ -4,7 +4,9 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 /emmc@android     /system             ext4      ro                                                          wait
 /emmc@usrdata     /data               ext4      noatime,nosuid,nodev,noauto_da_alloc,discard                wait,check,resize
+/emmc@usrdata     /data               f2fs      nosuid,nodev,noatime,inline_xattr                           wait,check,resize,encryptable=/dev/encrypt
 /emmc@cache       /cache              ext4      noatime,nosuid,nodev,noauto_da_alloc,discard                wait,check
+/emmc@cache       /cache              f2fs      nosuid,nodev,noatime,inline_xattr                           wait,check
 /emmc@protect_f   /protect_f          ext4      noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc    wait,check,autoformat
 /emmc@protect_s   /protect_s          ext4      noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc    wait,check,autoformat
 /devices/platform/mtk-msdc.1/mmc_host*		auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata
