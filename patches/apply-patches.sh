@@ -1,8 +1,8 @@
 #!/bin/bash
 cd ../../../..
-#cd system/core
-#git apply -v ../../device/bq/krillin/patches/surfaceflinger.patch
-#cd ../..
+cd system/core
+git apply -v ../../device/bq/krillin/patches/surfaceflinger.patch
+cd ../..
 cd bionic
 git apply -v ../device/bq/krillin/patches/libc.patch
 cd ..
