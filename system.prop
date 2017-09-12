@@ -1,69 +1,58 @@
 #
 # system.prop for krillin
 #
+
+# HARDWARE (ALREADY IMPLEMENTED ON CMD LINE IN KERNEL)
 ro.hardware=sprout
 
-rild.libpath=/system/lib/mtk-ril.so
-rild.libargs=-d /dev/ttyC0
-
-
-# MTK, Infinity, 20090720 {
-wifi.interface=wlan0
-# MTK, Infinity, 20090720 }
-
-# MTK, mtk03034, 20101210 {
-ro.mediatek.wlan.wsc=1
-# MTK, mtk03034 20101210}
-# MTK, mtk03034, 20110318 {
-ro.mediatek.wlan.p2p=1
-# MTK, mtk03034 20110318}
-
-# MTK, mtk03034, 20101213 {
-mediatek.wlan.ctia=0
-# MTK, mtk03034 20101213}
-
-
-#
-wifi.tethering.interface=ap0
-#
+# DPI
 ro.sf.lcd_density=240
-persist.sys.lcd_density=240
+
+# OPENGLES DRIVER
 ro.opengles.version=131072
-
-wifi.direct.interface=p2p0
-#dalvik.vm.heapgrowthlimit=96m
-#dalvik.vm.heapsize=128m
-
-# USB MTP WHQL
-ro.sys.usb.mtp.whql.enable=0
 
 # Power off opt in IPO
 sys.ipo.pwrdncap=2
 
+# USB 
 ro.sys.usb.storage.type=mtp,adb
-
-# USB BICR function
 ro.sys.usb.bicr=yes
-
-# USB Charge only function
 ro.sys.usb.charging.only=yes
+ro.sys.usb.mtp.whql.enable=0
 
 # audio
-ro.camera.sound.forced=0
 ro.audio.silent=0
 
+# ZYGOTE
 ro.zygote.preload.enable=0
 
+# KERNEL AND SELINUX
 ro.kernel.zio=38,108,105,16
 ro.boot.selinux=disable
 
 # Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
 
+# ABOUT THE MTK DEVICE
 ro.mediatek.chip_ver=S01
 ro.mediatek.version.release=ALPS.W10.24.p0
 ro.mediatek.platform=MT6582
 ro.mediatek.version.sdk=1
+
+## CAMERA AND ENCODERS
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+ro.camera.sound.forced=0
+
+# RIL
+rild.libpath=/system/lib/mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+ro.telephony.ril_class=MediaTekRIL
+ro.telephony.ril.config=fakeiccid
+persist.radio.fd.counter=15
+persist.radio.fd.off.counter=5
+persist.radio.fd.r8.counter=15
+persist.radio.fd.off.r8.counter=5
 ro.telephony.sim.count=2
 persist.radio.default.sim=0
 persist.radio.multisim.config=dsds
@@ -79,22 +68,20 @@ ro.sf.hwrotation=0
 ril.current.share_modem=2
 ril.radiooff.poweroffMD=0
 
-## RIL and Encoders
-media.stagefright.legacyencoder=true
-media.stagefright.less-secure=true
-ro.telephony.ril_class=MediaTekRIL
-ro.telephony.ril.config=fakeiccid
-##
-##
-persist.radio.fd.counter=15
-persist.radio.fd.off.counter=5
-persist.radio.fd.r8.counter=15
-persist.radio.fd.off.r8.counter=5
+# MTK WIFI HAL
 wifi.supplicant_scan_interval=15
-##
+wifi.direct.interface=p2p0
+wifi.tethering.interface=ap0
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+
+# MTK GPS
 ro.mtk_gps_support=1
 
 # SDCardFS freature
 ro.sys.sdcardfs=true
 
+# TIME ZONE
 persist.sys.timezone=Europe/Amsterdam
