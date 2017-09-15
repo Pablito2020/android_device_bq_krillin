@@ -5,6 +5,7 @@
 /system/bin/drvbd             u:object_r:drvbd_exec:s0
 /system/bin/nvram_daemon      u:object_r:nvram_daemon_exec:s0
 /system/xbin/mnld             u:object_r:mnld_exec:s0
+/system/bin/permission_check  u:object_r:permission_check_exec:s0
 /system/bin/msensord          u:object_r:msensord_exec:s0
 /system/bin/thermal_manager   u:object_r:thermal_manager_exec:s0
 /system/bin/wmt_loader        u:object_r:wmt_loader_exec:s0
