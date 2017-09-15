@@ -14,6 +14,6 @@ git apply -v ../../device/bq/krillin/patches/encoders_n.patch
 git apply -v ../../device/bq/krillin/patches/mtk_color_support.patch
 cd ../..
 cd packages/apps/Recorder
-git apply -v ../../device/bq/krillin/patches/screen_recording.patch
+git apply -v ../../../device/bq/krillin/patches/screen_recording.patch
 cd ../../..
 
