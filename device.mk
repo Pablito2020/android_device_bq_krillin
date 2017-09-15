@@ -165,6 +165,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg
 
+# BUILD RADIO FM PACKAGE
+PRODUCT_PACKAGES += \
+    FMRadio
+
 # CAMERA PACKAGE
 PRODUCT_PACKAGES += \
     Snap
