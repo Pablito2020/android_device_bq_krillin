@@ -39,6 +39,7 @@ This branch is for building LineageOS 14.1 ROMS.
  
 #### Known Iusses :
  * Mobile Data in some companies
+ * Recovery F2FS (IT is added, but it isnt working for now)
 
 ### Full Compilation guide:
 

@@ -104,9 +104,7 @@ PRODUCT_COPY_FILES += \
     
 # TWRP RECOVERY
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab \
-    $(LOCAL_PATH)/recovery/etc/sbin/fsck.f2fs:root/sbin/fsck.f2fs \
-    $(LOCAL_PATH)/recovery/etc/sbin/mkfs.f2fs:root/sbin/mkfs.f2fs
+    $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # OVERLAY
 DEVICE_PACKAGE_OVERLAYS := device/bq/krillin/overlay
