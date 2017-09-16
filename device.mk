@@ -224,6 +224,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-swap=false	
+
+# GRANULAR VOLUME STEPS (MAD TEAM)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=14 \
+    ro.config.media_vol_steps=30
 	
 # LOGD TOOL
 PRODUCT_COPY_FILES += \
