@@ -2,8 +2,6 @@ on init
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 1300000
     write /sys/devices/system/cpu/cpufreq/hotplug/cpu_num_base 4
     mkdir /cust 0771 system system
-    mkdir /persist 0771 system system
-    mkdir /persist-lg 0771 system system
     mkdir /mpt 0771 system system
 
    
@@ -34,20 +32,6 @@ on post-fs-data
 
 	chmod 0660 /dev/misc2
 	chown root system /dev/misc2
-
-	mkdir /persist-lg/sensor 0771 system system
-	chown system system /persist-lg/sensor
-	chmod 0771 /persist-lg/sensor
-
-service lgpserver /system/bin/lgpserver
-	class main
-	user system
-	group radio system
-
-# LGE AT command daemon(atd)
-service atd /system/bin/atd
-	socket atd stream 0660 system inet
-	class main
 
 on property:dev.bootcomplete=1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 598000

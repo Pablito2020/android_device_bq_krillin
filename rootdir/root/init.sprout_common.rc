@@ -264,8 +264,10 @@ on post-fs-data
     chown system system /sys/class/misc/m_baro_misc/barodelay
     chown system system /sys/class/misc/m_baro_misc/barobatch
     chown system system /sys/class/misc/m_baro_misc/baroflush
+
     #Accdet
     chown root radio /sys/devices/platform/Accdet_Driver/driver/accdet_call_state
+
     #VideoCodec
     chmod 0660 /dev/Vcodec
     chown media media /dev/Vcodec
@@ -888,6 +890,7 @@ service orientationd /system/bin/orientationd
     user system
     group system input
     class main
+
 service AcdApiDaemon /system/bin/AcdApiDaemon
     disabled
     user system
