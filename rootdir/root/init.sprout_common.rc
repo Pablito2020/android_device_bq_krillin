@@ -207,11 +207,6 @@ on post-fs-data
     chown system system /sys/class/misc/m_mag_misc/magflush
     chown system system /sys/class/misc/m_mag_misc/magoactive
     chown system system /sys/class/misc/m_mag_misc/magodelay
-    
-    # ADDED BY BQ (IT SEEMS TO BE SOMETHING RELATED WITH BATERY)
-    chown system system /sys/devices/platform/battery/Ckt_AT_Test_Charging_State
-
-    # More magnetometer sensors..
     chown system system /sys/class/misc/m_mag_misc/magobatch
     chown system system /sys/class/misc/m_mag_misc/magoflush
     chmod 0660 /sys/class/misc/m_batch_misc/batchactive
@@ -264,6 +259,10 @@ on post-fs-data
     chown system system /sys/class/misc/m_baro_misc/barodelay
     chown system system /sys/class/misc/m_baro_misc/barobatch
     chown system system /sys/class/misc/m_baro_misc/baroflush
+
+    # msensor
+    chmod 0444 /sys/bus/platform/drivers/msensor/daemon
+    chown system system /sys/bus/platform/drivers/msensor/daemon
 
     #Accdet
     chown root radio /sys/devices/platform/Accdet_Driver/driver/accdet_call_state
@@ -817,16 +816,17 @@ service ami304d /system/bin/ami304d
     class main
 
 service memsicd /system/bin/memsicd
-     disabled
+    disabled
     user system
     group system
     class main
 
 service memsicd3416x /system/bin/memsicd3416x
-     disabled
-	 user system
+    disabled
+    user system
     group system
     class main
+
 service akmd8975 /system/bin/akmd8975
     disabled
     user system
@@ -874,14 +874,16 @@ service bmm056d /system/bin/bmm056d
     user system
     group system
     class main
+
 service mc6420d /system/bin/mc6420d
     disabled
     user system
     group system
     class main
+
 service qmc5983d /system/bin/qmc5983d
-     disabled
-	 user system
+    disabled
+    user system
     group system
     class main
 
