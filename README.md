@@ -62,10 +62,6 @@ This branch is for building LineageOS 14.1 ROMS.
      * export WITH_TWRP=true
      * mka recoveryimage
 
-### Currently broken freatures:
-
- * Mobile data
-
 ### Thanks to (In alphabetichal order):
 
  * Assusdan
