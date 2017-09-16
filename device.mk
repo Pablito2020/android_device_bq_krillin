@@ -11,14 +11,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
 # Inherit necessary things
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk) 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
-# Inherit the proprietary setup
 $(call inherit-product, vendor/bq/krillin/krillin-vendor.mk)
 
 # Local Path
@@ -48,7 +45,6 @@ PRODUCT_COPY_FILES += \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
 
 # CAMERA PERMISSIONS
 PRODUCT_COPY_FILES += \
@@ -118,7 +114,7 @@ PRODUCT_PACKAGES += \
     tinymix
 
 # WIFI
- PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
@@ -127,9 +123,12 @@ PRODUCT_PACKAGES += \
 	
 PRODUCT_PACKAGES += \
     librs_jni \
-    com.android.future.usb.accessory
 
-# LIGHTS
+# USB
+PRODUCT_PACKAGES += \
+com.android.future.usb.accessory
+
+# LED NOTIFICATION
  PRODUCT_PACKAGES += \
      lights.mt6582
 
@@ -140,11 +139,28 @@ PRODUCT_PACKAGES += \
     libnl_2 \
     libtinyxml
 
-# PARTITIONS
+# START TEAM MAD CHANGES
+# FILESYSTEM MANAGMENT TOOL
 PRODUCT_PACKAGES += \
     setup_fs \
-    e2fsck
-    
+    e2fsck \
+    fsck.f2fs \
+    mkfs.f2fs \
+    make_ext4fs
+
+# exFAT
+PRODUCT_PACKAGES += \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+
+# NTFS
+PRODUCT_PACKAGES += \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs
+# END TEAM MAD CHANGES
+
 # GPS PACKAGE
 PRODUCT_PACKAGES += \
     gps.mt6582
@@ -163,18 +179,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libstlport
   
-# RADIO FM NEEDED
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg
-
-# BUILD RADIO FM PACKAGE
+# RADIO FM
 PRODUCT_PACKAGES += \
     FMRadio
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/system/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg
 
 # CAMERA PACKAGE
 PRODUCT_PACKAGES += \
     Snap
 
+# SUPERUSER
+WITH_SU := true
+
+# DEFAULT PROPIERTIES
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	ro.crypto.state=unencrypted \
 	ro.mount.fs=EXT4 \
@@ -210,6 +228,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # LOGD TOOL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tools/logd:system/bin/logd
-
-# SUPERUSER
-WITH_SU := true
