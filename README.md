@@ -68,8 +68,9 @@ This branch is for building LineageOS 14.1 ROMS.
  * Assusdan
  * Chymardos
  * Deckersu
- * kra1o5
- * sultanxda
+ * Kra1o5
+ * The MAD Team (Fire855, DragonPT and Derteufel)
+ * Sultanxda
  * Varun Chitre
  * Vo-1
  * Xcore
