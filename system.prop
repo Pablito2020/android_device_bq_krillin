@@ -80,8 +80,8 @@ mediatek.wlan.ctia=0
 # MTK GPS
 ro.mtk_gps_support=1
 
-# SDCardFS freature
-ro.sys.sdcardfs=true
+# SDCardFS freature (disable it for now.. It is causing that the user can't download files from the browser or system apps)
+# ro.sys.sdcardfs=true
 
 # TIME ZONE
 persist.sys.timezone=Europe/Amsterdam
