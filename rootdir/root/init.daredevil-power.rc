@@ -1,22 +1,12 @@
+# DareDevil Script for improve the performance
+# Only tested on the BQ Aquaris E4.5 (Krillin)
+# Pablito2020, 2017
+
 on init
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 1300000
     write /sys/devices/system/cpu/cpufreq/hotplug/cpu_num_base 4
     mkdir /cust 0771 system system
     mkdir /mpt 0771 system system
-
-   
-on post-fs
-	chown root root /cust
-	chmod 0755 /cust
-    restorecon_recursive /cust
-	chown system system /persist
-	chmod 0771 /persist
-	chown system system /persist-lg
-	chmod 0771 /persist-lg
-	chown system system /mpt
-	chmod 0775 /mpt
-
-
 
 on post-fs-data
 # Sensor
@@ -36,4 +26,3 @@ on post-fs-data
 on property:dev.bootcomplete=1
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 598000
     write /sys/devices/system/cpu/cpufreq/hotplug/cpu_num_base 1
-
