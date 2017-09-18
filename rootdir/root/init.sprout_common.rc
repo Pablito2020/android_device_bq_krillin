@@ -799,8 +799,8 @@ service msensord /system/bin/msensord
     oneshot
 
 service st480d /system/bin/st480d
-     disabled
-	 user system
+    disabled
+    user system
     group system
     class main
 
@@ -809,6 +809,7 @@ service s62xd /system/bin/s62xd
     user compass
     group system
     class main
+
 service ami304d /system/bin/ami304d
     user system
     group system

@@ -1,5 +1,5 @@
 import /init.sprout_common.rc
-import /init.daredevil.rc
+import /init.daredevil-power.rc
 
 on init
 

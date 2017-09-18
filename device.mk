@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/root/ueventd.sprout.rc:root/ueventd.sprout.rc \
     $(LOCAL_PATH)/rootdir/root/init.sprout.usb.rc:root/init.sprout.usb.rc \
     $(LOCAL_PATH)/rootdir/root/init.sprout.rc:root/init.sprout.rc \
-    $(LOCAL_PATH)/rootdir/root/init.daredevil.rc:root/init.daredevil.rc \
+    $(LOCAL_PATH)/rootdir/root/init.daredevil-power.rc:root/init.daredevil-power.rc \
     $(LOCAL_PATH)/rootdir/root/fstab.sprout:root/fstab.sprout
     
 # TWRP RECOVERY
