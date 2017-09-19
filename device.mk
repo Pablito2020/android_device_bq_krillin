@@ -175,7 +175,7 @@ PRODUCT_PACKAGES += \
 
 # KRILLIN SHIMS
 PRODUCT_PACKAGES += \
-    libkrillin
+    libshims-krillin
 
 # Telecomm
 PRODUCT_COPY_FILES += \
