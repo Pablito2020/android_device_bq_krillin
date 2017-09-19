@@ -2,49 +2,34 @@
 # system.prop for krillin
 #
 
-# HARDWARE (ALREADY IMPLEMENTED ON CMD LINE IN KERNEL)
 ro.hardware=sprout
-
-# DPI
 ro.sf.lcd_density=240
-
-# OPENGLES DRIVER
 ro.opengles.version=131072
-
-# Power off opt in IPO
 sys.ipo.pwrdncap=2
 
-# USB 
 ro.sys.usb.storage.type=mtp,adb
 ro.sys.usb.bicr=yes
 ro.sys.usb.charging.only=yes
 ro.sys.usb.mtp.whql.enable=0
 
-# audio
 ro.audio.silent=0
 
-# ZYGOTE
-ro.zygote.preload.enable=0
 
-# KERNEL AND SELINUX
+ro.zygote.preload.enable=0
 ro.kernel.zio=38,108,105,16
 ro.boot.selinux=disable
 
-# Disable dirty region for Mali
 debug.hwui.render_dirty_regions=false
 
-# ABOUT THE MTK DEVICE
 ro.mediatek.chip_ver=S01
 ro.mediatek.version.release=ALPS.W10.24.p0
 ro.mediatek.platform=MT6582
 ro.mediatek.version.sdk=1
 
-## CAMERA AND ENCODERS
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 ro.camera.sound.forced=0
 
-# RIL
 rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 ro.telephony.ril_class=MediaTekRIL
@@ -68,7 +53,6 @@ ro.sf.hwrotation=0
 ril.current.share_modem=2
 ril.radiooff.poweroffMD=0
 
-# MTK WIFI HAL
 wifi.supplicant_scan_interval=15
 wifi.direct.interface=p2p0
 wifi.tethering.interface=ap0
@@ -77,11 +61,6 @@ ro.mediatek.wlan.wsc=1
 ro.mediatek.wlan.p2p=1
 mediatek.wlan.ctia=0
 
-# MTK GPS
 ro.mtk_gps_support=1
 
-# SDCardFS freature (disable it for now.. It is causing that the user can't download files from the browser or system apps)
 # ro.sys.sdcardfs=true
-
-# TIME ZONE
-persist.sys.timezone=Europe/Amsterdam
