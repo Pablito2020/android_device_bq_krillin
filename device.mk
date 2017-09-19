@@ -44,69 +44,55 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
-    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# CAMERA PERMISSIONS
-PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
-	frameworks/native/data/etc/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml
-	
-# AGPS
-PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/rootdir/system/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
+    frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+    frameworks/native/data/etc/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml
 
-# AUDIO	
+# NECESSARY CONFIGS
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    $(LOCAL_PATH)/rootdir/system/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml
-
-# THERMAL
-PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/rootdir/system/etc/thermal/thermal.conf:system/etc/.tp/thermal.conf \
-     $(LOCAL_PATH)/rootdir/system/etc/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
-     $(LOCAL_PATH)/rootdir/system/etc/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf
-
-# KEYLAYOUT
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl
-
-# HOSTAPD
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    $(LOCAL_PATH)/rootdir/system/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    $(LOCAL_PATH)/rootdir/system/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny
+    $(LOCAL_PATH)/configs/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
+    $(LOCAL_PATH)/configs/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    $(LOCAL_PATH)/configs/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    $(LOCAL_PATH)/configs/etc/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    $(LOCAL_PATH)/configs/etc/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    $(LOCAL_PATH)/configs/etc/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    $(LOCAL_PATH)/configs/etc/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml \
+    $(LOCAL_PATH)/configs/etc/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml \
+    $(LOCAL_PATH)/configs/etc/thermal/thermal.conf:system/etc/.tp/thermal.conf \
+    $(LOCAL_PATH)/configs/etc/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
+    $(LOCAL_PATH)/configs/etc/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf \
+    $(LOCAL_PATH)/configs/usr/keylayout/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl \
+    $(LOCAL_PATH)/configs/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    $(LOCAL_PATH)/configs/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/configs/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    $(LOCAL_PATH)/configs/etc/ecc_list.xml:system/etc/ecc_list.xml \
+    $(LOCAL_PATH)/configs/etc/apns-conf.xml:system/etc/apns-conf.xml \
+    $(LOCAL_PATH)/configs/etc/spn-conf.xml:system/etc/spn-conf.xml \
+    $(LOCAL_PATH)/configs/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg
 	
 PRODUCT_TAGS += dalvik.gc.type-precise
 
 # RAMDISK
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/root/init.sprout_common.rc:root/init.sprout_common.rc \
-    $(LOCAL_PATH)/rootdir/root/sbin/multi_init:root/sbin/multi_init \
-    $(LOCAL_PATH)/rootdir/root/init.protect.rc:root/init.protect.rc \
-    $(LOCAL_PATH)/rootdir/root/init.modem.rc:root/init.modem.rc \
-    $(LOCAL_PATH)/rootdir/root/factory_init.rc:root/factory_init.rc \
-    $(LOCAL_PATH)/rootdir/root/ueventd.sprout.rc:root/ueventd.sprout.rc \
-    $(LOCAL_PATH)/rootdir/root/init.sprout.usb.rc:root/init.sprout.usb.rc \
-    $(LOCAL_PATH)/rootdir/root/init.sprout.rc:root/init.sprout.rc \
-    $(LOCAL_PATH)/rootdir/root/init.daredevil-power.rc:root/init.daredevil-power.rc \
-    $(LOCAL_PATH)/rootdir/root/fstab.sprout:root/fstab.sprout
+    $(LOCAL_PATH)/rootdir/init.sprout_common.rc:root/init.sprout_common.rc \
+    $(LOCAL_PATH)/rootdir/sbin/multi_init:root/sbin/multi_init \
+    $(LOCAL_PATH)/rootdir/init.protect.rc:root/init.protect.rc \
+    $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
+    $(LOCAL_PATH)/rootdir/factory_init.rc:root/factory_init.rc \
+    $(LOCAL_PATH)/rootdir/ueventd.sprout.rc:root/ueventd.sprout.rc \
+    $(LOCAL_PATH)/rootdir/init.sprout.usb.rc:root/init.sprout.usb.rc \
+    $(LOCAL_PATH)/rootdir/init.sprout.rc:root/init.sprout.rc \
+    $(LOCAL_PATH)/rootdir/init.daredevil-power.rc:root/init.daredevil-power.rc \
+    $(LOCAL_PATH)/rootdir/fstab.sprout:root/fstab.sprout
     
 # TWRP RECOVERY
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
-# SUPERUSER
+# SUPERUSER + KERNEL ADIUTOR
 WITH_SU := true
-
-# KERNEL ADIUTOR PREBUILT APK (FOR DOUBLETAP2WAKE, SWEEP2WAKE + MORE FEATURES
-# THANKS TO THE DEVELOPER WILLY YE AND ALL THE CONTRIBUTORS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
 
@@ -147,22 +133,17 @@ PRODUCT_PACKAGES += \
     libnl_2 \
     libtinyxml
 
-# START TEAM MAD CHANGES
-# FILESYSTEM MANAGMENT TOOL
+# START TEAM MAD CHANGES (FILESYSTEM MANAGEMENT TOOLS)
 PRODUCT_PACKAGES += \
     setup_fs \
     e2fsck \
     fsck.f2fs \
     mkfs.f2fs \
     make_ext4fs
-
-# exFAT
 PRODUCT_PACKAGES += \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat
-
-# NTFS
 PRODUCT_PACKAGES += \
     fsck.ntfs \
     mkfs.ntfs \
@@ -177,12 +158,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshims-krillin
 
-# Telecomm
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/ecc_list.xml:system/etc/ecc_list.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/apns-conf.xml:system/etc/apns-conf.xml \
-    $(LOCAL_PATH)/rootdir/system/etc/spn-conf.xml:system/etc/spn-conf.xml
-
 # EGL
 PRODUCT_PACKAGES += \
     libstlport
@@ -190,8 +165,6 @@ PRODUCT_PACKAGES += \
 # RADIO FM
 PRODUCT_PACKAGES += \
     FMRadio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/system/etc/fmr/mt6627_fm_cust.cfg:system/etc/fmr/mt6627_fm_cust.cfg
 
 # CAMERA PACKAGE
 PRODUCT_PACKAGES += \
