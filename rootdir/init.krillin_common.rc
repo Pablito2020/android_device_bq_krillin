@@ -1,5 +1,5 @@
 # platform specific configuration items
-import /init.sprout.usb.rc
+import /init.krillin.usb.rc
 import /init.modem.rc
 
 on early-init
@@ -23,8 +23,8 @@ on init
 
 on fs
     write /proc/bootprof "INIT:eMMC:Mount_All_START"
-    mount_all /fstab.sprout
-    swapon_all fstab.sprout
+    mount_all /fstab.krillin
+    swapon_all fstab.krillin
     write /proc/bootprof "INIT:eMMC:Mount_All_END"
 
 # mount different fs end
