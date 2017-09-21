@@ -32,15 +32,6 @@ ro.camera.sound.forced=0
 
 rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
-ro.telephony.ril_class=MediaTekRIL
-ro.telephony.ril.config=fakeiccid
-persist.radio.fd.counter=15
-persist.radio.fd.off.counter=5
-persist.radio.fd.r8.counter=15
-persist.radio.fd.off.r8.counter=5
-ro.telephony.sim.count=2
-persist.radio.default.sim=0
-persist.radio.multisim.config=dsds
 ro.telephony.default_network=0,1
 ril.first.md=1
 ril.flightmode.poweroffMD=1
@@ -52,6 +43,34 @@ ril.external.md=0
 ro.sf.hwrotation=0
 ril.current.share_modem=2
 ril.radiooff.poweroffMD=0
+ro.telephony.sim.count=2
+persist.radio.default.sim=0
+persist.radio.multisim.config=dsds
+persist.radio.fd.counter=15
+persist.radio.fd.off.counter=5
+persist.radio.fd.r8.counter=15
+persist.radio.fd.off.r8.counter=5
+
+# OLD RIL PROPS WE'RE USING NOW SPROUT RIL
+#persist.radio.fd.counter=15
+#persist.radio.fd.off.counter=5
+#persist.radio.fd.r8.counter=15
+#persist.radio.fd.off.r8.counter=5
+#ro.telephony.sim.count=2
+#persist.radio.default.sim=0
+#persist.radio.multisim.config=dsds
+#ro.telephony.default_network=0,1
+#ril.first.md=1
+#ril.flightmode.poweroffMD=1
+#ril.telephony.mode=0
+#persist.mtk.wcn.combo.chipid=-1
+#ril.specific.sm_cause=0
+#bgw.current3gband=0
+#ril.external.md=0
+#ril.current.share_modem=2
+#ril.radiooff.poweroffMD=0
+
+ro.sf.hwrotation=0
 
 wifi.supplicant_scan_interval=15
 wifi.direct.interface=p2p0
