@@ -208,6 +208,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=14 \
     ro.config.media_vol_steps=30
 	
+# FASTER BOOTANIMATION
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # LOGD TOOL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tools/logd:system/bin/logd
