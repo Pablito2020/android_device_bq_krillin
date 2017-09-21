@@ -57,6 +57,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 USE_NINJA=false
 
 # Cyanogenmod
+BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := device/bq/krillin/cmhw/
 
 # DEXPREOPT
