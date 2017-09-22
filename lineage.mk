@@ -18,10 +18,6 @@ PRODUCT_BRAND := bq
 PRODUCT_MANUFACTURER := bq
 PRODUCT_MODEL := Aquaris E4.5
 
-# Correct bootanimation size for the screen
-TARGET_SCREEN_HEIGHT := 960
-TARGET_SCREEN_WIDTH := 540
-
 # set locales & aapt config.
 PRODUCT_AAPT_CONFIG := normal mdpi
 PRODUCT_AAPT_PREF_CONFIG := mdpi
