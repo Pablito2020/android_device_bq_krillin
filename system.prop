@@ -63,4 +63,5 @@ mediatek.wlan.ctia=0
 
 ro.mtk_gps_support=1
 
-# ro.sys.sdcardfs=true
+# SDCardFS
+ro.sys.sdcardfs=true
