@@ -32,7 +32,8 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 # FILESYSTEMS
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true # WIP FEATURE
+TARGET_USERIMAGES_USE_F2FS := true
+TARGET_KERNEL_HAVE_EXFAT := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # VOLD
@@ -71,23 +72,21 @@ ifeq ($(WITH_TWRP),true)
 RECOVERY_VARIANT := twrp
 TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery/kernel
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/etc/recovery.fstab
-DEVICE_RESOLUTION := 540x960
-DEVICE_SCREEN_WIDTH := 540
-DEVICE_SCREEN_HEIGHT := 960
-TW_THEME := portrait_hdpi
-TW_INCLUDE_NTFS_3G := true
-TW_EXCLUDE_SUPERSU := true
-BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_SUPPRESS_SECURE_ERASE := true
-TW_NO_REBOOT_BOOTLOADER := true
-TW_EXCLUDE_MTP := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_THEME := portrait_hdpi
+TW_EXCLUDE_SUPERSU := true
+TW_NO_REBOOT_BOOTLOADER := true
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun0/file
+TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 150
+TW_NO_EXFAT_FUSE := true
+TW_EXCLUDE_MTP := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_INCLUDE_CRYPTO := true
-TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
-TW_MAX_BRIGHTNESS := 255
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0/gadget/lun0/file
-TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
+TW_INCLUDE_NTFS_3G := true
+BOARD_SUPPRESS_SECURE_ERASE := true
 TW_INTERNAL_STORAGE_PATH := "/data/media"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_EXTERNAL_STORAGE_PATH := "/external_sd"
