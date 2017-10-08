@@ -18,7 +18,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 
 # Go to the lineage os directory
-cd ../../..
+cd ../../../..
 
 # Clone the recovery and the busybox tools
 git clone https://github.com/LineageOS/android_external_busybox external/busybox

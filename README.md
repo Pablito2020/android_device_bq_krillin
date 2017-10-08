@@ -31,11 +31,17 @@ This branch is for building Nougat ROMS.
 
 ### Recovery Compilation (TWRP Variant):
 
-  Enter to the "device tree" directory (bq/device/krillin):
+  Enter to the "utilities" directory (device/bq/krillin/utilities):
 
      * . twrp.sh
 
-### Thanks to (In alphabetichal order):
+### If you have a compilation error with jack server do:
+
+  Enter to the "utilities" directory (device/bq/krillin/utilities):
+
+     * . jack.sh
+
+### Contributors (In alphabetichal order):
 
  * Assusdan
  * Chymardos
