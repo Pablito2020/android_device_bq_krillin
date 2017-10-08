@@ -70,7 +70,6 @@ TARGET_OTA_ASSERT_DEVICE := krillin,Aquaris_E45,alps,giraffe
 # TWRP RECOVERY
 ifeq ($(WITH_TWRP),true)
 RECOVERY_VARIANT := twrp
-TARGET_PREBUILT_RECOVERY_KERNEL := $(LOCAL_PATH)/recovery/kernel
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/etc/recovery.fstab
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_THEME := portrait_hdpi
