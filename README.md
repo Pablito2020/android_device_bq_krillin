@@ -17,29 +17,7 @@ Camera  | 8MPx, LED Flash
 
 ![Krillin](https://faqsandroid.com/wp-content/uploads/2014/05/3-BQ-Aquaris-E.jpg "All three krillin")
 
-This branch is for building LineageOS 14.1 ROMS.
-
-#### Whats Working ?
- * Wifi
- * Bluetooth
- * Vibration
- * Audio
- * Flashlight (statusbar && Camera)
- * Video Recording
- * Micro SD support
- * MTP and Mass Storage modes
- * Rotation
- * Doze
- * Offline charging
- * RIL (only calls and sms)
- * GPS
- * Audio over Bluetooth (music, calls .etc)
- * Hotspot
- * Radio FM
- 
-#### Known Iusses :
- * Mobile Data in some companies
- * Recovery F2FS (IT is added, but it isnt working for now)
+This branch is for building Nougat ROMS.
 
 ### Full Compilation guide:
 
@@ -53,15 +31,9 @@ This branch is for building LineageOS 14.1 ROMS.
 
 ### Recovery Compilation (TWRP Variant):
 
-  LineageOS root / source directory:
+  Enter to the "device tree" directory (bq/device/krillin):
 
-     * git clone https://github.com/LineageOS/android_external_busybox external/busybox
-     * git clone https://github.com/OmniROM/android_bootable_recovery bootable/recovery-twrp
-     * source build/envsetup.sh
-     * lunch
-     * lineage_krillin-eng
-     * export WITH_TWRP=true
-     * mka recoveryimage
+     * . twrp.sh
 
 ### Thanks to (In alphabetichal order):
 
