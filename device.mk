@@ -11,17 +11,20 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# Inherit necessary things
+
+# Inherit lineage os necessary things
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk) 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+
+# Call krillin vendor
 $(call inherit-product, vendor/bq/krillin/krillin-vendor.mk)
 
 # Local Path
 LOCAL_PATH := device/bq/krillin
 
-# PERMISSIONS
+# Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
@@ -49,7 +52,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.camera.manual_sensor.xml:system/etc/permissions/android.hardware.camera.manual_sensor.xml
 
-# NECESSARY CONFIGS
+# Necessary Configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/etc/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
     $(LOCAL_PATH)/configs/etc/media_profiles.xml:system/etc/media_profiles.xml \
@@ -74,7 +77,7 @@ PRODUCT_COPY_FILES += \
 	
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-# RAMDISK
+# Ramdisk
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.krillin_common.rc:root/init.krillin_common.rc \
     $(LOCAL_PATH)/rootdir/sbin/multi_init:root/sbin/multi_init \
@@ -87,19 +90,21 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.daredevil-power.rc:root/init.daredevil-power.rc \
     $(LOCAL_PATH)/rootdir/fstab.krillin:root/fstab.krillin
     
-# TWRP RECOVERY
+# Recovery related (TWRP-Specific)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/etc/twrp.fstab:recovery/root/etc/twrp.fstab
 
-# SUPERUSER + KERNEL ADIUTOR
+# Superuser
 WITH_SU := true
+
+# Kernel Adiutor package
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/priv-app/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
 
-# OVERLAY
+# Overlay
 DEVICE_PACKAGE_OVERLAYS := device/bq/krillin/overlay
 
-# AUDIO
+# Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
@@ -107,7 +112,7 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
-# WIFI
+# Wifi
 PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
@@ -122,18 +127,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 com.android.future.usb.accessory
 
-# LED NOTIFICATION
+# Led package
  PRODUCT_PACKAGES += \
      lights.mt6582
 
-# CHARGING
+# Charging
 PRODUCT_PACKAGES += \
     charger \
     charger_res_images \
     libnl_2 \
     libtinyxml
 
-# START TEAM MAD CHANGES (FILESYSTEM MANAGEMENT TOOLS)
+# Filesystem Managment Tools
 PRODUCT_PACKAGES += \
     setup_fs \
     e2fsck \
@@ -148,29 +153,28 @@ PRODUCT_PACKAGES += \
     fsck.ntfs \
     mkfs.ntfs \
     mount.ntfs
-# END TEAM MAD CHANGES
 
-# GPS PACKAGE
+# GPS package
 PRODUCT_PACKAGES += \
     gps.mt6582
 
-# KRILLIN SHIMS
+# Shims for krillin
 PRODUCT_PACKAGES += \
     libshims-krillin
 
-# EGL
+# EGL Necessary package
 PRODUCT_PACKAGES += \
     libstlport
   
-# RADIO FM
+# Radio FM
 PRODUCT_PACKAGES += \
     FMRadio
 
-# CAMERA PACKAGE
+# Snap Package
 PRODUCT_PACKAGES += \
     Snap
 
-# DEFAULT PROPIERTIES
+# Default Propierties
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 	ro.crypto.state=unencrypted \
 	ro.mount.fs=EXT4 \
@@ -203,11 +207,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-swap=false	
 
-# GRANULAR VOLUME STEPS (MAD TEAM)
+# Granular Volume Steps -- M.A.D Team
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=14 \
     ro.config.media_vol_steps=30
 	
-# LOGD TOOL
+# Logd Tool
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/tools/logd:system/bin/logd

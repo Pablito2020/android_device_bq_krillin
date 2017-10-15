@@ -1,15 +1,15 @@
 # LOCAL PATH
 LOCAL_PATH := device/bq/krillin
 
-# BOOTLOADER
+# Bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := Aquaris_E45
 
-# PLATFORM
+# Platform
 TARGET_BOARD_PLATFORM := mt6582
 MTK_BOARD_PLATFORMS := mt6582
 
-# ARCHITECTURE
+# Architecture
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 ARCH_ARM_HAVE_VFP := true
@@ -21,7 +21,7 @@ TARGET_ARCH_VARIANT_CPU := cortex-a7
 TARGET_CPU_VARIANT:= cortex-a7
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
-# PARTITIONS (via cat /proc/partitions)
+# Partitions (via cat /proc/partitions)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 12296192
 BOARD_SYSTEMIMAGE_PARTITION_SIZE:=1073741824
@@ -30,17 +30,17 @@ BOARD_CACHEIMAGE_PARTITION_SIZE:=743003200
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# FILESYSTEMS
+# Filesystems (ext4, f2fs and exfat)
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_KERNEL_HAVE_EXFAT := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
-# VOLD
+# Vold
 BOARD_VOLD_MAX_PARTITIONS := 25
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
-# KERNEL + BOOTIMG INFO
+# Kernel + boot.img
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/tools/bootimg.mk
 MTK_PLATFORM := mt6582
 MTK_PROJECT := krillin
@@ -51,23 +51,23 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-# DON'T USE NINJA (IN MY COMPUTER IT SUCKS!)
+# Disable Ninja tool for old computers
 USE_NINJA=false
 
-# Cyanogenmod
+# Cyanogenmod Hardware Hooks
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := device/bq/krillin/cmhw/
 
-# DEXPREOPT
+# Dexpreopt
 WITH_DEXPREOPT := false
 DISABLE_DEXPREOPT := true
 
-# OTA
+# Zip package
 BLOCK_BASED_OTA := false
 TARGET_OTA_ASSERT_DEVICE := krillin,Aquaris_E45,alps,giraffe
 
-# RECOVERY
-# TWRP RECOVERY
+# Recovery
+# TWRP recovery related
 ifeq ($(WITH_TWRP),true)
 RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/etc/recovery.fstab
@@ -94,10 +94,10 @@ else
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/recovery.fstab
 endif
 
-# BLUETOOTH
+# Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
-# MTK WLAN
+# Mediatek Wlan
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_mt66xx
@@ -108,21 +108,21 @@ WIFI_DRIVER_FW_PATH_STA:=STA
 WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
 
-# MIKIN, MALLOC
+# Minkin and Malloc
 USE_MINIKIN := true
 MALLOC_SVELTE := true
 
-# FONTS
+# Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-# SYSTEM PROP
+# System Prop
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
-# MEDIATEK FLAGS
+# Mediatek Needed Flags
 BOARD_HAS_MTK_HARDWARE := true
 MTK_HARDWARE := true
 
-# DISPLAY NEEDED
+# Display
 USE_OPENGL_RENDERER := true
 DEVICE_RESOLUTION := 540x960
 TARGET_SCREEN_HEIGHT := 960
@@ -136,13 +136,13 @@ TARGET_GLOBAL_CFLAGS += -DANDROID_MULTI_SIM
 TARGET_GLOBAL_CPPFLAGS += -DANDROID_MULTI_SIM
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/
 
-# FLAGS
+# Neon Flags
 TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
-# MTK CAMERA NEEDED
+# Camera
 USE_CAMERA_STUB := true
 
-# SEPOLICY (ENFORCING NOT WORKING FOR NOW)
+# Sepolicy
 BOARD_SEPOLICY_DIRS += \
     device/bq/krillin/sepolicy
