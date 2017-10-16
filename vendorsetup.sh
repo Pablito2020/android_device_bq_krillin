@@ -1,5 +1,5 @@
-# Run device patches on the tree
-sh device/bq/krillin/patches/patches.sh
+# Run device specific patches
+sh device/bq/krillin/mtk/patches/patches.sh
 
 # Add lunch combos
 add_lunch_combo lineage_krillin-userdebug
