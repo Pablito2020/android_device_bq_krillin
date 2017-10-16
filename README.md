@@ -17,7 +17,7 @@ Camera  | 8MPx, LED Flash
 
 ![Krillin](https://faqsandroid.com/wp-content/uploads/2014/05/3-BQ-Aquaris-E.jpg "All three krillin")
 
-This branch is for building Nougat ROMS.
+This branch is for building Nougat ROMS and TWRP recovery
 
 ### Full Compilation guide:
 
@@ -31,13 +31,17 @@ This branch is for building Nougat ROMS.
 
 ### Recovery Compilation (TWRP Variant):
 
-  Enter to the "utilities" directory (device/bq/krillin/utilities):
+  Enter to the "scripts" directory (device/bq/krillin/scripts):
 
      * . twrp.sh
 
+     * lineage_krillin-userdebug
+
+     * mka recoveryimage
+
 ### If you have a compilation error with jack server do:
 
-  Enter to the "utilities" directory (device/bq/krillin/utilities):
+  Enter to the "scripts" directory (device/bq/krillin/scripts):
 
      * . jack.sh
 
