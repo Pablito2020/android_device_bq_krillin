@@ -87,7 +87,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.krillin.rc:root/ueventd.krillin.rc \
     $(LOCAL_PATH)/rootdir/init.krillin.usb.rc:root/init.krillin.usb.rc \
     $(LOCAL_PATH)/rootdir/init.krillin.rc:root/init.krillin.rc \
-    $(LOCAL_PATH)/rootdir/init.daredevil-power.rc:root/init.power.rc \
+    $(LOCAL_PATH)/rootdir/init.power.rc:root/init.power.rc \
     $(LOCAL_PATH)/rootdir/fstab.krillin:root/fstab.krillin
     
 # Recovery related (TWRP-Specific)
