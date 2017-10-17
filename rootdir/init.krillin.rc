@@ -1,5 +1,6 @@
 import /init.krillin_common.rc
-import /init.daredevil-power.rc
+# Call the power.rc file
+import /init.power.rc
 
 on init
 
@@ -9,4 +10,3 @@ on init
     # Support legacy paths
     symlink storage/sdcard sdcard
     symlink storage/sdcard /mnt/sdcard
-
