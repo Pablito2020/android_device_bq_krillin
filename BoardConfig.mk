@@ -62,6 +62,12 @@ BOARD_HARDWARE_CLASS := device/bq/krillin/cmhw/
 WITH_DEXPREOPT := false
 DISABLE_DEXPREOPT := true
 
+# Charger Path
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
+
+# Sensors
+TARGET_NO_SENSOR_PERMISSION_CHECK := true
+
 # Zip package
 BLOCK_BASED_OTA := false
 TARGET_OTA_ASSERT_DEVICE := krillin,Aquaris_E45,alps,giraffe

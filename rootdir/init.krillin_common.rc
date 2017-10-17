@@ -162,7 +162,7 @@ on post-fs-data
 
     # Start sensor
     chmod 0660 /dev/hwmsensor
-    chmod 0660 /dev/msensor
+    chmod 0777 /dev/msensor
     chmod 0660 /dev/gsensor
     chmod 0660 /dev/als_ps
     chmod 0660 /dev/gyroscope
@@ -193,14 +193,14 @@ on post-fs-data
     chown system system /sys/class/misc/m_acc_misc/accflush
 
     # Magnetometer (compass) sensor
-    chmod 0660 /sys/class/misc/m_mag_misc/magactive
-    chmod 0660 /sys/class/misc/m_mag_misc/magdelay
-    chmod 0660 /sys/class/misc/m_mag_misc/magbatch
-    chmod 0660 /sys/class/misc/m_mag_misc/magflush
-    chmod 0660 /sys/class/misc/m_mag_misc/magoactive
-    chmod 0660 /sys/class/misc/m_mag_misc/magodelay
-    chmod 0660 /sys/class/misc/m_mag_misc/magobatch
-    chmod 0660 /sys/class/misc/m_mag_misc/magoflush
+    chmod 0777 /sys/class/misc/m_mag_misc/magactive
+    chmod 0777 /sys/class/misc/m_mag_misc/magdelay
+    chmod 0777 /sys/class/misc/m_mag_misc/magbatch
+    chmod 0777 /sys/class/misc/m_mag_misc/magflush
+    chmod 0777 /sys/class/misc/m_mag_misc/magoactive
+    chmod 0777 /sys/class/misc/m_mag_misc/magodelay
+    chmod 0777 /sys/class/misc/m_mag_misc/magobatch
+    chmod 0777 /sys/class/misc/m_mag_misc/magoflush
     chown system system /sys/class/misc/m_mag_misc/magactive
     chown system system /sys/class/misc/m_mag_misc/magdelay
     chown system system /sys/class/misc/m_mag_misc/magbatch
@@ -209,10 +209,10 @@ on post-fs-data
     chown system system /sys/class/misc/m_mag_misc/magodelay
     chown system system /sys/class/misc/m_mag_misc/magobatch
     chown system system /sys/class/misc/m_mag_misc/magoflush
-    chmod 0660 /sys/class/misc/m_batch_misc/batchactive
-    chmod 0660 /sys/class/misc/m_batch_misc/batchdelay
-    chmod 0660 /sys/class/misc/m_batch_misc/batchbatch
-    chmod 0660 /sys/class/misc/m_batch_misc/batchflush
+    chmod 0777 /sys/class/misc/m_batch_misc/batchactive
+    chmod 0777 /sys/class/misc/m_batch_misc/batchdelay
+    chmod 0777 /sys/class/misc/m_batch_misc/batchbatch
+    chmod 0777 /sys/class/misc/m_batch_misc/batchflush
     chown system system /sys/class/misc/m_batch_misc/batchactive
     chown system system /sys/class/misc/m_batch_misc/batchdelay
     chown system system /sys/class/misc/m_batch_misc/batchbatch
@@ -261,8 +261,11 @@ on post-fs-data
     chown system system /sys/class/misc/m_baro_misc/baroflush
 
     # msensor
-    chmod 0444 /sys/bus/platform/drivers/msensor/daemon
+    chmod 0777 /sys/bus/platform/drivers/msensor/daemon
     chown system system /sys/bus/platform/drivers/msensor/daemon
+    chown system /sys/devices/platform/msensor/driver/cpsopmode
+    chown system /sys/devices/platform/msensor/driver/cpsreptxy
+    chown system /sys/devices/platform/msensor/driver/cpsreptz
 
     #Accdet
     chown root radio /sys/devices/platform/Accdet_Driver/driver/accdet_call_state
@@ -291,10 +294,6 @@ on post-fs-data
     chown system /sys/class/input/input3/wake
     chown system /sys/class/input/input4/offsets
     chown system /sys/class/input/input4/dynamic_matrix
-    chown system /sys/devices/platform/msensor/driver/cpsopmode
-    chown system /sys/devices/platform/msensor/driver/cpsreptxy
-    chown system /sys/devices/platform/msensor/driver/cpsreptz
-
 
     # SPM SODI Enable
     chown media /proc/mcdi/sodi_en
@@ -336,8 +335,6 @@ on post-fs-data
     chmod 0660 /dev/sec
     chown root system /dev/sec
 
-    # device apc settings
-
     # device info /proc interface
     chmod 0440 /dev/devmap
     chown root system /dev/devmap
@@ -373,11 +370,6 @@ on post-fs-data
     chmod 0660 /dev/kd_camera_flashlight
     chmod 0660 /dev/kd_camera_hw_bus2
     chmod 0660 /dev/FM50AF
-    chmod 0660 /dev/OV8825AF
-    chmod 0660 /dev/OV8826AF
-    chmod 0660 /dev/LITEON3H7AF    
-    chmod 0660 /dev/CAM_CAL_DRV
-    chmod 0660 /dev/EEPROM_M24C08F
 
     chown system camera /dev/camera-sysram
     chown system camera /dev/camera-isp
@@ -386,12 +378,6 @@ on post-fs-data
     chown system camera /dev/kd_camera_flashlight
     chown system camera /dev/kd_camera_hw_bus2
     chown system camera /dev/FM50AF
-    chown system camera /dev/OV8825AF
-    chown system camera /dev/OV8826AF
-    chown system camera /dev/LITEON3H7AF    
-    chown system camera /dev/CAM_CAL_DRV
-    chown system camera /dev/EEPROM_M24C08F
-
 
     #MATV
     chmod 0660 /dev/MATV
@@ -420,15 +406,12 @@ on post-fs-data
     chmod 0660 /dev/mtk_sched
     chown system media /dev/mtk_sched
 
+    # Mali Drivers
     chmod 666 /dev/mali
     chown system graphics /dev/mali
 
-
-
     #sbchk
     mkdir /data/sec 0750 system system
-
-
     exec 0666 /system/xbin/autosanity
 
 
@@ -482,7 +465,7 @@ on boot
     chown root system /sys/module/page_alloc/parameters/log_order_threshold
     chmod 0664 /sys/module/page_alloc/parameters/log_order_threshold
 
-     # Tweak background writeout
+    # Tweak background writeout
     write /proc/sys/vm/dirty_writeback_centisecs 300
 
     chmod 0660 /sys/power/autosleep
@@ -703,8 +686,6 @@ service dhcpcd_bt-pan /system/bin/dhcpcd -A -BK -dd
     group net_admin net_raw
     disabled
     oneshot
-
-
 
 service dhcpcd_wlan0 /system/bin/dhcpcd -A -BK -dd
     class main
@@ -931,10 +912,12 @@ service thermal_manager /system/bin/thermal_manager
     user root
     oneshot
 
-service battery_charger /charger
+# Health Charger
+service charger /sbin/healthd -c
     class charger
-
+    critical
     seclabel u:r:healthd:s0
+
 #
 # Connectivity related services (Begin)
 #
