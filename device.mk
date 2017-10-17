@@ -97,10 +97,6 @@ PRODUCT_COPY_FILES += \
 # Superuser
 WITH_SU := true
 
-# Kernel Adiutor package
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/priv-app/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS := device/bq/krillin/overlay
 
