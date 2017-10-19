@@ -100,6 +100,10 @@ WITH_SU := true
 # Overlay
 DEVICE_PACKAGE_OVERLAYS := device/bq/krillin/overlay
 
+# Gestures Package for dt2wake and Sw2wake
+PRODUCT_PACKAGES += \
+    Gestures
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
@@ -203,7 +207,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=speed \
     dalvik.vm.dex2oat-swap=false	
 
-# Granular Volume Steps -- M.A.D Team
+# Granular Volume Steps
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=14 \
     ro.config.media_vol_steps=30
