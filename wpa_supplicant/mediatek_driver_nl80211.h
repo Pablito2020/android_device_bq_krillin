@@ -3,6 +3,8 @@
 
 #include <sys/socket.h>
 
+//#define CONFIG_MTK_STAGE_SCAN
+
 #ifndef BITS
 /* Eddie */
 /* bits range: for example BITS(16,23) = 0xFF0000
@@ -344,3 +346,4 @@ struct wpa_driver_available_chan_s {
 
 
 #endif
+
