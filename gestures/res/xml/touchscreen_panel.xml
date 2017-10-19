@@ -16,36 +16,12 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/touchscreen_sweep">
-
-        <SwitchPreference
-            android:key="touchscreen_gesture_s2w"
-            android:title="@string/touchscreen_s2w_gesture_title"
-            android:summary="@string/touchscreen_s2w_gesture_summary" />
-
-        <SwitchPreference
-            android:key="touchscreen_gesture_s2s"
-            android:title="@string/touchscreen_s2s_gesture_title"
-            android:summary="@string/touchscreen_s2s_gesture_summary" />
-
-        <SwitchPreference
-            android:key="touchscreen_gesture_s2wi"
-            android:title="@string/touchscreen_s2wi_gesture_title"
-            android:summary="@string/touchscreen_s2wi_gesture_summary" />
-
-    </PreferenceCategory>
-
     <PreferenceCategory android:title="@string/touchscreen_doubletap">
 
         <SwitchPreference
             android:key="touchscreen_gesture_dt2w"
             android:title="@string/touchscreen_dt2w_gesture_title"
             android:summary="@string/touchscreen_dt2w_gesture_summary" />
-
-        <SwitchPreference
-            android:key="touchscreen_gesture_dt2s"
-            android:title="@string/touchscreen_dt2s_gesture_title"
-            android:summary="@string/touchscreen_dt2s_gesture_summary" />
 
     </PreferenceCategory>
 
