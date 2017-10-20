@@ -62,7 +62,10 @@ BOARD_HARDWARE_CLASS := device/bq/krillin/cmhw/
 WITH_DEXPREOPT := false
 DISABLE_DEXPREOPT := true
 
-# Charger Path
+# LightHAL
+TARGET_PROVIDES_LIBLIGHT := true
+
+# Charger Light Path
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Sensors
