@@ -1,6 +1,4 @@
 import /init.krillin_common.rc
-# Call the power.rc file
-import /init.power.rc
 
 on init
 
