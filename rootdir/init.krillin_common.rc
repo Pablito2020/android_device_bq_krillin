@@ -19,6 +19,10 @@ on init
     chown root system /proc/lk_env
     chmod 0660 /proc/lk_env
 
+    # Double Tap permission
+    chown root system /sys/android_touch/doubletap2wake
+    chmod 0660 /sys/android_touch/doubletap2wake
+
 # mount different fs start
 
 on fs
