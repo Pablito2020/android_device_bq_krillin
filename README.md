@@ -49,10 +49,10 @@ This branch is for building Nougat ROMS and TWRP recovery
 
  * Assusdan
  * Chymardos
+ * DanielHK
  * Deckersu
  * Kra1o5
- * The MAD Team (Fire855, DragonPT and Derteufel)
- * Sultanxda
+ * MAD team (Fire855, DragonPT and Derteufel)
  * Samar Vispute
  * Varun Chitre
  * Vo-1
