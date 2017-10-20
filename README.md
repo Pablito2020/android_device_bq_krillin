@@ -19,7 +19,17 @@ Camera  | 8MPx, LED Flash
 
 This branch is for building Nougat ROMS and TWRP recovery
 
-### Full Compilation guide:
+### Full Compilation guide [1st method]:
+
+     * repo init -u git://github.com/LineageOS/android.git -b cm-14.1
+
+     * repo sync --force-sync 
+
+     * . build/envsetup.sh
+
+     * brunch lineage_krillin-userdebug
+
+### Full Compilation guide [2n method]:
 
      * repo init -u git://github.com/LineageOS/android.git -b cm-14.1
 
@@ -28,6 +38,8 @@ This branch is for building Nougat ROMS and TWRP recovery
      * . build/envsetup.sh
 
      * lunch lineage_krillin-userdebug
+
+     * make -j4 bacon
 
 ### Recovery Compilation (TWRP Variant):
 
