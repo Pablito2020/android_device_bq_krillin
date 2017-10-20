@@ -14,7 +14,6 @@ ro.sys.usb.mtp.whql.enable=0
 
 ro.audio.silent=0
 
-
 ro.zygote.preload.enable=0
 ro.kernel.zio=38,108,105,16
 ro.boot.selinux=disable
@@ -63,5 +62,4 @@ mediatek.wlan.ctia=0
 
 ro.mtk_gps_support=1
 
-# SDCardFS
-ro.sys.sdcardfs=true
+# ro.sys.sdcardfs=true
