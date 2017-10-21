@@ -1,15 +1,14 @@
-# LOCAL PATH
 LOCAL_PATH := device/bq/krillin
 
-# Bootloader
+# bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := Aquaris_E45
 
-# Platform
+# platform
 TARGET_BOARD_PLATFORM := mt6582
 MTK_BOARD_PLATFORMS := mt6582
 
-# Architecture
+# arch
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 ARCH_ARM_HAVE_VFP := true
@@ -21,26 +20,26 @@ TARGET_ARCH_VARIANT_CPU := cortex-a7
 TARGET_CPU_VARIANT:= cortex-a7
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
-# Partitions (via cat /proc/partitions)
+# partitions (via cat /proc/partitions)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 12296192
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
 BOARD_SYSTEMIMAGE_PARTITION_SIZE:=1073741824
 BOARD_USERDATAIMAGE_PARTITION_SIZE:=5886705664
 BOARD_CACHEIMAGE_PARTITION_SIZE:=743003200
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# Filesystems (ext4, f2fs and exfat)
+# filesystems (ext4, f2fs and exfat)
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_KERNEL_HAVE_EXFAT := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
-# Vold
+# USB [vold]
 BOARD_VOLD_MAX_PARTITIONS := 25
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
-# Kernel + boot.img
+# boot
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/tools/bootimg.mk
 MTK_PLATFORM := mt6582
 MTK_PROJECT := krillin
@@ -51,7 +50,7 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-# Disable Ninja tool for old computers
+# Don't build with ninja
 USE_NINJA=false
 
 # Cyanogenmod Hardware Hooks
@@ -65,18 +64,17 @@ DISABLE_DEXPREOPT := true
 # LightHAL
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Charger Light Path
+# light path
 BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
-# Sensors
+# sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
-# Zip package
+# zip package
 BLOCK_BASED_OTA := false
 TARGET_OTA_ASSERT_DEVICE := krillin,Aquaris_E45,alps,giraffe
 
-# Recovery
-# TWRP recovery related
+# twrp recovery
 ifeq ($(WITH_TWRP),true)
 RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/etc/recovery.fstab
@@ -127,13 +125,13 @@ WIFI_DRIVER_STATE_OFF:=0
 USE_MINIKIN := true
 MALLOC_SVELTE := true
 
-# Fonts
+# fonts
 EXTENDED_FONT_FOOTPRINT := true
 
-# System Prop
+# prop file
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
-# Mediatek Needed Flags
+# Mediatek needed flags
 BOARD_HAS_MTK_HARDWARE := true
 BOARD_USES_MTK_HARDWARE := true 
 MTK_HARDWARE := true
@@ -159,6 +157,6 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 # Camera
 USE_CAMERA_STUB := true
 
-# Sepolicy
+# selinux policy
 BOARD_SEPOLICY_DIRS += \
     device/bq/krillin/sepolicy
