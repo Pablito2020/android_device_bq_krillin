@@ -111,12 +111,13 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
-# Wifi
+# Mediatek Wlan Packages
 PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \
+    libwifi-hal-mt66xx \
     wpa_supplicant.conf
 	
 PRODUCT_PACKAGES += \
