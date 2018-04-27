@@ -1,14 +1,14 @@
 LOCAL_PATH := device/bq/krillin
 
-# bootloader
+# Bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := Aquaris_E45
 
-# platform
+# Platform
 TARGET_BOARD_PLATFORM := mt6582
 MTK_BOARD_PLATFORMS := mt6582
 
-# arch
+# Arch
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 ARCH_ARM_HAVE_VFP := true
@@ -20,7 +20,7 @@ TARGET_ARCH_VARIANT_CPU := cortex-a7
 TARGET_CPU_VARIANT:= cortex-a7
 TARGET_CPU_MEMCPY_OPT_DISABLE := true
 
-# partitions (via cat /proc/partitions)
+# Partitions (via cat /proc/partitions)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
 BOARD_SYSTEMIMAGE_PARTITION_SIZE:=1073741824
@@ -29,7 +29,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE:=743003200
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-# filesystems (ext4, f2fs and exfat)
+# Filesystems (ext4, f2fs and exfat)
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_KERNEL_HAVE_EXFAT := true
@@ -39,7 +39,7 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_VOLD_MAX_PARTITIONS := 25
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
-# boot
+# Boot
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/tools/bootimg.mk
 MTK_PLATFORM := mt6582
 MTK_PROJECT := krillin
@@ -50,9 +50,6 @@ BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 -
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 
-# Don't build with ninja
-USE_NINJA=false
-
 # Cyanogenmod Hardware Hooks
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS := device/bq/krillin/cmhw/
@@ -61,10 +58,10 @@ BOARD_HARDWARE_CLASS := device/bq/krillin/cmhw/
 WITH_DEXPREOPT := false
 DISABLE_DEXPREOPT := true
 
-# LightHAL
+# Light HAL
 TARGET_PROVIDES_LIBLIGHT := true
 
-# sensors
+# Sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
 # zip package
@@ -141,9 +138,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
 # RIL
-SIM_COUNT := 2
-TARGET_GLOBAL_CFLAGS += -DANDROID_MULTI_SIM
-TARGET_GLOBAL_CPPFLAGS += -DANDROID_MULTI_SIM
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/
 
 # Offline charging
