@@ -64,9 +64,6 @@ DISABLE_DEXPREOPT := true
 # LightHAL
 TARGET_PROVIDES_LIBLIGHT := true
 
-# light path
-BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
-
 # sensors
 TARGET_NO_SENSOR_PERMISSION_CHECK := true
 
@@ -148,6 +145,11 @@ SIM_COUNT := 2
 TARGET_GLOBAL_CFLAGS += -DANDROID_MULTI_SIM
 TARGET_GLOBAL_CPPFLAGS += -DANDROID_MULTI_SIM
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/
+
+# Offline charging
+BOARD_CHARGER_DISABLE_INIT_BLANK := true
+BOARD_CHARGER_ENABLE_SUSPEND := false
+BACKLIGHT_PATH := "/sys/class/leds/lcd-backlight/brightness"
 
 # Neon Flags
 TARGET_GLOBAL_CFLAGS   += -mfpu=neon -mfloat-abi=softfp
