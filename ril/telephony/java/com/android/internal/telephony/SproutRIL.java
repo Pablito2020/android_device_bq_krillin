@@ -1,6 +1,6 @@
 /*
+ * Copyright (C) 2016 The CyanogenMod Project
  *
- * Copyright (C) 2017 The LineageOS Project
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -17,331 +17,172 @@
 package com.android.internal.telephony;
 
 import static com.android.internal.telephony.RILConstants.*;
-
+import com.android.internal.telephony.dataconnection.DataCallResponse;
+import com.android.internal.telephony.uicc.IccRefreshResponse;
 import android.content.Context;
 import android.os.AsyncResult;
 import android.os.Message;
 import android.os.Parcel;
-import android.telephony.Rlog;
+import android.telephony.TelephonyManager;
 
+
+/**
+ * Custom wrapper for MTK requests
+ *
+ * {@hide}
+ */
 public class SproutRIL extends RIL implements CommandsInterface {
+    static final String LOG_TAG = "SproutRIL";
 
-    static final int RIL_REQUEST_DUAL_SIM_MODE_SWITCH = 2012;
-    static final int RIL_REQUEST_SET_GPRS_CONNECT_TYPE = 2016;
-    static final int RIL_REQUEST_SET_GPRS_TRANSFER_TYPE = 2017;
-    static final int RIL_REQUEST_SET_CALL_INDICATION = 2036;
-    static final int RIL_UNSOL_NEIGHBORING_CELL_INFO = 3000;
-    static final int RIL_UNSOL_NETWORK_INFO = 3001;
-    static final int RIL_UNSOL_CALL_FORWARDING = 3002;
-    static final int RIL_UNSOL_CRSS_NOTIFICATION = 3003;
-    static final int RIL_UNSOL_CALL_PROGRESS_INFO = 3004;
-    static final int RIL_UNSOL_PHB_READY_NOTIFICATION = 3005;
-    static final int RIL_UNSOL_SPEECH_INFO = 3006;
-    static final int RIL_UNSOL_SIM_INSERTED_STATUS = 3007;
-    static final int RIL_UNSOL_RADIO_TEMPORARILY_UNAVAILABLE = 3008;
-    static final int RIL_UNSOL_ME_SMS_STORAGE_FULL = 3009;
-    static final int RIL_UNSOL_SMS_READY_NOTIFICATION = 3010;
-    static final int RIL_UNSOL_SCRI_RESULT = 3011;
-    static final int RIL_UNSOL_VT_STATUS_INFO = 3012;
-    static final int RIL_UNSOL_VT_RING_INFO = 3013;
-    static final int RIL_UNSOL_INCOMING_CALL_INDICATION = 3014;
-    static final int RIL_UNSOL_SIM_MISSING = 3015;
-    static final int RIL_UNSOL_GPRS_DETACH = 3016;
-    static final int RIL_UNSOL_SIM_RECOVERY= 3018;
-    static final int RIL_UNSOL_VIRTUAL_SIM_ON = 3019;
-    static final int RIL_UNSOL_VIRTUAL_SIM_OFF = 3020;
-    static final int RIL_UNSOL_INVALID_SIM = 3021;
-    static final int RIL_UNSOL_RESPONSE_PS_NETWORK_STATE_CHANGED = 3022;
-    static final int RIL_UNSOL_RESPONSE_ACMT = 3023;
-    static final int RIL_UNSOL_EF_CSP_PLMN_MODE_BIT = 3024;
-    static final int RIL_UNSOL_IMEI_LOCK = 3025;
-    static final int RIL_UNSOL_RESPONSE_MMRR_STATUS_CHANGED = 3026;
-    static final int RIL_UNSOL_SIM_PLUG_OUT = 3027;
-    static final int RIL_UNSOL_SIM_PLUG_IN = 3028;
-    static final int RIL_UNSOL_RESPONSE_ETWS_NOTIFICATION = 3029;
-    static final int RIL_UNSOL_CNAP = 3030;
-    static final int RIL_UNSOL_STK_EVDL_CALL = 3031;
+    static final int RIL_REQUEST_VENDOR_BASE = 2000;
+    static final int RIL_REQUEST_RESUME_REGISTRATION  = (RIL_REQUEST_VENDOR_BASE + 65);
+    static final int RIL_REQUEST_SET_CALL_INDICATION = (RIL_REQUEST_VENDOR_BASE + 86);
+    static final int RIL_REQUEST_GENERAL_SIM_AUTH = (RIL_REQUEST_VENDOR_BASE + 90);
+    static final int RIL_REQUEST_QUERY_AVAILABLE_NETWORK_WITH_ACT = (RIL_REQUEST_VENDOR_BASE + 95);
+    static final int RIL_REQUEST_SWITCH_CARD_TYPE = (RIL_REQUEST_VENDOR_BASE + 131);
 
-    private boolean dataAllowed = false;
-    private boolean setPreferredNetworkTypeSeen = false;
-    private String voiceRegState = "0";
-    private String voiceDataTech = "0";
+    static final int RIL_UNSOL_VENDOR_BASE = 3000;
+    static final int RIL_UNSOL_RESPONSE_PS_NETWORK_STATE_CHANGED = (RIL_UNSOL_VENDOR_BASE + 15);
+    static final int RIL_UNSOL_RESPONSE_REGISTRATION_SUSPENDED = (RIL_UNSOL_VENDOR_BASE + 24);
+    static final int RIL_UNSOL_INCOMING_CALL_INDICATION = (RIL_UNSOL_VENDOR_BASE + 42);
+    static final int RIL_UNSOL_CALL_INFO_INDICATION = (RIL_UNSOL_VENDOR_BASE + 49);
+    static final int RIL_UNSOL_MD_STATE_CHANGE = (RIL_UNSOL_VENDOR_BASE + 53);
+    static final int RIL_UNSOL_SET_ATTACH_APN = (RIL_UNSOL_VENDOR_BASE + 73);
+	
+    private int[] dataCallCids = { -1, -1, -1, -1, -1 };
 
-    public SproutRIL(Context context, int preferredNetworkType, int cdmaSubscription, Integer instanceId) {
-	    super(context, preferredNetworkType, cdmaSubscription, instanceId);
+    private Context mContext;
+    private TelephonyManager mTelephonyManager;
+
+    //***** Constructors
+    public SproutRIL(Context context, int preferredNetworkType, int cdmaSubscription) {
+        super(context, preferredNetworkType, cdmaSubscription, null);
     }
 
-    @Override
-    public void setInitialAttachApn(String apn, String protocol, int authType, String username,
-             String password, Message result) {
-        riljLog("setInitialAttachApn");
-
-        dataAllowed = true; //If we should attach to an APN, we actually need to register data
-
-        riljLog("Faking VoiceNetworkState");
-        mVoiceNetworkStateRegistrants.notifyRegistrants(new AsyncResult(null, null, null));
-
-        if (result != null) {
-            AsyncResult.forMessage(result, null, null);
-            result.sendToTarget();
-         }
+    public SproutRIL(Context context, int preferredNetworkType,
+            int cdmaSubscription, Integer instanceId) {
+        super(context, preferredNetworkType, cdmaSubscription, instanceId);
+        mContext = context;
+        mTelephonyManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
     }
 
-    @Override
-    protected RILRequest
-    processSolicited (Parcel p, int type) {
-        int serial, error, request;
-        RILRequest rr;
-        int dataPosition = p.dataPosition(); // save off position within the Parcel
-
-        serial = p.readInt();
-        error = p.readInt();
-
-        rr = mRequestList.get(serial);
-        if (rr == null || error != 0 || p.dataAvail() <= 0) {
-            p.setDataPosition(dataPosition);
-            return super.processSolicited(p, type);
+    private static String
+    localRequestToString(int request)
+    {
+        switch(request) {
+            case RIL_REQUEST_RESUME_REGISTRATION: return "RIL_REQUEST_RESUME_REGISTRATION";
+            case RIL_REQUEST_SET_CALL_INDICATION: return "RIL_REQUEST_SET_CALL_INDICATION";
+            default: return "<unknown response>";
         }
-
-        try { switch (rr.mRequest) {
-           case RIL_REQUEST_VOICE_REGISTRATION_STATE:
-               String voiceRegStates[] = (String [])responseStrings(p);
-
-               riljLog("VoiceRegistrationState response");
-
-               if (voiceRegStates.length > 0 && voiceRegStates[0] != null) {
-                   voiceRegState = voiceRegStates[0];
-               }
-
-               if (voiceRegStates.length > 3 && voiceRegStates[3] != null) {
-                   voiceDataTech = voiceRegStates[3];
-               }
-
-               if (RILJ_LOGD) riljLog(rr.serialString() + "< " + requestToString(rr.mRequest)
-                               + " " + retToString(rr.mRequest, voiceRegStates));
-
-               if (rr.mResult != null) {
-                       AsyncResult.forMessage(rr.mResult, voiceRegStates, null);
-                       rr.mResult.sendToTarget();
-               }
-               mRequestList.remove(serial);
-               break;
-           case RIL_REQUEST_DATA_REGISTRATION_STATE:
-               String dataRegStates[] = (String [])responseStrings(p);
-
-               riljLog("DataRegistrationState response");
-
-               if (dataRegStates.length > 0) {
-                   if (dataRegStates[0] != null) {
-                       if (!dataAllowed) {
-                           if (Integer.parseInt(dataRegStates[0]) > 0) {
-                               riljLog("Modifying dataRegState to 0 from " + dataRegStates[0]);
-                               dataRegStates[0] = "0";
-                           }
-                       } else {
-                           if ((Integer.parseInt(dataRegStates[0]) != 1) && (Integer.parseInt(dataRegStates[0]) != 5) &&
-                               ((Integer.parseInt(voiceRegState) == 1) || (Integer.parseInt(voiceRegState) == 5))) {
-                               riljLog("Modifying dataRegState from " + dataRegStates[0] + " to " + voiceRegState);
-                               dataRegStates[0] = voiceRegState;
-                               if (dataRegStates.length > 3) {
-                                   riljLog("Modifying dataTech from " + dataRegStates[3] + " to " + voiceDataTech);
-                                   dataRegStates[3] = voiceDataTech;
-                               }
-                           }
-                       }
-                   }
-               }
-
-               if (RILJ_LOGD) riljLog(rr.serialString() + "< " + requestToString(rr.mRequest)
-                               + " " + retToString(rr.mRequest, dataRegStates));
-
-               if (rr.mResult != null) {
-                       AsyncResult.forMessage(rr.mResult, dataRegStates, null);
-                       rr.mResult.sendToTarget();
-               }
-               mRequestList.remove(serial);
-               break;
-           default:
-               p.setDataPosition(dataPosition);
-               return super.processSolicited(p, type);
-        }} catch (Throwable tr) {
-                // Exceptions here usually mean invalid RIL responses
-
-                Rlog.w(RILJ_LOG_TAG, rr.serialString() + "< "
-                                + requestToString(rr.mRequest)
-                                + " exception, possible invalid RIL response", tr);
-
-                if (rr.mResult != null) {
-                        AsyncResult.forMessage(rr.mResult, null, tr);
-                        rr.mResult.sendToTarget();
-                }
-                return rr;
-        }
-
-        return rr;
     }
 
     @Override
     protected void
     processUnsolicited (Parcel p, int type) {
         Object ret;
-        int dataPosition = p.dataPosition();
+        int dataPosition = p.dataPosition(); // save off position within the Parcel
         int response = p.readInt();
 
         switch(response) {
-            case RIL_UNSOL_CALL_PROGRESS_INFO: ret = responseStrings(p); break;
-            case RIL_UNSOL_INCOMING_CALL_INDICATION: ret = responseStrings(p); break;
-            case RIL_UNSOL_RESPONSE_PS_NETWORK_STATE_CHANGED: ret =  responseVoid(p); break;
-            case RIL_UNSOL_SIM_INSERTED_STATUS: ret = responseInts(p); break;
-            case RIL_UNSOL_SIM_MISSING: ret = responseInts(p); break;
-            case RIL_UNSOL_SIM_PLUG_OUT: ret = responseInts(p); break;
-            case RIL_UNSOL_SIM_PLUG_IN: ret = responseInts(p); break;
-            case RIL_UNSOL_SMS_READY_NOTIFICATION: ret = responseVoid(p); break;
-            case RIL_UNSOL_RESPONSE_RADIO_STATE_CHANGED: ret =  responseVoid(p); break;
+            case RIL_UNSOL_RESPONSE_REGISTRATION_SUSPENDED: ret = responseRegSuspended(p); break;
+            case RIL_UNSOL_INCOMING_CALL_INDICATION: ret = responseIncomingCallIndication(p); break;
+            case RIL_UNSOL_CALL_INFO_INDICATION: ret = responseCallProgress(p); break;
+	        case RIL_UNSOL_MD_STATE_CHANGE: ret = responseInts(p); break;
+            case RIL_UNSOL_SET_ATTACH_APN: ret = responseSetAttachApn(p); break;
+            case RIL_UNSOL_ON_USSD: ret =  responseStrings(p); break;
+            case RIL_UNSOL_RESPONSE_PS_NETWORK_STATE_CHANGED: ret = responseInts(p); break;
             default:
+                // Rewind the Parcel
                 p.setDataPosition(dataPosition);
+                // Forward responses that we are not overriding to the super class
                 super.processUnsolicited(p, type);
                 return;
         }
-
-        // To avoid duplicating code from RIL.java, we rewrite some response codes to fit
-        // AOSP's one (when they do the same effect)
-        boolean rewindAndReplace = false;
-        int newResponseCode = 0;
-
-        switch (response) {
-            case RIL_UNSOL_CALL_PROGRESS_INFO:
-		rewindAndReplace = true;
-		newResponseCode = RIL_UNSOL_RESPONSE_CALL_STATE_CHANGED;
-		break;
+        switch(response) {
             case RIL_UNSOL_INCOMING_CALL_INDICATION:
-		setCallIndication((String[])ret);
-                rewindAndReplace = true;
-		newResponseCode = RIL_UNSOL_RESPONSE_CALL_STATE_CHANGED;
-		break;
+                mCallStateRegistrants
+                    .notifyRegistrants(new AsyncResult(null, null, null));
+            break;
+            case RIL_UNSOL_CALL_INFO_INDICATION:
+                if (ret == null) {
+                        mCallStateRegistrants
+                            .notifyRegistrants(new AsyncResult(null, null, null));
+                }
+            break;
+            case RIL_UNSOL_ON_USSD:
+                String[] resp = (String[])ret;
+
+                if (resp.length < 2) {
+                    resp = new String[2];
+                    resp[0] = ((String[])ret)[0];
+                    resp[1] = null;
+                }
+                if (resp[0] != null &&
+                         Integer.parseInt(resp[0]) >= 2 &&
+                         Integer.parseInt(resp[0]) <=5 ) {
+                    // support USSD_SESSION_END and USSD_HANDLED_BY_STK as normal finishes
+                    resp[0] = "0";
+                }
+
+                if (RILJ_LOGD) unsljLogMore(response, resp[0]);
+                if (mUSSDRegistrant != null) {
+                    mUSSDRegistrant.notifyRegistrant(
+                        new AsyncResult (null, resp, null));
+                }
+            break;
             case RIL_UNSOL_RESPONSE_PS_NETWORK_STATE_CHANGED:
-                rewindAndReplace = true;
-                newResponseCode = RIL_UNSOL_RESPONSE_VOICE_NETWORK_STATE_CHANGED;
-                break;
-            case RIL_UNSOL_SIM_INSERTED_STATUS:
-            case RIL_UNSOL_SIM_MISSING:
-            case RIL_UNSOL_SIM_PLUG_OUT:
-            case RIL_UNSOL_SIM_PLUG_IN:
-                rewindAndReplace = true;
-                newResponseCode = RIL_UNSOL_RESPONSE_SIM_STATUS_CHANGED;
-                break;
-            case RIL_UNSOL_SMS_READY_NOTIFICATION:
-                break;
-            case RIL_UNSOL_RESPONSE_RADIO_STATE_CHANGED:
-		// intercept and send GPRS_TRANSFER_TYPE and GPRS_CONNECT_TYPE to RIL
-	        setRadioStateFromRILInt(p.readInt());
-		rewindAndReplace = true;
-		newResponseCode = RIL_UNSOL_RESPONSE_RADIO_STATE_CHANGED;
-		break;
-            default:
-                Rlog.i(RILJ_LOG_TAG, "Unprocessed unsolicited known MTK response: " + response);
+                if (((int[])ret)[0] != 4)
+                    mVoiceNetworkStateRegistrants
+                        .notifyRegistrants(new AsyncResult(null, null, null));
+            break;
+
         }
 
-        if (rewindAndReplace) {
-            Rlog.w(RILJ_LOG_TAG, "Rewriting MTK unsolicited response to " + newResponseCode);
+    }
 
-            // Rewrite
-            p.setDataPosition(dataPosition);
-            p.writeInt(newResponseCode);
+    protected Object
+    responseRegSuspended(Parcel p) {
+        int numInts;
+        int response[];
 
-            // And rewind again in front
-            p.setDataPosition(dataPosition);
+        numInts = p.readInt();
 
-            super.processUnsolicited(p, type);
+        response = new int[numInts];
+
+        for (int i = 0 ; i < numInts ; i++) {
+            response[i] = p.readInt();
         }
-    }    
 
-    private void setCallIndication(String[] incomingCallInfo) {
+        RILRequest rr = RILRequest.obtain(RIL_REQUEST_RESUME_REGISTRATION, null);
 
-	RILRequest rr = RILRequest.obtain(RIL_REQUEST_SET_CALL_INDICATION, null);
+        if (RILJ_LOGD) riljLog(rr.serialString() + "> " + localRequestToString(rr.mRequest)
+                + " sessionId " + response[0]);
 
-	int callId = Integer.parseInt(incomingCallInfo[0]);
-        int callMode = Integer.parseInt(incomingCallInfo[3]);
-        int seqNumber = Integer.parseInt(incomingCallInfo[4]);
+        rr.mParcel.writeInt(1);
+        rr.mParcel.writeInt(response[0]);
 
-	// some guess work is needed here, for now, just 0
-	callMode = 0;
+        send(rr);
+
+        return response;
+    }
+
+    protected Object
+    responseIncomingCallIndication(Parcel p) {
+        String response[];
+
+        response = p.readStringArray();
+
+        RILRequest rr = RILRequest.obtain(RIL_REQUEST_SET_CALL_INDICATION, null);
+
+        if (RILJ_LOGD) riljLog(rr.serialString() + "> " + localRequestToString(rr.mRequest));
 
         rr.mParcel.writeInt(3);
-
-        rr.mParcel.writeInt(callMode);
-        rr.mParcel.writeInt(callId);
-        rr.mParcel.writeInt(seqNumber);
-
-        if (RILJ_LOGD) riljLog(rr.serialString() + "> "
-            + requestToString(rr.mRequest) + " " + callMode + " " + callId + " " + seqNumber);
-
+        rr.mParcel.writeInt(Integer.parseInt(response[3]));
+        rr.mParcel.writeInt(Integer.parseInt(response[0]));
+        rr.mParcel.writeInt(Integer.parseInt(response[4]));
         send(rr);
-    }
 
-    // Override setupDataCall as the MTK RIL needs 8th param CID (hardwired to 1?)
-    @Override
-    public void
-    setupDataCall(int radioTechnology, int profile, String apn,
-            String user, String password, int authType, String protocol,
-            Message result) {
-
-        RILRequest rr = RILRequest.obtain(RIL_REQUEST_SETUP_DATA_CALL, result);
-
-        rr.mParcel.writeInt(8);
-
-        rr.mParcel.writeString(Integer.toString(radioTechnology + 2));
-        rr.mParcel.writeString(Integer.toString(profile));
-        rr.mParcel.writeString(apn);
-        rr.mParcel.writeString(user);
-        rr.mParcel.writeString(password);
-        rr.mParcel.writeString(Integer.toString(authType));
-        rr.mParcel.writeString(protocol);
-        rr.mParcel.writeString("1");
-
-        if (RILJ_LOGD) riljLog(rr.serialString() + "> "
-                + requestToString(rr.mRequest) + " " + radioTechnology + " "
-                + profile + " " + apn + " " + user + " "
-                + password + " " + authType + " " + protocol + "1");
-
-        send(rr);
-    }
-
-    private void setRadioStateFromRILInt (int stateCode) {
-        switch (stateCode) {
-	case 0: case 1: break; // radio off
-	default:
-	    {
-	        RILRequest rr = RILRequest.obtain(RIL_REQUEST_SET_GPRS_TRANSFER_TYPE, null);
-
-		if (RILJ_LOGD) riljLog(rr.serialString() + "> " + requestToString(rr.mRequest));
-
-		rr.mParcel.writeInt(1);
-		rr.mParcel.writeInt(1);
-
-		send(rr);
-	    }
-	    {
-	        RILRequest rr = RILRequest.obtain(RIL_REQUEST_SET_GPRS_CONNECT_TYPE, null);
-
-		if (RILJ_LOGD) riljLog(rr.serialString() + "> " + requestToString(rr.mRequest));
-
-		rr.mParcel.writeInt(1);
-		rr.mParcel.writeInt(1);
-
-		send(rr);
-	    }
-	}
-    }
-
-    @Override
-    public void getRadioCapability(Message response) {
-        riljLog("getRadioCapability: returning static radio capability");
-        if (response != null) {
-            Object ret = makeStaticRadioCapability();
-            AsyncResult.forMessage(response, ret, null);
-            response.sendToTarget();
-        }
+        return response;
     }
 
     protected Object
@@ -361,15 +202,232 @@ public class SproutRIL extends RIL implements CommandsInterface {
         }
         return failCause;
     }
+	
+    protected Object
+    responseCallProgress(Parcel p) {
+        String response[];
+
+        response = p.readStringArray();
+
+        if (response.length >= 2) {
+            if (response[1].equals("129")) { // Call termination
+                return null;
+            }
+        }
+        return response;
+    }
 
     @Override
-    public void setPreferredNetworkType(int networkType , Message response) {
-        riljLog("setPreferredNetworkType: " + networkType);
+    public void setInitialAttachApn(String apn, String protocol, int authType, String username,
+            String password, Message result) {
+        RILRequest rr = RILRequest.obtain(RIL_REQUEST_SET_INITIAL_ATTACH_APN, null);
 
-        if (!setPreferredNetworkTypeSeen) {
-            setPreferredNetworkTypeSeen = true;
+        String operatorNumber = mTelephonyManager.getSimOperatorNumericForPhone(mInstanceId);
+        if (RILJ_LOGD) { riljLog("Set RIL_REQUEST_SET_INITIAL_ATTACH_APN"); }
+
+        rr.mParcel.writeString(apn);
+        rr.mParcel.writeString(protocol);
+        rr.mParcel.writeInt(authType);
+        rr.mParcel.writeString(username);
+        rr.mParcel.writeString(password);
+
+        rr.mParcel.writeString(operatorNumber);
+        rr.mParcel.writeInt(1);
+        rr.mParcel.writeStringArray(null);
+
+        if (RILJ_LOGD) { riljLog(rr.serialString() + "> " + requestToString(rr.mRequest)
+                + ", apn:" + apn + ", protocol:" + protocol + ", authType:" + authType
+                + ", username:" + username + ", password:" + password + ", operator:" + operatorNumber);
         }
 
-        super.setPreferredNetworkType(networkType, response);
+        send(rr);
+    }
+
+    protected Object
+    responseSetAttachApn(Parcel p) {
+        // The stack refuses to attach to LTE unless an IA APN was set, and
+        // will loop until it happens. Set an empty one to unblock.
+        setInitialAttachApn("","",0,"","",null);
+        return null;
+    }
+
+    @Override
+    protected Object
+    responseSimRefresh(Parcel p) {
+        IccRefreshResponse response = new IccRefreshResponse();
+
+        response.refreshResult = p.readInt();
+        String rawefId = p.readString();
+        response.efId   = rawefId == null ? 0 : Integer.parseInt(rawefId);
+        response.aid = p.readString();
+
+        return response;
+    }
+
+    @Override
+    public void
+    setupDataCall(int radioTechnology, int profile, String apn,
+            String user, String password, int authType, String protocol,
+            Message result) {
+        int interfaceId=0;
+        RILRequest rr
+                = RILRequest.obtain(RIL_REQUEST_SETUP_DATA_CALL, result);
+
+        rr.mParcel.writeInt(8); //bumped by one
+
+        rr.mParcel.writeString(Integer.toString(radioTechnology));
+        rr.mParcel.writeString(Integer.toString(profile));
+        rr.mParcel.writeString(apn);
+        rr.mParcel.writeString(user);
+        rr.mParcel.writeString(password);
+        rr.mParcel.writeString(Integer.toString(authType));
+        rr.mParcel.writeString(protocol);
+
+        /* Find the first available interfaceId */
+        for (int i=0; i < 4; i++) {
+            if (dataCallCids[i] < 0) {
+                interfaceId = i+1;
+                break;
+            }
+        }
+        rr.mParcel.writeString(interfaceId+"");
+
+        if (RILJ_LOGD) riljLog(rr.serialString() + "> "
+                + requestToString(rr.mRequest) + " " + radioTechnology + " "
+                + profile + " " + apn + " " + user + " "
+                + password + " " + authType + " " + protocol + " " + interfaceId);
+
+        send(rr);
+    }
+
+    @Override
+    public void
+    deactivateDataCall(int cid, int reason, Message result) {
+        for (int i=0; i < 4; i++) {
+            if (dataCallCids[i] == cid) {
+                dataCallCids[i] = -1;
+                break;
+            }
+        }
+        super.deactivateDataCall(cid, reason, result);
+    }
+
+
+    // Solicited request handling
+    @Override
+    protected RILRequest
+    processSolicited (Parcel p, int type) {
+        int serial, error;
+        int dataPosition = p.dataPosition(); // save off position within the Parcel
+        serial = p.readInt();
+        error = p.readInt();
+
+        RILRequest rr = null;
+
+        /* Pre-process the reply before popping it */
+        synchronized (mRequestList) {
+            RILRequest tr = mRequestList.get(serial);
+            if (tr != null && tr.mSerial == serial) {
+                if (error == 0 || p.dataAvail() > 0) {
+                    try {switch (tr.mRequest) {
+                        /* Get those we're interested in */
+                        case RIL_REQUEST_DATA_REGISTRATION_STATE:
+                        case RIL_REQUEST_SETUP_DATA_CALL:
+                        case RIL_REQUEST_ALLOW_DATA:
+                            rr = tr;
+                            break;
+                        // vendor ril refreshes the properties while generating this answer. Do our own updates afterwards
+                    }} catch (Throwable thr) {
+                        // Exceptions here usually mean invalid RIL responses
+                        if (tr.mResult != null) {
+                            AsyncResult.forMessage(tr.mResult, null, thr);
+                            tr.mResult.sendToTarget();
+                        }
+                        return tr;
+                    }
+                }
+            }
+        }
+
+        if (rr == null) {
+            /* Nothing we care about, go up */
+            p.setDataPosition(dataPosition);
+
+            // Forward responses that we are not overriding to the super class
+            return super.processSolicited(p, type);
+        }
+
+
+        rr = findAndRemoveRequestFromList(serial);
+
+        if (rr == null) {
+            return rr;
+        }
+
+        Object ret = null;
+
+        if (error == 0 || p.dataAvail() > 0) {
+            switch (rr.mRequest) {
+                case RIL_REQUEST_DATA_REGISTRATION_STATE: ret =  fixupPSBearerDataRegistration(p); break;
+                case RIL_REQUEST_SETUP_DATA_CALL: ret =  fetchCidFromDataCall(p); break;
+                case RIL_REQUEST_ALLOW_DATA: ret =  responseVoid(p); mVoiceNetworkStateRegistrants.notifyRegistrants(new AsyncResult(null, null, null)); break;
+                default:
+                    throw new RuntimeException("Shouldn't be here: " + rr.mRequest);
+            }
+            //break;
+        }
+
+        if (RILJ_LOGD) riljLog(rr.serialString() + "< " + requestToString(rr.mRequest)
+            + " " + retToString(rr.mRequest, ret));
+
+        if (rr.mResult != null) {
+            AsyncResult.forMessage(rr.mResult, ret, null);
+            rr.mResult.sendToTarget();
+        }
+
+        return rr;
+    }
+
+    private Object
+    fixupPSBearerDataRegistration(Parcel p) {
+        int num;
+        String response[];
+
+        response = p.readStringArray();
+
+        if (response.length >= 4 &&
+            response[3] != null &&
+            Integer.parseInt(response[3]) >= 128) {
+            // extended values >= RIL_RADIO_TECHNOLOGY_MTK (128) == HSPAP (15)
+            response[3] = "15";
+        }
+
+        return response;
+    }
+
+    private Object
+    fetchCidFromDataCall(Parcel p) {
+        DataCallResponse ret = (DataCallResponse)super.responseSetupDataCall(p);
+
+        if (ret.cid >= 0) {
+            for (int i = 0; i < 4; i++) {
+                if (dataCallCids[i] < 0) {
+                    dataCallCids[i] = ret.cid;
+                    break;
+                }
+            }
+        }
+        return ret;
+    }
+
+    @Override
+    public void
+    iccIOForApp (int command, int fileid, String path, int p1, int p2, int p3,
+            String data, String pin2, String aid, Message result) {
+        if (command == 0xc0 && p3 == 0) {
+            riljLog("Override the size for the COMMAND_GET_RESPONSE 0 => 15");
+            p3 = 15;
+        }
+        super.iccIOForApp(command, fileid, path, p1, p2, p3, data, pin2, aid, result);
     }
 }
