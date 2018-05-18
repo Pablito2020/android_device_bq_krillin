@@ -29,11 +29,7 @@ CM_BUILDTYPE := EXPERIMENTAL
 # Krillin specific propierties
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	persist.sys.usb.config=mtp
 	
 PRODUCT_PROPERTY_OVERRIDES += \
   persist.service.adb.enable=1 \
-  persist.service.debuggable=1 \
-  persist.sys.usb.config=mtp,adb
+  persist.service.debuggable=1
