@@ -113,6 +113,9 @@ WIFI_DRIVER_FW_PATH_P2P:=P2P
 USE_MINIKIN := true
 MALLOC_SVELTE := true
 
+# nija tool
+USE_NINJA=false
+
 # fonts
 EXTENDED_FONT_FOOTPRINT := true
 
