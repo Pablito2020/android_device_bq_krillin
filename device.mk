@@ -117,6 +117,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \
+    libwifi-hal-mt66xx \
     wpa_supplicant.conf
 	
 PRODUCT_PACKAGES += \
