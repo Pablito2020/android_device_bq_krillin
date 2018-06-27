@@ -150,5 +150,5 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 USE_CAMERA_STUB := true
 
 # selinux policy
-BOARD_SEPOLICY_DIRS += \
-    device/bq/krillin/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+    #device/bq/krillin/sepolicy
